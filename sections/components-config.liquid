@@ -1,0 +1,166 @@
+{% assign sid = section.id %}
+
+{% style %}
+  #shopify-section-{{ sid }} {
+    padding-block: {{ section.settings.padding_block }}rem;
+  }
+{% endstyle %}
+
+<style>
+  .buttons__wrapper {
+    display: flex;
+    gap: 0.8rem;
+    padding-block: 3.2rem;
+  }
+</style>
+
+{% liquid
+  assign heading = section.settings.heading
+  assign text = section.settings.text
+  assign paragraph = section.settings.paragraph
+  assign buttons_block = section.blocks | where: 'type', 'button'
+  assign link_block = section.blocks | where: 'type', 'link' | first
+%}
+
+<div class="page-width">
+  <h1>{{ heading }}</h1>
+  <h2>{{ heading }}</h2>
+  <h3>{{ heading }}</h3>
+  <h4>{{ heading }}</h4>
+  <h5>{{ heading }}</h5>
+  <h6>{{ heading }}</h6>
+
+  <div>{{ text }}</div>
+
+  {{ paragraph }}
+
+  <div class="buttons__wrapper">
+    {% for button in buttons_block %}
+      <button class="button button--{{ button.settings.variant }}" {{ button.shopify_attributes }}>
+        {{ button.settings.label }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <div>
+    <a class="link" href="{{ link_block.settings.url }}" {{ link_block.shopify_attributes }}>
+      {{- link_block.settings.label -}}
+    </a>
+  </div>
+
+  <form action="POST">
+    <div class="field">
+      <input type="text" class="field__input" id="name" placeholder="Name" required>
+      <label for="name" class="field__label">Name</label>
+    </div>
+  </form>
+</div>
+
+{% schema %}
+{
+  "name": "Components Configuration",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "This is just a placeholder."
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Richtext",
+      "default": "<p>There are other placeholder text alternatives like Hipster Ipsum, Zombie Ipsum, Bacon Ipsum, and many more. While often hilarious, these placeholder passages can also lead to much of the same confusion.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Styles"
+    },
+    {
+      "type": "range",
+      "id": "padding_block",
+      "label": "Padding Block",
+      "min": 4,
+      "max": 14,
+      "step": 1,
+      "unit": "rem",
+      "default": 8
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Button Label",
+          "default": "Primary"
+        },
+        {
+          "type": "select",
+          "id": "variant",
+          "label": "Button Variant",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "outline",
+              "label": "Outline"
+            },
+            {
+              "value": "text",
+              "label": "Text"
+            }
+          ],
+          "default": "primary"
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "name": "Link",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Link Label",
+          "default": "Google"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Components Configuration",
+      "blocks": [
+        {
+          "type": "button"
+        },
+        {
+          "type": "link",
+          "settings": {
+            "url": "https://www.google.com"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
