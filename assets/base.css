@@ -3595,3 +3595,75 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* Overridden styles  */
+body,
+button,
+a {
+  letter-spacing: 0 !important;
+}
+
+.button {
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.field__label {
+  display: none;
+}
+
+.field__input {
+  padding: 0rem 1.5rem 0rem 2rem !important;
+}
+
+.link {
+  text-decoration: unset !important;
+}
+
+h1,
+.h1 {
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+h2,
+.h2 {
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+h3,
+.h3 {
+  letter-spacing: -0.015em;
+  font-weight: 500;
+}
+
+h4,
+.h4 {
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+h5,
+.h5 {
+  letter-spacing: -0.0025em;
+  font-weight: 500;
+}
+
+h6,
+.h6 {
+  font-weight: 500;
+}
+
+.field:has(textarea),
+.field:has(textarea)::before,
+.field:has(textarea)::after,
+textarea.field__input:focus,
+textarea.field__input {
+  border-radius: 2rem !important;
+}
+
+textarea.field__input {
+  padding-block: 1rem !important;
+}
