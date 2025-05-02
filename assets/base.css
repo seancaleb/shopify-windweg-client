@@ -3597,6 +3597,21 @@ details-disclosure > details {
 }
 
 /* Overridden styles  */
+:root {
+  /* Colors  */
+  --cstm-color-primary: #1a1a1a;
+  --cstm-color-primary-dark: #0A0A0A;
+  --cstm-color-secondary: #4E937A;
+  --cstm-color-tertiary: #D52941;
+  --cstm-color-background: var(--color-background);
+  --cstm-color-text: #424242;
+  --cstm-color-white: #ffffff;
+
+  /* Easings */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration: 400ms;
+}
+
 body,
 button,
 a {
@@ -3607,6 +3622,28 @@ a {
   font-weight: 500;
   cursor: pointer;
   overflow: hidden;
+  font-size: 1.6rem;
+  line-height: 1;
+  padding-block: 1.6rem;
+  padding-inline: 3.2rem;
+}
+
+.button--primary, .button--outline {
+  transition: all var(--duration) var(--ease);
+}
+
+.button--outline {
+  background-color: transparent;
+  color: var(--cstm-color-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--cstm-color-primary-dark);
+}
+
+.button--outline:hover {
+  color: var(--cstm-color-white);
+  background-color: var(--cstm-color-primary);
 }
 
 .field__label {
@@ -3614,7 +3651,7 @@ a {
 }
 
 .field__input {
-  padding: 0rem 1.5rem 0rem 2rem !important;
+  padding: 0rem 1.5rem 0rem 1.5rem !important;
 }
 
 .link {
@@ -3623,37 +3660,62 @@ a {
 
 h1,
 .h1 {
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
+  font-size: 6.4rem;
+  line-height: 1;
   font-weight: 600;
 }
 
 h2,
 .h2 {
-  letter-spacing: -0.02em;
+  letter-spacing: -0.035em;
+  font-size: 4.8rem;
+  line-height: 1.15;
   font-weight: 600;
 }
 
 h3,
 .h3 {
-  letter-spacing: -0.015em;
-  font-weight: 500;
+  letter-spacing: -0.03em;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  font-weight: 600;
 }
 
 h4,
 .h4 {
-  letter-spacing: -0.01em;
-  font-weight: 500;
+  letter-spacing: -0.025em;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  font-weight: 600;
 }
 
 h5,
 .h5 {
-  letter-spacing: -0.0025em;
-  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 600;
 }
 
 h6,
 .h6 {
-  font-weight: 500;
+  letter-spacing: -0.015em;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: unset;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--cstm-color-primary);
+}
+
+body, p {
+  color: var(--cstm-color-text);
 }
 
 .field:has(textarea),
@@ -3661,9 +3723,13 @@ h6,
 .field:has(textarea)::after,
 textarea.field__input:focus,
 textarea.field__input {
-  border-radius: 2rem !important;
+  border-radius: .6rem !important;
 }
 
 textarea.field__input {
   padding-block: 1rem !important;
+}
+
+input {
+  min-height: 4.8rem !important;
 }
