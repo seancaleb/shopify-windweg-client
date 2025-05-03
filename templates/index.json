@@ -22,7 +22,7 @@
       }
     },
     "custom_feature_column_list_888kA3": {
-      "type": "custom-feature-column-list",
+      "type": "custom-column-list",
       "blocks": {
         "feature_column_Jey8hN": {
           "type": "feature_column",

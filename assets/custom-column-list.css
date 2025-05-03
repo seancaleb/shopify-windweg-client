@@ -1,38 +1,38 @@
-.feat-col__grid {
+.col__grid {
     display: grid;
     gap: 3.2rem;
     grid-template-columns: repeat(auto-fit, minmax(22.8rem, 1fr));
 }
 
-.feat-col__item {
+.col__item {
     display: grid;
     gap: 1.6rem;
     justify-items: start;
     align-items: start;
 }
 
-.feat-col__image {
-    width: 4.8rem;
+.col__image {
+    width: 8rem;
     height: 100%;
     border-radius: 100%;
 }
 
-.feat-col__title {
+.col__title {
     max-width: 30ch;
 }
 
-.feat-col__text {
+.col__text {
     max-width: 40ch;
 }
 
 @media screen and (min-width: 750px) {
-    .feat-col__grid {
+    .col__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .feat-col__grid {
+    .col__grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }

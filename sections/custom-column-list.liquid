@@ -1,4 +1,4 @@
-{{ 'custom-feature-column-list.css' | asset_url | stylesheet_tag }}
+{{ 'custom-column-list.css' | asset_url | stylesheet_tag }}
 
 {% render 'section-padding-style-config',
   section_id: section.id,
@@ -7,20 +7,24 @@
 %}
 
 <div class="page-width">
-  <div class="feat-col__grid">
+  <div class="col__grid">
     {% for block in section.blocks %}
-      <div class="feat-col__item" {{ block.shopify_attributes }}>
+      <div
+        class="col__item"
+        {{ block.shopify_attributes }}
+        style="justify-items: {{ section.settings.text_alignment }}"
+      >
         {% if block.settings.image %}
         {% else %}
-          {{ 'product-1' | placeholder_svg_tag: 'feat-col__image' }}
+          {{ 'product-1' | placeholder_svg_tag: 'col__image' }}
         {% endif %}
 
         {% if block.settings.title %}
-          <h4 class="feat-col__title">{{ block.settings.title }}</h4>
+          <h4 class="col__title">{{ block.settings.title }}</h4>
         {% endif %}
 
         {% if block.settings.text %}
-          <div class="feat-col__text">{{ block.settings.text | strip_html }}</div>
+          <div class="col__text">{{ block.settings.text | strip_html }}</div>
         {% endif %}
       </div>
     {% endfor %}
@@ -29,7 +33,7 @@
 
 {% schema %}
 {
-  "name": "Feature Column List",
+  "name": "Column List",
   "tag": "section",
   "disabled_on": {
     "groups": ["*"]
@@ -38,6 +42,26 @@
     {
       "type": "header",
       "content": "Styles"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
     },
     {
       "type": "range",
@@ -62,8 +86,9 @@
   ],
   "blocks": [
     {
-      "type": "feature_column",
+      "type": "column",
       "name": "Column",
+      "limit": 4,
       "settings": [
         {
           "type": "image_picker",
@@ -87,19 +112,19 @@
   ],
   "presets": [
     {
-      "name": "Feature Column List",
+      "name": "Column List",
       "blocks": [
         {
-          "type": "feature_column"
+          "type": "column"
         },
         {
-          "type": "feature_column"
+          "type": "column"
         },
         {
-          "type": "feature_column"
+          "type": "column"
         },
         {
-          "type": "feature_column"
+          "type": "column"
         }
       ]
     }
