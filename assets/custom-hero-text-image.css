@@ -70,6 +70,10 @@
     height: auto;
 }
 
+.hero__image {
+    display: block;
+}
+
 @media screen and (min-width: 480px) {
     .hero__content-wrapper {
         justify-items: start;
