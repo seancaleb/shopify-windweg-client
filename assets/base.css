@@ -3603,9 +3603,10 @@ details-disclosure > details {
   --cstm-color-primary-dark: #0a0a0a;
   --cstm-color-secondary: #4e937a;
   --cstm-color-tertiary: #d52941;
-  --cstm-color-background: var(--color-background);
+  --cstm-color-background: #fdfcf9;
   --cstm-color-text: #424242;
   --cstm-color-white: #ffffff;
+  --cstm-color-ratings: #f6cc24;
 
   /* Easings */
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -3800,6 +3801,18 @@ input {
   min-height: 4.8rem !important;
 }
 
+.badge {
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.badge--secondary {
+  border-color: var(--cstm-color-secondary);
+  background: var(--cstm-color-secondary);
+  color: var(--cstm-color-white);
+  border-radius: .6rem;
+}
+
 /* Overridden Styles  */
 .link,
 .customer a {
@@ -3845,7 +3858,7 @@ input {
 
 @media screen and (min-width: 990px) {
   .header {
-    padding-inline: 1rem !important; 
+    padding-inline: 5.6rem !important; 
   }
 }
 
@@ -3911,13 +3924,15 @@ input {
     padding-right: 2.4rem;
   }
 
-  .header {
-    max-width: 95%;
-  }
-
   .header--middle-left .header__heading-link,
   .header--top-left .header__heading-link {
     margin-left: unset;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header {
+    max-width: 192rem;
   }
 }
 

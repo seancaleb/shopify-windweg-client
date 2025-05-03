@@ -1,0 +1,108 @@
+{{ 'custom-feature-column-list.css' | asset_url | stylesheet_tag }}
+
+{% render 'section-padding-style-config',
+  section_id: section.id,
+  padding_top: section.settings.padding_top,
+  padding_bottom: section.settings.padding_bottom
+%}
+
+<div class="page-width">
+  <div class="feat-col__grid">
+    {% for block in section.blocks %}
+      <div class="feat-col__item" {{ block.shopify_attributes }}>
+        {% if block.settings.image %}
+        {% else %}
+          {{ 'product-1' | placeholder_svg_tag: 'feat-col__image' }}
+        {% endif %}
+
+        {% if block.settings.title %}
+          <h4 class="feat-col__title">{{ block.settings.title }}</h4>
+        {% endif %}
+
+        {% if block.settings.text %}
+          <div class="feat-col__text">{{ block.settings.text | strip_html }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Feature Column List",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["*"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Styles"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 4,
+      "max": 14,
+      "step": 1,
+      "unit": "rem",
+      "label": "Padding Top",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 4,
+      "max": 14,
+      "step": 1,
+      "unit": "rem",
+      "label": "Padding Bottom",
+      "default": 6
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature_column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Placeholder text"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature Column List",
+      "blocks": [
+        {
+          "type": "feature_column"
+        },
+        {
+          "type": "feature_column"
+        },
+        {
+          "type": "feature_column"
+        },
+        {
+          "type": "feature_column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
