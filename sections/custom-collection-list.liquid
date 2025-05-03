@@ -1,0 +1,169 @@
+{% assign sid = section.id %}
+
+{% render 'section-padding-style-config',
+  section_id: section.id,
+  padding_top: section.settings.padding_top,
+  padding_bottom: section.settings.padding_bottom
+%}
+
+<style>
+  #shopify-section-{{ sid }} .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slider {
+    padding-bottom: 4rem;
+  }
+
+  #shopify-section-{{ sid }} .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 100%;
+  }
+
+  #shopify-section-{{ sid }} .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ sid }} .swiper-scrollbar.swiper-scrollbar-horizontal {
+    height: 4px !important;
+    opacity: 1 !important;
+    background: #E0E0E0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  #shopify-section-{{ sid }} .swiper-scrollbar-drag {
+    display: block !important;
+    background: #949494 !important;
+  }
+
+  #shopify-section-{{ sid }} .content-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  #shopify-section-{{ sid }} .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  #shopify-section-{{ sid }} .heading {
+    position: absolute;
+    left: 2.4rem;
+    bottom: 2.4rem;
+  }
+</style>
+
+<div class="page-width">
+  <div class="swiper swiper-slider">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide" {{ block.shopify_attributes }}>
+          <a href="{{ block.settings.url }}" class="content-wrapper">
+            {% if block.settings.image %}
+            {% else %}
+              {{ 'collection-apparel-1' | placeholder_svg_tag: 'image' }}
+            {% endif %}
+
+            {% if block.settings.title %}
+              <h4 class="heading">{{ block.settings.title }}</h4>
+            {% endif %}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-scrollbar" style="height: 6px;"></div>
+  </div>
+</div>
+
+<script src="{{ 'custom-collection-list.js' | asset_url  }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Collection Slider List",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["*"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Styles"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 4,
+      "max": 14,
+      "step": 1,
+      "unit": "rem",
+      "label": "Padding Top",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 4,
+      "max": 14,
+      "step": 1,
+      "unit": "rem",
+      "label": "Padding Bottom",
+      "default": 6
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Placeholder text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Collection URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Slider List",
+      "blocks": [
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
