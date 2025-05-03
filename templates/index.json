@@ -21,32 +21,32 @@
         "url": ""
       }
     },
-    "custom_feature_column_list_888kA3": {
+    "custom_column_list_r9Wkm4": {
       "type": "custom-column-list",
       "blocks": {
-        "feature_column_Jey8hN": {
-          "type": "feature_column",
+        "column_NTDjct": {
+          "type": "column",
           "settings": {
             "title": "Placeholder text",
             "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
           }
         },
-        "feature_column_qaKeEQ": {
-          "type": "feature_column",
+        "column_kndn4n": {
+          "type": "column",
           "settings": {
             "title": "Placeholder text",
             "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
           }
         },
-        "feature_column_ddWkLK": {
-          "type": "feature_column",
+        "column_FHJFYa": {
+          "type": "column",
           "settings": {
             "title": "Placeholder text",
             "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
           }
         },
-        "feature_column_aziEha": {
-          "type": "feature_column",
+        "column_FAQVDw": {
+          "type": "column",
           "settings": {
             "title": "Placeholder text",
             "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
@@ -54,14 +54,15 @@
         }
       },
       "block_order": [
-        "feature_column_Jey8hN",
-        "feature_column_qaKeEQ",
-        "feature_column_ddWkLK",
-        "feature_column_aziEha"
+        "column_NTDjct",
+        "column_kndn4n",
+        "column_FHJFYa",
+        "column_FAQVDw"
       ],
-      "name": "Feature Column List",
+      "name": "Column List",
       "settings": {
-        "padding_top": 10,
+        "text_alignment": "left",
+        "padding_top": 6,
         "padding_bottom": 6
       }
     },
@@ -185,15 +186,162 @@
         "padding_top": 6,
         "padding_bottom": 6
       }
+    },
+    "custom_logo_list_gbmefQ": {
+      "type": "custom-logo-list",
+      "blocks": {
+        "logo_rQJHQq": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_Ybb3t7": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_UEajFF": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_gmj7fN": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_VmBFwf": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_UJbBhd": {
+          "type": "logo",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "logo_rQJHQq",
+        "logo_Ybb3t7",
+        "logo_UEajFF",
+        "logo_gmj7fN",
+        "logo_VmBFwf",
+        "logo_UJbBhd"
+      ],
+      "name": "Logo List",
+      "settings": {
+        "text": "As seen on:",
+        "spacing": 2.4,
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_collapsible_content_TVJbiz": {
+      "type": "custom-collapsible-content",
+      "blocks": {
+        "content_rxdwpa": {
+          "type": "content",
+          "settings": {
+            "heading": "Your heading goes here",
+            "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+          }
+        },
+        "content_3EdPMb": {
+          "type": "content",
+          "settings": {
+            "heading": "Your heading goes here",
+            "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+          }
+        },
+        "content_8aYDyD": {
+          "type": "content",
+          "settings": {
+            "heading": "Your heading goes here",
+            "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+          }
+        },
+        "content_hfrzmJ": {
+          "type": "content",
+          "settings": {
+            "heading": "Your heading goes here",
+            "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+          }
+        },
+        "content_DRX6Ng": {
+          "type": "content",
+          "settings": {
+            "heading": "Your heading goes here",
+            "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+          }
+        }
+      },
+      "block_order": [
+        "content_rxdwpa",
+        "content_3EdPMb",
+        "content_8aYDyD",
+        "content_hfrzmJ",
+        "content_DRX6Ng"
+      ],
+      "name": "Collapsible Content",
+      "settings": {
+        "subheading": "Subheading",
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_column_list_RUwq9W": {
+      "type": "custom-column-list",
+      "blocks": {
+        "column_aDHycm": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_gFq37q": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_NGxgJh": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_xaYnXD": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aDHycm",
+        "column_gFq37q",
+        "column_NGxgJh",
+        "column_xaYnXD"
+      ],
+      "name": "Column List",
+      "settings": {
+        "text_alignment": "center",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
     }
   },
   "order": [
     "custom_hero_text_image_ik4EUP",
-    "custom_feature_column_list_888kA3",
+    "custom_column_list_r9Wkm4",
     "custom_heading_with_text_U77nCM",
     "custom_collection_list_rmhEiU",
     "custom_text_image_jBMAGT",
     "custom_text_image_CRGAM3",
-    "custom_text_image_dWcCXy"
+    "custom_text_image_dWcCXy",
+    "custom_logo_list_gbmefQ",
+    "custom_collapsible_content_TVJbiz",
+    "custom_column_list_RUwq9W"
   ]
 }
