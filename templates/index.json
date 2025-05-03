@@ -9,46 +9,191 @@
  */
 {
   "sections": {
-    "components_config_iM9MP4": {
-      "type": "components-config",
+    "custom_hero_text_image_ik4EUP": {
+      "type": "custom-hero-text-image",
+      "name": "Hero with Text and Image",
+      "settings": {
+        "rating": 4.8,
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "button_label": "Explore our products",
+        "button_variant": "primary",
+        "url": ""
+      }
+    },
+    "custom_feature_column_list_888kA3": {
+      "type": "custom-feature-column-list",
       "blocks": {
-        "button_XbRVKq": {
-          "type": "button",
+        "feature_column_Jey8hN": {
+          "type": "feature_column",
           "settings": {
-            "label": "Discover more",
-            "variant": "primary"
+            "title": "Placeholder text",
+            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
           }
         },
-        "button_QnKmNA": {
-          "type": "button",
+        "feature_column_qaKeEQ": {
+          "type": "feature_column",
           "settings": {
-            "label": "Outlined button",
-            "variant": "outline"
+            "title": "Placeholder text",
+            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
           }
         },
-        "link_qAgPWH": {
-          "type": "link",
+        "feature_column_ddWkLK": {
+          "type": "feature_column",
           "settings": {
-            "label": "Google",
-            "url": "https://www.google.com"
+            "title": "Placeholder text",
+            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
+          }
+        },
+        "feature_column_aziEha": {
+          "type": "feature_column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
           }
         }
       },
       "block_order": [
-        "button_XbRVKq",
-        "button_QnKmNA",
-        "link_qAgPWH"
+        "feature_column_Jey8hN",
+        "feature_column_qaKeEQ",
+        "feature_column_ddWkLK",
+        "feature_column_aziEha"
       ],
-      "name": "Components Configuration",
+      "name": "Feature Column List",
       "settings": {
-        "heading": "This is just a placeholder.",
-        "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website.",
-        "paragraph": "<p>There are other placeholder text alternatives like Hipster Ipsum, Zombie Ipsum, Bacon Ipsum, and many more. While often hilarious, these placeholder passages can also lead to much of the same confusion.</p>",
-        "padding_block": 8
+        "padding_top": 10,
+        "padding_bottom": 6
+      }
+    },
+    "custom_heading_with_text_U77nCM": {
+      "type": "custom-heading-with-text",
+      "name": "Heading with Text",
+      "settings": {
+        "subheading": "Subheading",
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "padding_top": 6,
+        "padding_bottom": 4
+      }
+    },
+    "custom_collection_list_rmhEiU": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "collection_yWGn3A": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_CXKMiV": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_ihjmnz": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_K79xTX": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_qJPhUf": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_CxRRgN": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_NxKPMR": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_yWGn3A",
+        "collection_CXKMiV",
+        "collection_ihjmnz",
+        "collection_K79xTX",
+        "collection_qJPhUf",
+        "collection_CxRRgN",
+        "collection_NxKPMR"
+      ],
+      "name": "Collection Slider List",
+      "settings": {
+        "padding_top": 4,
+        "padding_bottom": 6
+      }
+    },
+    "custom_text_image_jBMAGT": {
+      "type": "custom-text-image",
+      "name": "Text with Image",
+      "settings": {
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "button_label": "Discover more",
+        "button_variant": "primary",
+        "url": "",
+        "image_position": "right",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_text_image_CRGAM3": {
+      "type": "custom-text-image",
+      "name": "Text with Image",
+      "settings": {
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "button_label": "Discover more",
+        "button_variant": "primary",
+        "url": "",
+        "image_position": "left",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_text_image_dWcCXy": {
+      "type": "custom-text-image",
+      "name": "Text with Image",
+      "settings": {
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "button_label": "Discover more",
+        "button_variant": "primary",
+        "url": "",
+        "image_position": "right",
+        "padding_top": 6,
+        "padding_bottom": 6
       }
     }
   },
   "order": [
-    "components_config_iM9MP4"
+    "custom_hero_text_image_ik4EUP",
+    "custom_feature_column_list_888kA3",
+    "custom_heading_with_text_U77nCM",
+    "custom_collection_list_rmhEiU",
+    "custom_text_image_jBMAGT",
+    "custom_text_image_CRGAM3",
+    "custom_text_image_dWcCXy"
   ]
 }
