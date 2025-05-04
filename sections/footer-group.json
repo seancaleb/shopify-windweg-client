@@ -23,7 +23,7 @@
         "newsletter_heading": "Subscribe to get latest deals",
         "newsletter_text": "Subscribe today and never miss our top offers and important announcements.",
         "payment_enable": true,
-        "padding_top": 6,
+        "padding_top": 8,
         "padding_bottom": 10
       }
     },

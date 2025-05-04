@@ -27,10 +27,78 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_header_with_heading_image_7ca8Ah": {
+      "type": "custom-header-with-heading-image",
+      "name": "Header with Heading Image",
+      "settings": {
+        "heading": "",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_contact_form_LijNKD": {
+      "type": "custom-contact-form",
+      "name": "Contact Form",
+      "settings": {
+        "heading": "We're here to help - get in touch!",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet. Once we have your content finalized, we'll replace this.",
+        "button_label": "Send message",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "custom_column_list_dmeczK": {
+      "type": "custom-column-list",
+      "blocks": {
+        "column_FmKtdj": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_rGkG7G": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_m6aQhV": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_pG7p9q": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_FmKtdj",
+        "column_rGkG7G",
+        "column_m6aQhV",
+        "column_pG7p9q"
+      ],
+      "name": "Column List",
+      "settings": {
+        "text_alignment": "center",
+        "padding_top": 6,
+        "padding_bottom": 10
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "custom_header_with_heading_image_7ca8Ah",
+    "custom_contact_form_LijNKD",
+    "custom_column_list_dmeczK"
   ]
 }
