@@ -3776,6 +3776,11 @@ h5,
 .h5,
 h6 {
   color: var(--cstm-color-primary);
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 500;
 }
 
 body,
