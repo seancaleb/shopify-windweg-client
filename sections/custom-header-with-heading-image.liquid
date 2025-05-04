@@ -1,5 +1,4 @@
 {% assign sid = section.id %}
-{% assign heading = section.settings.heading | default: page.title | default: template.name | capitalize %}
 
 {% render 'section-padding-style-config',
   section_id: section.id,
@@ -51,7 +50,9 @@
 {% endunless %}
 
 <div class="page-width">
-  <h1 class="heading">{{ heading }}</h1>
+  {% if section.settings.heading %}
+    <h1 class="heading">{{ section.settings.heading | capitalize }}</h1>
+  {% endif %}
 </div>
 
 {% schema %}
