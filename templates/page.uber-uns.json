@@ -1,0 +1,202 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_header_with_heading_image_QT4nPW": {
+      "type": "custom-header-with-heading-image",
+      "name": "Header with Heading Image",
+      "settings": {
+        "heading": "",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_heading_with_text_7CLABg": {
+      "type": "custom-heading-with-text",
+      "name": "Heading with Text",
+      "settings": {
+        "subheading": "",
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "padding_top": 10,
+        "padding_bottom": 6
+      }
+    },
+    "custom_text_image_REmUDw": {
+      "type": "custom-text-image",
+      "name": "Text with Image",
+      "settings": {
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "button_label": "Discover more",
+        "button_variant": "primary",
+        "url": "",
+        "image_position": "left",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_text_image_dPhP9J": {
+      "type": "custom-text-image",
+      "name": "Text with Image",
+      "settings": {
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "button_label": "Discover more",
+        "button_variant": "primary",
+        "url": "",
+        "image_position": "right",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_logo_list_kje6hQ": {
+      "type": "custom-logo-list",
+      "blocks": {
+        "logo_NAfmgK": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_qwacbU": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_eEcjyn": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_yYKGjp": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_QpPbXw": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_mKQWfD": {
+          "type": "logo",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "logo_NAfmgK",
+        "logo_qwacbU",
+        "logo_eEcjyn",
+        "logo_yYKGjp",
+        "logo_QpPbXw",
+        "logo_mKQWfD"
+      ],
+      "name": "Logo List",
+      "settings": {
+        "text": "As seen on:",
+        "spacing": 2.4,
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "newsletter_WJ4WhM": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_46adyN": {
+          "type": "heading",
+          "settings": {
+            "heading": "สมัครรับข้อมูลของเราทางอีเมล",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_QYa6eb": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>รับรู้ข่าวสารเกี่ยวกับคอลเลกชันใหม่และข้อเสนอพิเศษก่อนใคร</p>"
+          }
+        },
+        "email_form_w4qYeH": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_46adyN",
+        "paragraph_QYa6eb",
+        "email_form_w4qYeH"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_column_list_yL36rz": {
+      "type": "custom-column-list",
+      "blocks": {
+        "column_x8b3AJ": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_3TdPkh": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_A3edTY": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_QjbKgi": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_x8b3AJ",
+        "column_3TdPkh",
+        "column_A3edTY",
+        "column_QjbKgi"
+      ],
+      "name": "Column List",
+      "settings": {
+        "text_alignment": "center",
+        "padding_top": 6,
+        "padding_bottom": 10
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_header_with_heading_image_QT4nPW",
+    "custom_heading_with_text_7CLABg",
+    "custom_text_image_REmUDw",
+    "custom_text_image_dPhP9J",
+    "custom_logo_list_kje6hQ",
+    "newsletter_WJ4WhM",
+    "custom_column_list_yL36rz"
+  ]
+}
