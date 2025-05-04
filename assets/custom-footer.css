@@ -1,0 +1,159 @@
+footer ul {
+  margin: unset;
+  padding: unset;
+  list-style-type: none;
+}
+
+.footer__wrapper {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 990px) {
+  .footer__wrapper {
+    flex-direction: row;
+    gap: 4.8rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
+.footer__wrapper > * {
+  flex: 1;
+}
+
+/* Logo  */
+.footer__content-wrapper {
+  flex-grow: 1.5;
+  display: grid;
+  gap: 1.6rem;
+}
+
+.footer__logo {
+  display: block;
+}
+
+.footer__text {
+  max-width: 60ch;
+}
+
+/* Menu  */
+.footer__nav {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.footer__nav-heading {
+  color: var(--cstm-color-primary);
+  font-weight: 600;
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.footer__nav-item {
+}
+
+.footer__nav-link {
+  display: block;
+  text-decoration: unset;
+  color: var(--cstm-color-text);
+  transition: all var(--duration) var(--ease);
+  white-space: nowrap;
+}
+
+.footer__nav-link:hover {
+  color: var(--cstm-color-primary);
+  text-decoration: underline;
+}
+
+/* Newsletter  */
+.footer__newsletter-wrapper {
+  flex-grow: 1.5;
+  display: grid;
+  gap: 1.6rem;
+}
+
+.footer__newsletter-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+footer .newsletter-form {
+  padding-top: .8rem;
+}
+
+
+/* Copyright  */
+.footer__copyright-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  justify-content: space-between;
+  padding-block: 3.2rem;
+}
+
+
+
+.footer__payment-icon {
+  width: 4.8rem;
+  height: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 480px) {
+  .footer__newsletter-input-wrapper {
+    align-items: start;
+  }
+
+  footer .newsletter-form {
+    margin: unset;
+    max-width: 48rem;
+  }
+
+  .footer__newsletter-input-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .footer__copyright-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .footer__content-wrapper,
+  .footer__newsletter-wrapper {
+    flex: 1.5 1 25rem;
+    gap: 2.4rem;
+  }
+
+  .footer__nav {
+    gap: 2.4rem;
+  }
+
+  .footer__newsletter-input-wrapper {
+    flex-direction: column;
+  }
+
+  footer .newsletter-form {
+    padding-top: unset;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__wrapper {
+    gap: 8rem;
+  }
+
+
+  .footer__newsletter-input-wrapper {
+    flex-direction: row;
+  }
+}
