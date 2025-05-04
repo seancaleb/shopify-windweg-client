@@ -11,6 +11,22 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_footer_MEReJB": {
+      "type": "custom-footer",
+      "name": "Custom Footer",
+      "settings": {
+        "logo": "shopify://shop_images/windweg-logo.svg",
+        "logo_width": 110,
+        "text": "This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet.",
+        "menu_heading": "Legal & Return",
+        "menu": "footer-menu",
+        "newsletter_heading": "Subscribe to get latest deals",
+        "newsletter_text": "Subscribe today and never miss our top offers and important announcements.",
+        "payment_enable": true,
+        "padding_top": 6,
+        "padding_bottom": 10
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -41,6 +57,7 @@
         "footer-1",
         "footer-2"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
@@ -58,6 +75,7 @@
     }
   },
   "order": [
+    "custom_footer_MEReJB",
     "footer"
   ]
 }
