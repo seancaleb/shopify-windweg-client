@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_rich_text_VBcNwP": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "heading_LJrzBd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Widerrufsbelehrung"
+          }
+        },
+        "richtext_eLjNGM": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<h3>Widerrufsrecht</h3><p>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die<br/>Widerrufsfrist beträgt vierzehn Tage ab dem Tag , an dem Sie oder ein von Ihnen benannter Dritter, der nicht<br/>der Beförderer ist, die Waren in Besitz genommen haben bzw. hat.<br/><br/>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Michael Ochs, Bukarester Straße 23, 97084 Würzburg,<br/>Deutschland, <a href=\"mailto:info@windweg.com\">info@windweg.com</a>, Telefon: 017684421759) mittels einer eindeutigen Erklärung (z.B. ein mit<br/>der Post versandter Brief oder eine E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.<br/>Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.<br/><br/>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts<br/>vor Ablauf der Widerrufsfrist absenden.</p><h3>Folgen des Widerrufs</h3><p>Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben,<br/>einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie<br/>eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben),<br/>unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über<br/>Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe<br/>Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde<br/>ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte<br/>berechnet. Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis<br/>Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere<br/>Zeitpunkt ist.<br/><br/>Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem<br/>Sie uns über den Widerruf dieses Vertrags unterrichten, an uns oder an Michael Ochs (Bukarester Straße 23,<br/>97084 Würzburg, Deutschland) zurückzusenden oder zu übergeben. Die Frist ist gewahrt, wenn Sie die<br/>Waren vor Ablauf der Frist von vierzehn Tagen absenden. Sie tragen die unmittelbaren Kosten der<br/>Rücksendung der Waren. Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser<br/>Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht<br/>notwendigen Umgang mit ihnen zurückzuführen ist.</p><h3>Muster-Widerrufsformular</h3><p>– An Michael Ochs, Bukarester Straße 23, 97084 Würzburg, Deutschland, <a href=\"mailto:info@windweg.com\">info@windweg.com</a><br/>– Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den Kauf der<br/>folgenden<br/>– Waren (*)/die Erbringung der folgenden Dienstleistung (*)<br/>– Bestellt am (*)/erhalten am (*)<br/>– Name des/der Verbraucher(s)<br/>– Anschrift des/der Verbraucher(s)<br/>– Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)<br/>– Datum<br/>(*) Unzutreffendes streichen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LJrzBd",
+        "richtext_eLjNGM"
+      ],
+      "name": "Rich Text",
+      "settings": {
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_rich_text_VBcNwP"
+  ]
+}
