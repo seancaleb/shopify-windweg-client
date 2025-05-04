@@ -281,6 +281,18 @@
           font-size: 1.6rem;
         }
       }
+
+      {% unless template == 'page.terms-and-conditions' or template == 'page.cancellation-policy' or template == 'page.privacy-policy' or template == 'page.imprint' %}
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+          margin: unset;
+        }
+      {% endunless %}
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
