@@ -231,51 +231,51 @@
         "padding_bottom": 6
       }
     },
-    "custom_collapsible_content_TVJbiz": {
+    "custom_collapsible_content_CAa7nd": {
       "type": "custom-collapsible-content",
       "blocks": {
-        "content_rxdwpa": {
+        "content_in9Ufw": {
           "type": "content",
           "settings": {
-            "heading": "Your heading goes here",
-            "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+            "heading": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].answer | metafield_tag }}"
           }
         },
-        "content_3EdPMb": {
+        "content_FkyzW3": {
           "type": "content",
           "settings": {
-            "heading": "Your heading goes here",
-            "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+            "heading": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].answer | metafield_tag }}"
           }
         },
-        "content_8aYDyD": {
+        "content_t7fVYm": {
           "type": "content",
           "settings": {
-            "heading": "Your heading goes here",
-            "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+            "heading": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].answer | metafield_tag }}"
           }
         },
-        "content_hfrzmJ": {
+        "content_GLGKfg": {
           "type": "content",
           "settings": {
-            "heading": "Your heading goes here",
-            "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+            "heading": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].answer | metafield_tag }}"
           }
         },
-        "content_DRX6Ng": {
+        "content_khzx7e": {
           "type": "content",
           "settings": {
-            "heading": "Your heading goes here",
-            "text": "Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website."
+            "heading": "{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].answer | metafield_tag }}"
           }
         }
       },
       "block_order": [
-        "content_rxdwpa",
-        "content_3EdPMb",
-        "content_8aYDyD",
-        "content_hfrzmJ",
-        "content_DRX6Ng"
+        "content_in9Ufw",
+        "content_FkyzW3",
+        "content_t7fVYm",
+        "content_GLGKfg",
+        "content_khzx7e"
       ],
       "name": "Collapsible Content",
       "settings": {
@@ -375,7 +375,7 @@
     "custom_text_image_CRGAM3",
     "custom_text_image_dWcCXy",
     "custom_logo_list_gbmefQ",
-    "custom_collapsible_content_TVJbiz",
+    "custom_collapsible_content_CAa7nd",
     "custom_column_list_RUwq9W",
     "newsletter_Lthb4n"
   ]
