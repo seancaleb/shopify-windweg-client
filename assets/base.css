@@ -4019,3 +4019,8 @@ details[open] > .header__menu-item {
 .utility-bar {
   background-color: var(--cstm-color-primary);
 }
+
+.header-wrapper {
+  background-color: var(--cstm-color-white);
+  border-bottom: 1px solid #e0e0e0;
+}

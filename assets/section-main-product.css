@@ -1492,3 +1492,115 @@ a.product__text {
     border: none;
   }
 }
+
+/* Overridden Styles */
+@media screen and (min-width: 990px) {
+  .product--large:not(.product--no-media) .product__media-wrapper {
+    max-width: 55%;
+    width: calc(55% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .product--large:not(.product--no-media) .product__info-wrapper {
+    padding: 0 0 0 8rem;
+    max-width: 45%;
+    width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+
+  .product--large .thumbnail-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  media-gallery.product__column-sticky {
+    display: flex;
+  }
+}
+
+.product-media-container.constrain-height.media-fit-contain {
+  width: 100%;
+}
+
+.product-media-container.constrain-height.media-fit-contain {
+  border-color: transparent;
+}
+
+.thumbnail[aria-current] {
+  box-shadow: unset;
+  border-color: transparent;
+}
+
+.thumbnail-list__item.slider__slide .thumbnail.global-media-settings {
+  border-color: transparent;
+}
+
+.thumbnail-list__item.slider__slide .thumbnail:hover {
+  opacity: 1;
+}
+
+.thumbnail[aria-current]:focus:not(:focus-visible) {
+  box-shadow: unset;
+}
+
+media-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+media-gallery > slider-component {
+  width: 100%;
+}
+
+media-gallery slider-component:last-child {
+  width: 100%;
+  order: 1;
+  max-width: 30rem;
+}
+
+.product__description {
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+@media screen and (min-width: 750px) {
+  media-gallery {
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  media-gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: min(10%, 8rem);
+  }
+
+  media-gallery slider-component:last-child {
+    width: calc(15% - 1rem);
+    max-width: 8rem;
+    order: -1;
+  }
+}
+
+.product-form__buttons {
+  max-width: unset;
+}
+
+@media screen and (min-width: 750px) {
+  .product-form__buttons {
+    max-width: 44rem;
+  }
+}
+
+.product__description p {
+  display: inline;
+}
+
+product-info {
+  background-color: var(--cstm-color-white) !important;
+}
