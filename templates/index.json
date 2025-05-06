@@ -1,210 +1,382 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "custom_hero_text_image_ik4EUP": {
+      "type": "custom-hero-text-image",
+      "name": "Hero with Text and Image",
+      "settings": {
+        "rating": 4.8,
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "button_label": "Explore our products",
+        "button_variant": "primary",
+        "url": ""
+      }
+    },
+    "custom_column_list_r9Wkm4": {
+      "type": "custom-column-list",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "column_NTDjct": {
+          "type": "column",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "title": "Placeholder text",
+            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
           }
         },
-        "text": {
-          "type": "text",
+        "column_kndn4n": {
+          "type": "column",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "title": "Placeholder text",
+            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
           }
         },
-        "button": {
-          "type": "buttons",
+        "column_FHJFYa": {
+          "type": "column",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "title": "Placeholder text",
+            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
+          }
+        },
+        "column_FAQVDw": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "column_NTDjct",
+        "column_kndn4n",
+        "column_FHJFYa",
+        "column_FAQVDw"
       ],
+      "name": "Column List",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "text_alignment": "left",
+        "padding_top": 6,
+        "padding_bottom": 6
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "custom_heading_with_text_U77nCM": {
+      "type": "custom-heading-with-text",
+      "name": "Heading with Text",
+      "settings": {
+        "subheading": "Subheading",
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "padding_top": 6,
+        "padding_bottom": 4
+      }
+    },
+    "custom_collection_list_rmhEiU": {
+      "type": "custom-collection-list",
       "blocks": {
-        "heading": {
+        "collection_yWGn3A": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_CXKMiV": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_ihjmnz": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_K79xTX": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_qJPhUf": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_CxRRgN": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        },
+        "collection_NxKPMR": {
+          "type": "collection",
+          "settings": {
+            "title": "Placeholder text",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_yWGn3A",
+        "collection_CXKMiV",
+        "collection_ihjmnz",
+        "collection_K79xTX",
+        "collection_qJPhUf",
+        "collection_CxRRgN",
+        "collection_NxKPMR"
+      ],
+      "name": "Collection Slider List",
+      "settings": {
+        "padding_top": 4,
+        "padding_bottom": 6
+      }
+    },
+    "custom_text_image_jBMAGT": {
+      "type": "custom-text-image",
+      "name": "Text with Image",
+      "settings": {
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "button_label": "Discover more",
+        "button_variant": "primary",
+        "url": "",
+        "image_position": "right",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_text_image_CRGAM3": {
+      "type": "custom-text-image",
+      "name": "Text with Image",
+      "settings": {
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "button_label": "Discover more",
+        "button_variant": "primary",
+        "url": "",
+        "image_position": "left",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_text_image_dWcCXy": {
+      "type": "custom-text-image",
+      "name": "Text with Image",
+      "settings": {
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "button_label": "Discover more",
+        "button_variant": "primary",
+        "url": "",
+        "image_position": "right",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_logo_list_gbmefQ": {
+      "type": "custom-logo-list",
+      "blocks": {
+        "logo_rQJHQq": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_Ybb3t7": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_UEajFF": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_gmj7fN": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_VmBFwf": {
+          "type": "logo",
+          "settings": {}
+        },
+        "logo_UJbBhd": {
+          "type": "logo",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "logo_rQJHQq",
+        "logo_Ybb3t7",
+        "logo_UEajFF",
+        "logo_gmj7fN",
+        "logo_VmBFwf",
+        "logo_UJbBhd"
+      ],
+      "name": "Logo List",
+      "settings": {
+        "text": "As seen on:",
+        "spacing": 2.4,
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_collapsible_content_CAa7nd": {
+      "type": "custom-collapsible-content",
+      "blocks": {
+        "content_in9Ufw": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].answer | metafield_tag }}"
+          }
+        },
+        "content_FkyzW3": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].answer | metafield_tag }}"
+          }
+        },
+        "content_t7fVYm": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].answer | metafield_tag }}"
+          }
+        },
+        "content_GLGKfg": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].answer | metafield_tag }}"
+          }
+        },
+        "content_khzx7e": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].answer | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "content_in9Ufw",
+        "content_FkyzW3",
+        "content_t7fVYm",
+        "content_GLGKfg",
+        "content_khzx7e"
+      ],
+      "name": "Collapsible Content",
+      "settings": {
+        "subheading": "Subheading",
+        "heading": "Your heading goes here",
+        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "custom_column_list_RUwq9W": {
+      "type": "custom-column-list",
+      "blocks": {
+        "column_aDHycm": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_gFq37q": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_NGxgJh": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        },
+        "column_xaYnXD": {
+          "type": "column",
+          "settings": {
+            "title": "Placeholder text",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aDHycm",
+        "column_gFq37q",
+        "column_NGxgJh",
+        "column_xaYnXD"
+      ],
+      "name": "Column List",
+      "settings": {
+        "text_alignment": "center",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
+    "newsletter_Lthb4n": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_Uz7LbE": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Subscribe to our newsletter",
             "heading_size": "h1"
           }
         },
-        "text": {
-          "type": "text",
+        "paragraph_T9Ccrn": {
+          "type": "paragraph",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Subscribe today and never miss our top offers and important announcements. Be the first to discover our latest deals!</p>"
           }
+        },
+        "email_form_BTpUnL": {
+          "type": "email_form",
+          "settings": {}
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading_Uz7LbE",
+        "paragraph_T9Ccrn",
+        "email_form_BTpUnL"
       ],
+      "name": "t:sections.newsletter.presets.name",
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 6,
+        "padding_bottom": 10
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "custom_hero_text_image_ik4EUP",
+    "custom_column_list_r9Wkm4",
+    "custom_heading_with_text_U77nCM",
+    "custom_collection_list_rmhEiU",
+    "custom_text_image_jBMAGT",
+    "custom_text_image_CRGAM3",
+    "custom_text_image_dWcCXy",
+    "custom_logo_list_gbmefQ",
+    "custom_collapsible_content_CAa7nd",
+    "custom_column_list_RUwq9W",
+    "newsletter_Lthb4n"
   ]
 }

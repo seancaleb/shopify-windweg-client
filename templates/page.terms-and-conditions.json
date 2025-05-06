@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_rich_text_qQgmKr": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "heading_gtGAi6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Allgemeine Geschäftsbedingungen (AGB)"
+          }
+        },
+        "richtext_YYwtDF": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<h3><strong>1. Geltungsbereich</strong></h3><p>Für alle Bestellungen über unseren Online-Shop gelten die nachfolgenden AGB. Unser Online-Shop richtet sich ausschließlich an Verbraucher und Unternehmer mit Sitz in Deutschland.<br/> Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können.<br/> Unternehmer ist eine natürliche oder juristische Person oder eine rechtsfähige Personengesellschaft, die bei Abschluss eines Rechtsgeschäfts in Ausübung ihrer gewerblichen oder selbständigen beruflichen Tätigkeit handelt.</p><p></p><p></p><h3><strong>2. Vertragspartner, Vertragsschluss, Korrekturmöglichkeiten</strong></h3><p>Der Kaufvertrag kommt zustande mit:<br/> <strong>Michael Ochs<br/></strong> Einzelunternehmen<br/> Bukarester Straße 23, 97084 Würzburg, Deutschland</p><p>Mit Einstellung der Produkte in den Online-Shop geben wir ein verbindliches Angebot zum Vertragsschluss über diese Produkte ab.<br/> Sie können unsere Produkte zunächst unverbindlich in den Warenkorb legen und Ihre Eingaben vor Absenden Ihrer verbindlichen Bestellung jederzeit korrigieren. Der Vertrag kommt zustande, indem Sie durch Anklicken des Bestellbuttons das Angebot über die im Warenkorb enthaltenen Produkte annehmen.<br/> Unmittelbar nach dem Absenden der Bestellung erhalten Sie eine Bestellbestätigung per E-Mail.</p><p></p><p></p><h3><strong>3. Vertragssprache, Vertragstextspeicherung</strong></h3><p>Die für den Vertragsschluss zur Verfügung stehenden Sprachen sind <strong>Deutsch</strong> und <strong>Englisch</strong>.<br/> Wir speichern den Vertragstext und senden Ihnen die Bestelldaten sowie unsere AGB per E-Mail zu. Den Vertragstext können Sie nach Login in Ihrem Kundenkonto einsehen.</p><p></p><p></p><h3><strong>4. Lieferbedingungen</strong></h3><p><strong>Liefergebiet:</strong> Lieferung nur innerhalb Deutschlands.<br/> <strong>Versandart:</strong> Versand ausschließlich per Paketdienst.<br/> <strong>Keine Selbstabholung oder Lieferung an Packstationen möglich.</strong></p><p></p><p></p><h3><strong>5. Zahlungsarten</strong></h3><p>In unserem Shop stehen Ihnen folgende Zahlungsarten zur Verfügung:</p><p><strong>PayPal<br/></strong> Um über PayPal zu zahlen, benötigen Sie ein PayPal-Konto. Die Zahlungsabwicklung erfolgt direkt über PayPal (PayPal (Europe) S.à r.l. et Cie, S.C.A.).<br/> Je nach Einstellungen Ihres PayPal-Kontos kann Ihnen PayPal zusätzliche Zahlungsoptionen anbieten (z. B. Rechnungskauf oder Ratenzahlung).</p><p><strong>Stripe (Shopify Payments)<br/></strong> Die Zahlung per Kreditkarte, Apple Pay, Google Pay oder Klarna Sofortüberweisung erfolgt über unseren Zahlungsdienstleister Stripe Payments Europe Ltd., 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Irland.<br/> Stripe verarbeitet Ihre Zahlungsdaten verschlüsselt und sorgt für eine sichere Transaktion.</p><p></p><p></p><h3><strong>6. Gewährleistung und Garantien</strong></h3><p><strong>6.1 Mängelhaftung<br/></strong> Es gilt das gesetzliche Mängelhaftungsrecht.</p><p><strong>6.2 Garantien<br/></strong> Falls zusätzliche Garantien angeboten werden, finden Sie Details dazu bei den Produkten oder in gesonderten Garantiehinweisen.</p><p></p><p></p><h3><strong>7. Streitbeilegung</strong></h3><p>Die Europäische Kommission stellt unter<a href=\"https://ec.europa.eu/consumers/odr\"> <span style=\"text-decoration:underline\">https://ec.europa.eu/consumers/odr</span></a> eine Plattform zur Online-Streitbeilegung (OS) bereit.<br/><br/></p><p>Wir sind bereit, an einem außergerichtlichen Streitbeilegungsverfahren teilzunehmen. Zuständige Stelle ist:<br/> <strong>Außergerichtliche Streitbeilegungsstelle für Verbraucher und Unternehmer e. V.<br/></strong> Hohe Straße 11, 04107 Leipzig<br/> Website:<a href=\"https://www.streitbeilegungsstelle.org\"> <span style=\"text-decoration:underline\">www.streitbeilegungsstelle.org</span></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gtGAi6",
+        "richtext_YYwtDF"
+      ],
+      "name": "Rich Text",
+      "settings": {
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_rich_text_qQgmKr"
+  ]
+}
