@@ -19,8 +19,8 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
+            "text": "Alle Modelle enthalten Halterung & Anleitung und sind <strong>E-Bike geeignet</strong>.",
+            "text_style": "body"
           }
         },
         "price": {
@@ -41,6 +41,25 @@
         "description": {
           "type": "description",
           "settings": {}
+        },
+        "delivery_notice_banner_jFVUWx": {
+          "type": "delivery-notice-banner",
+          "settings": {
+            "title": "<p><strong>Versand mit DHL</strong>: 2–4 Werktage</p>"
+          }
+        },
+        "delivery_notice_banner_jcDHff": {
+          "type": "delivery-notice-banner",
+          "settings": {
+            "title": "<p><strong>Rückgabe</strong>: 14 Tage gesetzliches Widerrufsrecht</p>",
+            "image": "shopify://shop_images/icon-product-note.svg"
+          }
+        },
+        "delivery_notice_banner_XtcrNK": {
+          "type": "delivery-notice-banner",
+          "settings": {
+            "title": "<p>Alle Modelle enthalten Halterung & Anleitung und sind <strong>E-Bike geeignet</strong>.</p>"
+          }
         }
       },
       "block_order": [
@@ -49,7 +68,10 @@
         "price",
         "quantity_selector",
         "buy_buttons",
-        "description"
+        "description",
+        "delivery_notice_banner_jFVUWx",
+        "delivery_notice_banner_jcDHff",
+        "delivery_notice_banner_XtcrNK"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -63,8 +85,8 @@
         "image_zoom": "none",
         "hide_variants": false,
         "enable_video_looping": false,
-        "padding_top": 60,
-        "padding_bottom": 80
+        "padding_top": 6,
+        "padding_bottom": 6
       }
     },
     "related-products": {
