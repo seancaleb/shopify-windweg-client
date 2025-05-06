@@ -8,6 +8,14 @@
   {% render 'custom-card-product', product: product %}
 {% endcomment %}
 
+<style>
+  .featured__products-item .content > div:first-child {
+    max-width: 30ch;
+    color: var(--cstm-color-primary);
+    font-weight: 500;
+  }
+</style>
+
 <div class="featured__products-item">
   <a href="{{ product.url }}">
     <div class="featured__products-item-image-wrapper">
@@ -18,15 +26,20 @@
       }}
     </div>
     <div class="content">
-      <div class="h6" style="max-width: 30ch; color: var(--cstm-color-primary);">{{ product.title }}</div>
+      <div class="h6">
+        {{ product.title }}
+      </div>
       {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price' -%}
     </div>
 
     <div class="badge__container">
       {% if product.compare_at_price_max > product.price and product.available %}
+        {% assign savings = product.compare_at_price | minus: product.price %}
+        {% assign savings_percent = savings | times: 100.0 | divided_by: product.compare_at_price | round %}
         <span class="badge price__badge-sale">
           {{ 'products.product.on_sale' | t }}
-        </span>
+          {{ savings_percent }}%</span
+        >
       {% endif %}
 
       {% unless product.available %}

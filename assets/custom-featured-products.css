@@ -29,8 +29,9 @@
     aspect-ratio: 1 / 1;
     display: block;
     height: auto;
-    transition: transform var(--duration-default) var(--ease-out-slow);
+    transition: transform var(--duration) var(--ease);
     color: rgb(var(--color-foreground));
+    transform-origin: 10% 0%;
   }
   
   .featured__products-item-image:hover {

@@ -1643,3 +1643,12 @@ media-gallery slider-component:last-child {
   border-radius: .6rem;
 }
 
+media-gallery slider-component {
+  width: min(100%, 57rem);
+}
+
+@media screen and (min-width: 750px) {
+  media-gallery slider-component {
+    width: 100%
+  }
+}
