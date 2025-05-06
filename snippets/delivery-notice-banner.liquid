@@ -59,7 +59,7 @@
 <div class="delivery-notice__wrapper">
   <div class="delivery-notice__content-wrapper">
     <div class="delivery-notice__icon-wrapper">
-      {% if svg_text %}
+      {% if svg_text != blank %}
         {{ svg_text | append: '.svg' | inline_asset_content }}
       {% else %}
         {{ 'icon-delivery-box.svg' | inline_asset_content }}

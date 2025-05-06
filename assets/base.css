@@ -3779,8 +3779,9 @@ h6 {
   font-weight: 500;
 }
 
-h6 {
+h6, .h6 {
   margin-block-start: unset;
+  margin-block-end: unset;
 }
 
 strong {
@@ -4027,14 +4028,12 @@ details[open] > .header__menu-item {
 }
 
 .header-wrapper {
-  background-color: var(--cstm-color-white);
   border-bottom: 1px solid #e0e0e0;
 }
 
 .quantity {
   min-height: 4rem;
   width: fit-content;
-  background-color: var(--cstm-color-white);
 }
 
 .quantity::after {

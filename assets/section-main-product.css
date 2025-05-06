@@ -1610,10 +1610,6 @@ media-gallery slider-component:last-child {
   display: inline;
 }
 
-product-info {
-  background-color: var(--cstm-color-white) !important;
-}
-
 .product__title h1 {
   font-size: 2.8rem;
   line-height: 1.3;

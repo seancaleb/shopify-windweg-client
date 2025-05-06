@@ -1,0 +1,39 @@
+{% comment %}
+  Renders a custom product card
+
+  Accepts:
+  - product: {Object} Product Liquid object
+
+  Usage:
+  {% render 'custom-card-product', product: product %}
+{% endcomment %}
+
+<div class="featured__products-item">
+  <a href="{{ product.url }}">
+    <div class="featured__products-item-image-wrapper">
+      {{
+        product.featured_image
+        | image_url: width: 500
+        | image_tag: class: 'featured__products-item-image', widths: '200, 400, 600, 800'
+      }}
+    </div>
+    <div class="content">
+      <div class="h6" style="max-width: 30ch; color: var(--cstm-color-primary);">{{ product.title }}</div>
+      {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price' -%}
+    </div>
+
+    <div class="badge__container">
+      {% if product.compare_at_price_max > product.price and product.available %}
+        <span class="badge price__badge-sale">
+          {{ 'products.product.on_sale' | t }}
+        </span>
+      {% endif %}
+
+      {% unless product.available %}
+        <span class="badge price__badge-sold-out">
+          {{ 'products.product.sold_out' | t }}
+        </span>
+      {% endunless %}
+    </div>
+  </a>
+</div>
