@@ -3779,6 +3779,10 @@ h6 {
   font-weight: 500;
 }
 
+h6 {
+  margin-block-start: unset;
+}
+
 strong {
   font-weight: 600;
   color: var(--cstm-color-primary);
@@ -3876,8 +3880,10 @@ input {
 }
 
 .cart-count-bubble {
-  bottom: 0.1rem;
-  left: 2rem;
+  bottom: 0.25rem;
+  left: 2.25rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .header__icon {
@@ -4023,4 +4029,37 @@ details[open] > .header__menu-item {
 .header-wrapper {
   background-color: var(--cstm-color-white);
   border-bottom: 1px solid #e0e0e0;
+}
+
+.quantity {
+  min-height: 4rem;
+  width: fit-content;
+  background-color: var(--cstm-color-white);
+}
+
+.quantity::after {
+  box-shadow: 0 0 0 var(--inputs-border-width) #e0e0e0;
+}
+
+.quantity__button:focus, .quantity__input:focus {
+  z-index: unset;
+}
+
+.quantity > input {
+  max-width: 4rem;
+}
+
+.quantity > button {
+  width: 4rem;
+}
+
+.quantity > * {
+  min-height: 4rem !important;
+}
+
+.cart-count-bubble span {
+  color: var(--cstm-color-white);
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1rem;
 }
