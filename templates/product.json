@@ -12,16 +12,16 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "text_rzmiyn": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {}
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "Alle Modelle enthalten Halterung & Anleitung und sind <strong>E-Bike geeignet</strong>.",
-            "text_style": "body"
-          }
         },
         "price": {
           "type": "price",
@@ -45,26 +45,28 @@
         "delivery_notice_banner_jFVUWx": {
           "type": "delivery-notice-banner",
           "settings": {
-            "title": "<p><strong>Versand mit DHL</strong>: 2–4 Werktage</p>"
+            "title": "<p><strong>Versand mit DHL</strong>: 2–4 Werktage</p>",
+            "svg_text": ""
           }
         },
         "delivery_notice_banner_jcDHff": {
           "type": "delivery-notice-banner",
           "settings": {
             "title": "<p><strong>Rückgabe</strong>: 14 Tage gesetzliches Widerrufsrecht</p>",
-            "image": "shopify://shop_images/icon-product-note.svg"
+            "svg_text": "icon-product-returns"
           }
         },
         "delivery_notice_banner_XtcrNK": {
           "type": "delivery-notice-banner",
           "settings": {
-            "title": "<p>Alle Modelle enthalten Halterung & Anleitung und sind <strong>E-Bike geeignet</strong>.</p>"
+            "title": "<p>Alle Modelle enthalten Halterung & Anleitung und sind <strong>E-Bike geeignet</strong>.</p>",
+            "svg_text": "icon-product-note"
           }
         }
       },
       "block_order": [
+        "text_rzmiyn",
         "title",
-        "caption",
         "price",
         "quantity_selector",
         "buy_buttons",
@@ -86,7 +88,7 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 6,
-        "padding_bottom": 6
+        "padding_bottom": 8
       }
     },
     "related-products": {
