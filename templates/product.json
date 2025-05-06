@@ -155,34 +155,6 @@
         "padding_bottom": 6
       }
     },
-    "custom_text_image_Xyfww9": {
-      "type": "custom-text-image",
-      "name": "Text with Image",
-      "settings": {
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Discover more",
-        "button_variant": "primary",
-        "url": "",
-        "image_position": "right",
-        "padding_top": 6,
-        "padding_bottom": 6
-      }
-    },
-    "custom_text_image_kQ8jkf": {
-      "type": "custom-text-image",
-      "name": "Text with Image",
-      "settings": {
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Discover more",
-        "button_variant": "primary",
-        "url": "",
-        "image_position": "left",
-        "padding_top": 6,
-        "padding_bottom": 6
-      }
-    },
     "custom_logo_list_cQQ6gX": {
       "type": "custom-logo-list",
       "blocks": {
@@ -332,8 +304,6 @@
     "main",
     "related-products",
     "custom_column_list_aDUByf",
-    "custom_text_image_Xyfww9",
-    "custom_text_image_kQ8jkf",
     "custom_logo_list_cQQ6gX",
     "custom_collapsible_content_J9L63t",
     "custom_column_list_4UPWPg"
