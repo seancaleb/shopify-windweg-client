@@ -1255,3 +1255,21 @@ input.mobile-facets__checkbox {
     padding: 0 1rem 1rem;
   }
 }
+
+/* Overridden Styles  */
+.facet-filters__field .select__select,
+.mobile-facets__sort .select__select {
+  border-radius: 0.6rem;
+}
+
+.facet-filters__sort:focus-visible {
+  box-shadow: unset;
+  outline-offset: unset;
+  outline: unset;
+}
+
+@media screen and (min-width: 750px) {
+  .facets-vertical-form {
+    align-items: center;
+  }
+}

@@ -3794,6 +3794,7 @@ p,
 span {
   color: var(--cstm-color-text);
   line-height: 1.75;
+  letter-spacing: 0;
 }
 
 .field:has(textarea),
@@ -3823,6 +3824,33 @@ input {
   color: var(--cstm-color-white);
   border-radius: 0.6rem;
 }
+
+/* Custom Select  */
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  appearance: none;
+  width: 25rem;
+  font-size: 1.4rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: .6rem;
+  cursor: pointer;
+}
+
+.custom-select .svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.2rem;
+  width: 1.2rem;
+  color: inherit;
+}
+
+
 
 /* Overridden Styles  */
 .link,
@@ -4062,3 +4090,8 @@ details[open] > .header__menu-item {
   font-weight: 600;
   font-size: 1rem;
 }
+
+.field__input:focus, .select__select:focus, .customer .field input:focus, .customer select:focus, .localization-form__select:focus.localization-form__select:after {
+  box-shadow: unset;
+}
+
