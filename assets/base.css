@@ -3619,6 +3619,14 @@ a {
   letter-spacing: 0 !important;
 }
 
+body,
+p,
+span {
+  color: var(--cstm-color-text);
+  line-height: 1.75;
+  letter-spacing: 0;
+}
+
 .button {
   font-weight: 500;
   cursor: pointer;
@@ -3774,12 +3782,13 @@ h4,
 .h4,
 h5,
 .h5,
-h6 {
-  color: var(--cstm-color-primary);
+h6, .h6 {
+  color: var(--cstm-color-primary) !important;
   font-weight: 500;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   margin-block-start: unset;
   margin-block-end: unset;
 }
@@ -3789,13 +3798,7 @@ strong {
   color: var(--cstm-color-primary);
 }
 
-body,
-p,
-span {
-  color: var(--cstm-color-text);
-  line-height: 1.75;
-  letter-spacing: 0;
-}
+
 
 .field:has(textarea),
 .field:has(textarea)::before,
@@ -3837,7 +3840,7 @@ input {
   padding: 0.675em 6em 0.675em 1em;
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   cursor: pointer;
 }
 
@@ -3850,9 +3853,15 @@ input {
   color: inherit;
 }
 
-
-
 /* Overridden Styles  */
+.path {
+  stroke: var(--cstm-color-text);
+}
+
+.header__icon:hover .icon, .modal__close-button:hover .icon {
+  transform: unset;
+}
+
 .link,
 .customer a {
   font-size: 1.5rem;
@@ -3909,10 +3918,17 @@ input {
 }
 
 .cart-count-bubble {
-  bottom: 0.25rem;
-  left: 2.25rem;
+  bottom: 0rem;
+  left: 1.75rem;
   width: 2rem;
   height: 2rem;
+}
+
+@media screen and (min-width: 990px) {
+  .cart-count-bubble {
+    bottom: 0.25rem;
+    left: 2.25rem;
+  }
 }
 
 .header__icon {
@@ -4033,7 +4049,7 @@ details[open] > .header__menu-item {
 
 @media screen and (min-width: 990px) {
   .header {
-    padding-block: 1.4rem !important;
+    padding-block: 0.4rem !important;
   }
 }
 
@@ -4068,12 +4084,14 @@ details[open] > .header__menu-item {
   box-shadow: 0 0 0 var(--inputs-border-width) #e0e0e0;
 }
 
-.quantity__button:focus, .quantity__input:focus {
+.quantity__button:focus,
+.quantity__input:focus {
   z-index: unset;
 }
 
 .quantity > input {
   max-width: 4rem;
+  font-size: 1.5rem;
 }
 
 .quantity > button {
@@ -4084,6 +4102,12 @@ details[open] > .header__menu-item {
   min-height: 4rem !important;
 }
 
+@media screen and (min-width: 750px) {
+  .quantity > input {
+    font-size: 1.6rem;
+  }
+}
+
 .cart-count-bubble span {
   color: var(--cstm-color-white);
   line-height: 1;
@@ -4091,7 +4115,10 @@ details[open] > .header__menu-item {
   font-size: 1rem;
 }
 
-.field__input:focus, .select__select:focus, .customer .field input:focus, .customer select:focus, .localization-form__select:focus.localization-form__select:after {
+.field__input:focus,
+.select__select:focus,
+.customer .field input:focus,
+.customer select:focus,
+.localization-form__select:focus.localization-form__select:after {
   box-shadow: unset;
 }
-

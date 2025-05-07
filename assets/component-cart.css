@@ -220,3 +220,18 @@ cart-items {
     gap: 1rem;
   }
 }
+
+/* Overridden Styles */
+.cart__ctas {
+  margin-top: 1.6rem;
+}
+
+.cart__login-paragraph a {
+  color: var(--cstm-color-secondary);
+  font-weight: 500;
+  transition: none;
+}
+
+.cart__login-paragraph a:hover {
+  color: var(--cstm-color-secondary);
+}

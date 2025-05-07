@@ -72,3 +72,24 @@ input::-webkit-search-decoration {
 .template-search__results {
   position: relative;
 }
+
+/* Overridden Styles  */
+.search__input.field__input {
+  border: unset;
+  padding-left: unset;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+  font-weight: 500;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.search__input::placeholder {
+  opacity: 1;
+  color: rgba(var(--color-foreground), 0.5);
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.search__input ~ .field__label {
+  display: none;
+}

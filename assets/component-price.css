@@ -142,4 +142,10 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  color: var(--cstm-color-primary);
+  font-weight: 600;
+}
+
+.price--on-sale .price-item--regular {
+  font-size: 1.4rem;
 }
