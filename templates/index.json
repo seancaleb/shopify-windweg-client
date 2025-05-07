@@ -63,7 +63,8 @@
       "settings": {
         "text_alignment": "left",
         "padding_top": 6,
-        "padding_bottom": 6
+        "padding_bottom": 6,
+        "background_color": ""
       }
     },
     "custom_heading_with_text_U77nCM": {
@@ -231,38 +232,38 @@
         "padding_bottom": 6
       }
     },
-    "custom_collapsible_content_CAa7nd": {
+    "custom_collapsible_content_jDyAgP": {
       "type": "custom-collapsible-content",
       "blocks": {
-        "content_in9Ufw": {
+        "content_TVQbcA": {
           "type": "content",
           "settings": {
             "heading": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].question.value }}",
             "text": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].answer | metafield_tag }}"
           }
         },
-        "content_FkyzW3": {
+        "content_ejQT7t": {
           "type": "content",
           "settings": {
             "heading": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].question.value }}",
             "text": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].answer | metafield_tag }}"
           }
         },
-        "content_t7fVYm": {
+        "content_Gm4gTD": {
           "type": "content",
           "settings": {
             "heading": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].question.value }}",
             "text": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].answer | metafield_tag }}"
           }
         },
-        "content_GLGKfg": {
+        "content_9FdmAf": {
           "type": "content",
           "settings": {
             "heading": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].question.value }}",
             "text": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].answer | metafield_tag }}"
           }
         },
-        "content_khzx7e": {
+        "content_Qw44Kb": {
           "type": "content",
           "settings": {
             "heading": "{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].question.value }}",
@@ -271,17 +272,17 @@
         }
       },
       "block_order": [
-        "content_in9Ufw",
-        "content_FkyzW3",
-        "content_t7fVYm",
-        "content_GLGKfg",
-        "content_khzx7e"
+        "content_TVQbcA",
+        "content_ejQT7t",
+        "content_Gm4gTD",
+        "content_9FdmAf",
+        "content_Qw44Kb"
       ],
       "name": "Collapsible Content",
       "settings": {
-        "subheading": "Subheading",
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "subheading": "Brauchen Sie Hilfe?",
+        "heading": "Häufig gestellte Fragen",
+        "text": "Alles, was du über unsere sicheren und wetterfesten Faltschlösser wissen musst.",
         "padding_top": 6,
         "padding_bottom": 6
       }
@@ -328,7 +329,8 @@
       "settings": {
         "text_alignment": "center",
         "padding_top": 6,
-        "padding_bottom": 6
+        "padding_bottom": 6,
+        "background_color": ""
       }
     },
     "newsletter_Lthb4n": {
@@ -375,7 +377,7 @@
     "custom_text_image_CRGAM3",
     "custom_text_image_dWcCXy",
     "custom_logo_list_gbmefQ",
-    "custom_collapsible_content_CAa7nd",
+    "custom_collapsible_content_jDyAgP",
     "custom_column_list_RUwq9W",
     "newsletter_Lthb4n"
   ]
