@@ -1,10 +1,12 @@
 {{ 'custom-hero-text-image.css' | asset_url | stylesheet_tag }}
 
-<style>
+{% style %}
   #shopify-section-{{ section.id }} {
       position: relative;
+      background-color: {{ section.settings.background_color  }};
+      color: {{ section.settings.text_color  }};
   }
-</style>
+{% endstyle %}
 
 <div class="hero__wrapper" style="max-width: {{ settings.page_width }}px">
   {% comment %} Hero content  {% endcomment %}
@@ -29,15 +31,17 @@
     </a>
 
     <div class="hero__social-proof-wrapper">
-      {% comment %} FIXME: Import image on Shopify admin {% endcomment %}
       <img
-        src="{{ 'social-proof.jpg' | asset_url }}"
+        src="{{ 'social-proof.png' | asset_url }}"
         alt="Social proof"
         width="128"
         height="100%"
         class="hero__social-proof-image"
       >
-      <div>50.000+ lorem ipsum dolor</div>
+
+      {% if section.settings.reviews_label %}
+        <div>50.000+ {{ section.settings.reviews_label }}</div>
+      {% endif %}
     </div>
   </div>
 
@@ -85,6 +89,12 @@
       "default": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet."
     },
     {
+      "type": "text",
+      "id": "reviews_label",
+      "label": "Reviews Label",
+      "default": "lorem ipsum dolor"
+    },
+    {
       "type": "header",
       "content": "Button"
     },
@@ -123,6 +133,18 @@
       "type": "image_picker",
       "label": "Image",
       "id": "image"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#1a1a1a"
     }
   ],
   "presets": [

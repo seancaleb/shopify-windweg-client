@@ -1,7 +1,6 @@
 .hero__wrapper {
     display: grid;
     gap: 2.4rem;
-
 }
 
 .hero__content-wrapper {
@@ -9,6 +8,21 @@
     display: grid;
     gap: 2.4rem;
     padding-inline: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    height: auto;
+}
+
+@media screen and (min-width: 750px) {
+    .hero__content-wrapper {
+        padding-block: 4rem;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .hero__content-wrapper {
+        padding-block: 8rem;
+    }
 }
 
 .hero__image-wrapper {
@@ -49,6 +63,10 @@
     font-weight: 600;
 }
 
+.hero__heading {
+    color: inherit !important;
+}
+
 .hero__text {
     max-width: 50ch;
 }
@@ -72,6 +90,12 @@
 
 .hero__image {
     display: block;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    min-height: 40rem;
 }
 
 @media screen and (min-width: 480px) {
@@ -115,5 +139,6 @@
 
     .hero__image-wrapper {
         order: 1;
+        min-height: 60vh;
     }
 }
