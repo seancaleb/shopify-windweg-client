@@ -1,59 +1,27 @@
 {% assign sid = section.id %}
 
-{% render 'section-padding-style-config',
-  section_id: section.id,
-  padding_top: section.settings.padding_top,
-  padding_bottom: section.settings.padding_bottom
-%}
-
 <style>
-  #shopify-section-{{ sid }} {
-    position: relative;
-    min-height: 30rem;
-    background-image: url({{ section.settings.background_image | image_url }});
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: end;
-  }
-
-  #shopify-section-{{ sid }} .page-width {
+  #shopify-section-{{ sid }} img, #shopify-section-{{ sid }} svg {
+    height: auto;
     width: 100%;
-  }
-
-  #shopify-section-{{ sid }} .background__placeholder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    aspect-ratio: 16 / 9;
+    max-height: 60rem;
+    object-fit: cover;
+    object-position: top left;
     display: block;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  #shopify-section-{{ sid }} .heading {
-    color: var(--cstm-color-white);
-    text-transform: capitalize;
-  }
-
-  @media screen and (min-width: 990px) {
-    #shopify-section-{{ sid }} {
-        min-height: 40rem;
-      }
   }
 </style>
 
 {% unless section.settings.background_image %}
   {{ 'hero-apparel-1' | placeholder_svg_tag: 'background__placeholder' }}
+{% else %}
+  {{
+    section.settings.background_image
+    | image_url: width: 1920, height: 1080
+    | image_tag:
+      sizes: '(min-width: 1536px) 1536px, (min-width: 1280px) 1280px, (min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw'
+  }}
 {% endunless %}
-
-<div class="page-width">
-  {% if section.settings.heading %}
-    <h1 class="heading">{{ section.settings.heading | capitalize }}</h1>
-  {% endif %}
-</div>
 
 {% schema %}
 {

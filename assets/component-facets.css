@@ -1272,4 +1272,8 @@ input.mobile-facets__checkbox {
   .facets-vertical-form {
     align-items: center;
   }
+
+  .facets__form .product-count {
+    align-self: center;
+  }
 }
