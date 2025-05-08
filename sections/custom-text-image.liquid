@@ -2,16 +2,17 @@
 
 {% assign sid = section.id %}
 
-{% render 'section-padding-style-config',
-  section_id: section.id,
-  padding_top: section.settings.padding_top,
-  padding_bottom: section.settings.padding_bottom
-%}
+{% style %}
+  #shopify-section-{{ sid }} {
+      position: relative;
+      background-color: {{ section.settings.background_color  }};
+      color: {{ section.settings.text_color  }};
+  }
+{% endstyle %}
 
 <style>
   #shopify-section-{{ sid }} .wrapper {
     display: grid;
-    gap: 2.4rem;
   }
 
   #shopify-section-{{ sid }} .content-wrapper {
@@ -19,22 +20,52 @@
     display: grid;
     gap: 2.4rem;
     padding-inline: 1.5rem;
+    padding-block: 6rem;
+    height: auto;
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ sid }} .content-wrapper {
+      padding-block: 7.5rem;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    #shopify-section-{{ sid }} .content-wrapper {
+    }
   }
 
   #shopify-section-{{ sid }} .image-wrapper {
     order: -1;
   }
 
+  #shopify-section-{{ sid }} .heading {
+    color: inherit !important;
+    order: 2;
+  }
+
+  #shopify-section-{{ sid }} .subheading {
+    order: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
+
   #shopify-section-{{ sid }} .text {
-    max-width: 50ch;
+    max-width: 55ch;
+    order: 3;
   }
 
   #shopify-section-{{ sid }} .button {
     margin-top: 0.8rem;
+    order: 4;
   }
 
   #shopify-section-{{ sid }} .image {
     display: block;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
   }
 
   @media screen and (min-width: 480px) {
@@ -57,18 +88,22 @@
     #shopify-section-{{ sid }} .content-wrapper {
       padding-inline: 5.6rem;
     }
+
+    #shopify-section-{{ sid }} .image-wrapper {
+    }
   }
 
   @media screen and (min-width: 990px) {
     #shopify-section-{{ sid }} .image {
-      width: 100%;
+      position: absolute;
+      top: 0;
+      right: {% if section.settings.image_position == 'left' %} unset{% else %} 0{% endif %};
+      left: {% if section.settings.image_position == 'left' %} 0{% else %} unset{% endif %};
       height: 100%;
+      width: 50%;
       z-index: 0;
-      object-position: cover;
-    }
-
-    #shopify-section-{{ sid }} .image-wrapper {
-      align-self: stretch;
+      object-fit: cover;
+      object-position: center;
     }
 
     #shopify-section-{{ sid }} .wrapper {
@@ -79,49 +114,40 @@
     }
 
     #shopify-section-{{ sid }} .image-wrapper {
-      order: {% if section.settings.image_position == 'left' %}-1{% else %}1{% endif %};
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    #shopify-section-{{ sid }} .content-wrapper {
-        padding-left: {% if section.settings.image_position == 'left' %}8rem{% else %}5.6rem{% endif %};
-    }
-
-    #shopify-section-{{ sid }} .image-wrapper {
-      margin-right: {% if section.settings.image_position == 'left' %}2.4rem{% else %}5.6rem{% endif %};
-      margin-left: {% if section.settings.image_position == 'left' %}5.6rem{% else %}2.4rem{% endif %};
+      order: {% if section.settings.image_position == 'left' %} -1{% else %} 1{% endif %};
+      min-height: 65vh;
     }
   }
 </style>
 
-<div style="position: relative">
-  <div class="wrapper" style="max-width: {{ settings.page_width }}px">
-    {% comment %} Content  {% endcomment %}
-    <div class="content-wrapper">
-      {% if section.settings.heading %}
-        <h2 class="heading">{{ section.settings.heading }}</h2>
-      {% endif %}
-      {% if section.settings.text %}
-        <div class="text">{{ section.settings.text }}</div>
-      {% endif %}
-      <a href="{{ section.settings.url }}" class="button button--{{ section.settings.button_variant }}">
-        {{ section.settings.button_label }}
-      </a>
-    </div>
+<div class="wrapper" style="max-width: {{ settings.page_width }}px">
+  {% comment %} Content  {% endcomment %}
+  <div class="content-wrapper">
+    {% if section.settings.heading %}
+      <h2 class="heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+    {% if section.settings.subheading %}
+      <div class="subheading">{{ section.settings.subheading }}</div>
+    {% endif %}
+    {% if section.settings.text %}
+      <div class="text">{{ section.settings.text }}</div>
+    {% endif %}
+    <a href="{{ section.settings.url }}" class="button button button--{{ section.settings.button_variant }}">
+      {{ section.settings.button_label }}
+    </a>
+  </div>
 
-    {% comment %} Image  {% endcomment %}
-    <div class="image-wrapper">
-      {% if section.settings.image %}
-        {{
-          section.settings.image
-          | image_url: width: 1600
-          | image_tag: class: 'image', widths: '1200, 1600', sizes: '(max-width: 768px) 100vw, 1200px'
-        }}
-      {% else %}
-        {{ 'hero-apparel-1' | placeholder_svg_tag: 'image' }}
-      {% endif %}
-    </div>
+  {% comment %} Image  {% endcomment %}
+  <div class="image-wrapper">
+    {% if section.settings.image %}
+      {{
+        section.settings.image
+        | image_url: width: 1600
+        | image_tag: class: 'image', widths: '1200, 1600', sizes: '(max-width: 768px) 100vw, 1200px'
+      }}
+    {% else %}
+      {{ 'hero-apparel-1' | placeholder_svg_tag: 'image' }}
+    {% endif %}
   </div>
 </div>
 
@@ -133,6 +159,12 @@
     "groups": ["*"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Subheading"
+    },
     {
       "type": "text",
       "id": "heading",
@@ -154,22 +186,6 @@
       "id": "button_label",
       "label": "Label",
       "default": "Discover more"
-    },
-    {
-      "type": "select",
-      "id": "button_variant",
-      "label": "Variant",
-      "options": [
-        {
-          "value": "primary",
-          "label": "Primary"
-        },
-        {
-          "value": "outline",
-          "label": "Outline"
-        }
-      ],
-      "default": "primary"
     },
     {
       "type": "url",
@@ -206,24 +222,16 @@
       "content": "Styles"
     },
     {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 14,
-      "step": 1,
-      "unit": "rem",
-      "label": "Padding Top",
-      "default": 6
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
     },
     {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 14,
-      "step": 1,
-      "unit": "rem",
-      "label": "Padding Bottom",
-      "default": 6
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#1a1a1a"
     }
   ],
   "presets": [

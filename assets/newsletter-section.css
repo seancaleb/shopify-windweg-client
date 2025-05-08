@@ -48,3 +48,12 @@
     margin: 0 0 0 1rem;
   }
 }
+
+/* Overridden Styles */
+.newsletter__wrapper > * + * {
+  margin-top: 2.4rem;
+}
+
+.newsletter__wrapper > div:last-child {
+  margin-top: 3.2rem;
+}

@@ -3611,6 +3611,9 @@ details-disclosure > details {
   /* Easings */
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --duration: 400ms;
+
+  /* Box Shadow */
+  --cstm-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 body,
@@ -3638,6 +3641,10 @@ span {
   white-space: nowrap;
 }
 
+.button::before, .button::after {
+  box-shadow: unset !important;
+}
+
 .button--primary,
 .button--outline {
   transition: all var(--duration) var(--ease);
@@ -3649,7 +3656,7 @@ span {
 }
 
 .button--primary:hover {
-  background-color: #28C328;
+  background-color: #1A7F1A;
 }
 
 .button--outline:hover {
