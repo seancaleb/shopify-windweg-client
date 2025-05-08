@@ -3649,7 +3649,7 @@ span {
 }
 
 .button--primary:hover {
-  background-color: var(--cstm-color-primary-dark);
+  background-color: #28C328;
 }
 
 .button--outline:hover {
