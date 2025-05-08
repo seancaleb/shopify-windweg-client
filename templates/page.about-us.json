@@ -22,6 +22,7 @@
       "name": "Header with Heading Image",
       "settings": {
         "heading": "",
+        "background_image": "shopify://shop_images/EBC_5.jpg",
         "padding_top": 6,
         "padding_bottom": 6
       }
@@ -185,7 +186,8 @@
       "settings": {
         "text_alignment": "center",
         "padding_top": 6,
-        "padding_bottom": 10
+        "padding_bottom": 10,
+        "background_color": ""
       }
     }
   },

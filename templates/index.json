@@ -9,6 +9,13 @@
  */
 {
   "sections": {
+    "custom_video_banner_DCPPfB": {
+      "type": "custom-video-banner",
+      "name": "Video Banner",
+      "settings": {
+        "video": "shopify://files/videos/video-ad.mp4"
+      }
+    },
     "custom_hero_text_image_ik4EUP": {
       "type": "custom-hero-text-image",
       "name": "Hero with Text and Image",
@@ -76,74 +83,6 @@
         "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
         "padding_top": 6,
         "padding_bottom": 4
-      }
-    },
-    "custom_collection_list_rmhEiU": {
-      "type": "custom-collection-list",
-      "blocks": {
-        "collection_yWGn3A": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_CXKMiV": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_ihjmnz": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_K79xTX": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_qJPhUf": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_CxRRgN": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_NxKPMR": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_yWGn3A",
-        "collection_CXKMiV",
-        "collection_ihjmnz",
-        "collection_K79xTX",
-        "collection_qJPhUf",
-        "collection_CxRRgN",
-        "collection_NxKPMR"
-      ],
-      "name": "Collection Slider List",
-      "settings": {
-        "padding_top": 4,
-        "padding_bottom": 6
       }
     },
     "custom_text_image_jBMAGT": {
@@ -369,10 +308,10 @@
     }
   },
   "order": [
+    "custom_video_banner_DCPPfB",
     "custom_hero_text_image_ik4EUP",
     "custom_column_list_r9Wkm4",
     "custom_heading_with_text_U77nCM",
-    "custom_collection_list_rmhEiU",
     "custom_text_image_jBMAGT",
     "custom_text_image_CRGAM3",
     "custom_text_image_dWcCXy",

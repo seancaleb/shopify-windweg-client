@@ -83,7 +83,8 @@
       "settings": {
         "text_alignment": "center",
         "padding_top": 6,
-        "padding_bottom": 6
+        "padding_bottom": 6,
+        "background_color": ""
       }
     },
     "custom_text_image_Lm8q3B": {
@@ -186,7 +187,8 @@
       "settings": {
         "text_alignment": "center",
         "padding_top": 6,
-        "padding_bottom": 6
+        "padding_bottom": 6,
+        "background_color": ""
       }
     }
   },

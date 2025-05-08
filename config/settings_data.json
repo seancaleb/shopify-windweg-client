@@ -15,7 +15,7 @@
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
     "body_scale": 100,
-    "page_width": 1400,
+    "page_width": 1600,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 12,
     "spacing_grid_vertical": 12,
@@ -142,7 +142,7 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#424242",
-          "button": "#1a1a1a",
+          "button": "#45d945",
           "button_label": "#ffffff",
           "secondary_button_label": "#1a1a1a",
           "shadow": "#1a1a1a"
