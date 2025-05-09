@@ -313,7 +313,7 @@
       }
     },
     "custom_collapsible_content_jDyAgP": {
-      "type": "custom-faq",
+      "type": "custom-collapsible-content",
       "blocks": {
         "content_TVQbcA": {
           "type": "content",
@@ -409,7 +409,7 @@
           "type": "column",
           "settings": {
             "svg_text": "icon-product-returns",
-            "title": "40 Tage Rückgaberecht",
+            "title": "14 Tage Rückgaberecht",
             "text": ""
           }
         },
