@@ -18,13 +18,22 @@
 
 .reviews__list .wrapper {
     display: grid;
-    gap: 1.6rem;
+    gap: 2.4rem;
     padding: 2.4rem;
     border-radius: .6rem;
     border: 1px solid #e0e0e0;
+    align-content: space-between;
+
 }
 
-.reviews__list .ratings {
+.reviews__list .content-wrapper {
+    display: grid;
+    gap: 1.6rem;
+    align-content: start;
+}
+
+.reviews__list .ratings span {
+    
     font-size: 2.4rem;
 }
 
@@ -41,7 +50,24 @@
 
 
 .reviews__list .avatar-wrapper {
-    margin-top: 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.reviews__list .avatar-wrapper .avatar-image {
+    width: 4rem;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: .2rem;
+    border: 1px solid var(--cstm-color-secondary);
+}
+
+.reviews__list .avatar-wrapper .avatar-name {
+    font-weight: 500;
 }
 
 .reviews__wrapper .button {
@@ -50,10 +76,6 @@
 }
 
 @media screen and (min-width: 750px) {
-    .reviews__wrapper {
-        gap: 3.2rem;
-    }
-
     .reviews__wrapper .button {
         margin-top: 4rem;
     }

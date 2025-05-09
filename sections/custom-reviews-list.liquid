@@ -31,22 +31,23 @@
           {% endif %}
           {{ block.shopify_attributes }}
         >
-          <div class="ratings">
-            {% for i in (1..5) %}
-              <span class="star filled">★</span>
-            {% endfor %}
-          </div>
+          <div class="content-wrapper">
+            <div class="ratings">
+              {% for i in (1..5) %}
+                <span class="star filled">★</span>
+              {% endfor %}
+            </div>
 
-          <div class="title">{{ block.settings.title }}</div>
+            <div class="title">{{ block.settings.title }}</div>
 
-          <div class="text">
-            {{ block.settings.text }}
+            <div class="text">
+              {{ block.settings.text }}
+            </div>
           </div>
 
           <div class="avatar-wrapper">
-            {% assign avatar_image = 'person-' | append: forloop.index | append: '.svg' %}
-            {{ avatar_image | inline_asset_content }}
-            <div>{{ block.settings.name }}</div>
+            {{ block.settings.avatar_image | image_url: width: 64, height: 64 | image_tag: class: 'avatar-image' }}
+            <div class="avatar-name">{{ block.settings.avatar_name }}</div>
           </div>
         </div>
       {% endfor %}
@@ -142,30 +143,21 @@
         },
         {
           "type": "text",
-          "id": "name",
+          "id": "avatar_name",
           "label": "Name",
           "default": "John Doe"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar_image",
+          "label": "Image"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Reviews List",
-      "blocks": [
-        {
-          "type": "review"
-        },
-        {
-          "type": "review"
-        },
-        {
-          "type": "review"
-        },
-        {
-          "type": "review"
-        }
-      ]
+      "name": "Reviews List"
     }
   ]
 }
