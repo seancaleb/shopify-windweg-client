@@ -313,7 +313,7 @@
       }
     },
     "custom_collapsible_content_jDyAgP": {
-      "type": "custom-collapsible-content",
+      "type": "custom-faq",
       "blocks": {
         "content_TVQbcA": {
           "type": "content",

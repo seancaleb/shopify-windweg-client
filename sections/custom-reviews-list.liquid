@@ -28,6 +28,17 @@
   #shopify-section-{{ sid }} .swiper-pagination-bullet-active {
     background: var(--cstm-color-primary);
   }
+
+  @media (hover: hover) and (pointer: fine) {
+     #shopify-section-{{ sid }} .swiper {
+      cursor: grab;
+      user-select: none;
+    }
+
+     #shopify-section-{{ sid }} .swiper:active {
+      cursor: grabbing;
+    }
+  }
 </style>
 
 <div class="page-width">
