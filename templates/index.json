@@ -94,7 +94,8 @@
         "heading": "Willkommen bei Windweg",
         "text": "<p>wo das Radfahren zur Leidenschaft wird und jede Fahrt ein Schritt in eine bessere Zukunft bedeutet! Wir glauben, dass Fahrradfahren nicht nur eine Art der Fortbewegung ist, sondern eine Quelle der Freiheit und des Abenteuers.</p>",
         "padding_top": 6,
-        "padding_bottom": 10
+        "padding_bottom": 10,
+        "background_color": "#ffffff"
       }
     },
     "custom_text_image_jBMAGT": {
@@ -179,8 +180,59 @@
       "settings": {
         "text": "bekannt aus:",
         "spacing": 4,
-        "padding_top": 10,
-        "padding_bottom": 10
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "custom_reviews_list_QmNtan": {
+      "type": "custom-reviews-list",
+      "blocks": {
+        "review_TqLGMa": {
+          "type": "review",
+          "settings": {
+            "title": "Der Titel der Rezension steht hier",
+            "text": "<p>Dies ist eine vorübergehende Bewertung für dieses Produkt.</p>",
+            "name": "John Doe"
+          }
+        },
+        "review_C9V7ia": {
+          "type": "review",
+          "settings": {
+            "title": "Der Titel der Rezension steht hier",
+            "text": "<p>Dies ist eine vorübergehende Bewertung für dieses Produkt.</p>",
+            "name": "John Doe"
+          }
+        },
+        "review_L3Y9nb": {
+          "type": "review",
+          "settings": {
+            "title": "Der Titel der Rezension steht hier",
+            "text": "<p>Dies ist eine vorübergehende Bewertung für dieses Produkt.</p>",
+            "name": "John Doe"
+          }
+        },
+        "review_3NWHUa": {
+          "type": "review",
+          "settings": {
+            "title": "Der Titel der Rezension steht hier",
+            "text": "<p>Dies ist eine vorübergehende Bewertung für dieses Produkt.</p>",
+            "name": "John Doe"
+          }
+        }
+      },
+      "block_order": [
+        "review_TqLGMa",
+        "review_C9V7ia",
+        "review_L3Y9nb",
+        "review_3NWHUa"
+      ],
+      "name": "Reviews List",
+      "settings": {
+        "heading": "Das sagen unsere Kunden",
+        "button_label": "Erleben Sie es selbst",
+        "url": "shopify://collections/all",
+        "padding_top": 6,
+        "padding_bottom": 6
       }
     },
     "custom_collapsible_content_jDyAgP": {
@@ -352,6 +404,7 @@
     "custom_text_image_jBMAGT",
     "custom_text_image_ACnap8",
     "custom_logo_list_gbmefQ",
+    "custom_reviews_list_QmNtan",
     "custom_collapsible_content_jDyAgP",
     "custom_text_image_gXHTPk",
     "custom_column_list_RUwq9W",
