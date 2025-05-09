@@ -42,9 +42,25 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'heading' %}
-          <div class="heading h4" {{ block.shopify_attributes }}>{{ block.settings.heading }}</div>
+          <div
+            class="heading h4 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+            {{ block.shopify_attributes }}
+          >
+            {{ block.settings.heading }}
+          </div>
         {% when 'richtext' %}
-          <div {{ block.shopify_attributes }}>
+          <div
+            class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+            {{ block.shopify_attributes }}
+          >
             {{ block.settings.richtext }}
           </div>
       {% endcase %}

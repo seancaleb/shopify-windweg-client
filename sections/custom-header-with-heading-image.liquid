@@ -1,7 +1,7 @@
 {% assign sid = section.id %}
 
 <style>
-  #shopify-section-{{ sid }} img, #shopify-section-{{ sid }} svg {
+  #shopify-section-{{ sid }} svg {
     height: auto;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -10,6 +10,38 @@
     object-position: top left;
     display: block;
   }
+
+  #shopify-section-{{ sid }} .image {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 600px) {
+    #shopify-section-{{ sid }} .image {
+      max-height: 40rem;
+      object-fit: cover;
+      object-position: center 15%;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ sid }} .image {
+      max-height: 45rem;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    #shopify-section-{{ sid }} .image {
+      max-height: 50rem;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    #shopify-section-{{ sid }} .image {
+      max-height: 60vh
+    }
+  }
 </style>
 
 {% unless section.settings.background_image %}
@@ -17,9 +49,11 @@
 {% else %}
   {{
     section.settings.background_image
-    | image_url: width: 1920, height: 1080
+    | image_url: width: 1920
     | image_tag:
-      sizes: '(min-width: 1536px) 1536px, (min-width: 1280px) 1280px, (min-width: 1024px) 1024px, (min-width: 768px) 768px, 100vw'
+      class: 'image',
+      widths: '1280, 1920',
+      sizes: '(max-width: 768px) 100vw, (max-width: 1280px) 1280px, 1920'
   }}
 {% endunless %}
 

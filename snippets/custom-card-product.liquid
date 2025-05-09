@@ -12,7 +12,8 @@
   .featured__products-item .content > div:first-child {
     max-width: 30ch;
     color: var(--cstm-color-primary);
-    font-weight: 500;
+    font-weight: 600;
+    margin-top: 1.2rem;
   }
 </style>
 
@@ -36,10 +37,7 @@
       {% if product.compare_at_price_max > product.price and product.available %}
         {% assign savings = product.compare_at_price | minus: product.price %}
         {% assign savings_percent = savings | times: 100.0 | divided_by: product.compare_at_price | round %}
-        <span class="badge price__badge-sale">
-          {{ 'products.product.on_sale' | t }}
-          {{ savings_percent }}%</span
-        >
+        <span class="badge price__badge-sale"> {{ savings_percent }}% {{ 'products.product.on_sale' | t }}</span>
       {% endif %}
 
       {% unless product.available %}

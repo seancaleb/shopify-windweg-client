@@ -149,3 +149,7 @@
 .price--on-sale .price-item--regular {
   font-size: 1.4rem;
 }
+
+.price--on-sale .price-item--regular {
+  color: var(--cstm-color-tertiary);
+}
