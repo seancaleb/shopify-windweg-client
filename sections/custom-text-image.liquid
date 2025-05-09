@@ -170,7 +170,7 @@
       {% endif %}
       <a
         href="{{ section.settings.url }}"
-        class="button button button--{{ section.settings.button_variant }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        class="button button button--primary {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         {% if settings.animations_reveal_on_scroll %}
           data-cascade
           style="--animation-order: 4;"

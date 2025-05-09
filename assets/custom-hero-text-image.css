@@ -40,11 +40,11 @@
 
 }
 
-.hero__ratings-stars-wrapper .filled {
+.filled {
     color: var(--cstm-color-ratings);
 }
 
-.hero__ratings-stars-wrapper .partial {
+.partial {
     background: linear-gradient(90deg, var(--cstm-color-ratings) 60%, #E0E0E0 60%);
     background-clip: text;
     color: transparent;

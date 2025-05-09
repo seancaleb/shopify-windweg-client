@@ -41,6 +41,7 @@
         "column_NTDjct": {
           "type": "column",
           "settings": {
+            "svg_text": "icon-star",
             "title": "Mehrfacher Testsieger",
             "text": "<p>Unsere Produkte überzeugen mit erstklassiger Qualität und wurden mehrfach von unabhängigen Tests ausgezeichnet.</p>"
           }
@@ -48,6 +49,7 @@
         "column_kndn4n": {
           "type": "column",
           "settings": {
+            "svg_text": "icon-shield-check",
             "title": "Waterblock 3.0",
             "text": "<p>Maximaler Schutz vor Regen und Nässe: Mit der neuesten Waterblock 3.0-Technologie bleiben deine Sachen auch bei schlechtestem Wetter trocken.</p>"
           }
@@ -55,6 +57,7 @@
         "column_FHJFYa": {
           "type": "column",
           "settings": {
+            "svg_text": "icon-check-circle",
             "title": "Deutsche Entwicklung",
             "text": "<p>Wir stehen für Präzision und Qualität „Made in Germany“. Unsere Produkte werden mit viel Know-how und Leidenschaft entwickelt.</p>"
           }
@@ -62,6 +65,7 @@
         "column_FAQVDw": {
           "type": "column",
           "settings": {
+            "svg_text": "icon-globe",
             "title": "Umweltschutz",
             "text": "<p>Nachhaltigkeit liegt uns am Herzen. Wir setzen auf umweltfreundliche Materialien und Prozesse, um die Natur zu schützen.</p>"
           }
@@ -75,8 +79,9 @@
       ],
       "name": "Column List",
       "settings": {
+        "columns": 4,
         "text_alignment": "center",
-        "padding_top": 6,
+        "padding_top": 10,
         "padding_bottom": 6,
         "background_color": ""
       }
@@ -87,51 +92,39 @@
       "settings": {
         "subheading": "Leidenschaft fürs Radfahren",
         "heading": "Willkommen bei Windweg",
-        "text": "wo das Radfahren zur Leidenschaft wird und jede Fahrt ein Schritt in eine bessere Zukunft bedeutet! Wir glauben, dass Fahrradfahren nicht nur eine Art der Fortbewegung ist, sondern eine Quelle der Freiheit und des Abenteuers.",
+        "text": "<p>wo das Radfahren zur Leidenschaft wird und jede Fahrt ein Schritt in eine bessere Zukunft bedeutet! Wir glauben, dass Fahrradfahren nicht nur eine Art der Fortbewegung ist, sondern eine Quelle der Freiheit und des Abenteuers.</p>",
         "padding_top": 6,
-        "padding_bottom": 4
+        "padding_bottom": 10
       }
     },
     "custom_text_image_jBMAGT": {
       "type": "custom-text-image",
       "name": "Text with Image",
       "settings": {
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Discover more",
-        "button_variant": "primary",
-        "url": "",
+        "subheading": "Maximale Sicherheit – kompakt und allzeit bereit",
+        "heading": "Faltbare Fahrradschlösser für lange Strecken",
+        "text": "<p>Windweg Faltschlösser vereinen höchste Sicherheit mit praktischer Tragbarkeit – ideal für Pendler, Wochenendfahrer und Alltagsradler. Unsere kompakten Schlösser sind auf Langlebigkeit und Benutzerfreundlichkeit ausgelegt und bieten zuverlässigen Diebstahlschutz ohne viel Platz. Dank wetterbeständiger Materialien und einem eleganten, faltbaren Design ist Ihr Fahrrad überall sicher.</p>",
+        "button_label": "Faltschlösser kaufen",
+        "url": "shopify://collections/all",
+        "image": "shopify://shop_images/EBC_2.webp",
         "image_position": "right",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff"
       }
     },
-    "custom_text_image_CRGAM3": {
+    "custom_text_image_ACnap8": {
       "type": "custom-text-image",
       "name": "Text with Image",
       "settings": {
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Discover more",
-        "button_variant": "primary",
-        "url": "",
+        "subheading": "Vertrauenswürdig in 2022, 2023, 2024 – und darüber hinaus",
+        "heading": "Bewährter Schutz. Radfahrer vertrauen darauf.",
+        "text": "<p>Windweg Faltradschlösser werden Jahr für Jahr für Innovation, Qualität und Langlebigkeit ausgezeichnet und gewinnen das Vertrauen von Radfahrern weltweit. Unsere Kunden vertrauen auf unsere sicheren, wetterbeständigen und leicht zu transportierenden Schlösser, die den Anforderungen der Zeit standhalten. Vielen Dank für Ihre anhaltende Unterstützung und Ihr ehrliches Feedback – Sie spornen uns an, uns ständig zu verbessern.</p>",
+        "button_label": "Entdecken Sie unsere Fahrradschlösser",
+        "url": "shopify://collections/all",
+        "image": "shopify://shop_images/EBC_1_copy.webp",
         "image_position": "left",
-        "padding_top": 6,
-        "padding_bottom": 6
-      }
-    },
-    "custom_text_image_dWcCXy": {
-      "type": "custom-text-image",
-      "name": "Text with Image",
-      "settings": {
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Discover more",
-        "button_variant": "primary",
-        "url": "",
-        "image_position": "right",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff"
       }
     },
     "custom_logo_list_gbmefQ": {
@@ -139,27 +132,39 @@
       "blocks": {
         "logo_rQJHQq": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/YouTube.webp"
+          }
         },
         "logo_Ybb3t7": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Amazon.webp"
+          }
         },
         "logo_UEajFF": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/TikTok.webp"
+          }
         },
         "logo_gmj7fN": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Vergleich.webp"
+          }
         },
         "logo_VmBFwf": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Instagram.webp"
+          }
         },
         "logo_UJbBhd": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Fahrradmagazine.webp"
+          }
         }
       },
       "block_order": [
@@ -172,10 +177,10 @@
       ],
       "name": "Logo List",
       "settings": {
-        "text": "As seen on:",
-        "spacing": 2.4,
-        "padding_top": 6,
-        "padding_bottom": 6
+        "text": "bekannt aus:",
+        "spacing": 4,
+        "padding_top": 10,
+        "padding_bottom": 10
       }
     },
     "custom_collapsible_content_jDyAgP": {
@@ -224,6 +229,7 @@
         "content_9FdmAf",
         "content_Qw44Kb"
       ],
+      "disabled": true,
       "name": "Collapsible Content",
       "settings": {
         "subheading": "Brauchen Sie Hilfe?",
@@ -233,34 +239,56 @@
         "padding_bottom": 6
       }
     },
+    "custom_text_image_gXHTPk": {
+      "type": "custom-text-image",
+      "custom_css": [
+        ".image {object-position: left center;}"
+      ],
+      "name": "Text with Image",
+      "settings": {
+        "subheading": "Unsere Vision",
+        "heading": "Fahrradschutz, Sicherheit und Nachhaltigkeit",
+        "text": "<p>Für uns ist Fahrradfahren mehr als Fortbewegung – es ist ein Lebensstil. Bei Windweg vereinen wir unsere Leidenschaft für Fahrräder und Sicherheit, um dir mit innovativen Faltschlössern einen zuverlässigen Schutz zu bieten.</p><p><br/>Unsere Vision ist es, allen Radfahrern eine sichere, praktische Lösung anzubieten. Gleichzeitig legen wir großen Wert auf Nachhaltigkeit: Ein Teil unserer Erlöse unterstützt Projekte, die aktiv zur Reduktion des CO₂-Fußabdrucks und zum Schutz der Umwelt beitragen.</p>",
+        "button_label": "Erfahre mehr über uns",
+        "url": "shopify://pages/about-us",
+        "image": "shopify://shop_images/our-mission-image.webp",
+        "image_position": "right",
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff"
+      }
+    },
     "custom_column_list_RUwq9W": {
       "type": "custom-column-list",
       "blocks": {
         "column_aDHycm": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-delivery-box",
+            "title": "Kostenloser Versand ab 50€",
             "text": ""
           }
         },
         "column_gFq37q": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-message",
+            "title": "365 Tage Support",
             "text": ""
           }
         },
         "column_NGxgJh": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-product-returns",
+            "title": "40 Tage Rückgaberecht",
             "text": ""
           }
         },
         "column_xaYnXD": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-shield-check",
+            "title": "Sicherer Checkout",
             "text": ""
           }
         }
@@ -273,9 +301,10 @@
       ],
       "name": "Column List",
       "settings": {
+        "columns": 4,
         "text_alignment": "center",
-        "padding_top": 6,
-        "padding_bottom": 6,
+        "padding_top": 8,
+        "padding_bottom": 10,
         "background_color": ""
       }
     },
@@ -285,14 +314,14 @@
         "heading_Uz7LbE": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our newsletter",
+            "heading": "Abonnieren Sie unseren Newsletter",
             "heading_size": "h1"
           }
         },
         "paragraph_T9Ccrn": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Subscribe today and never miss our top offers and important announcements. Be the first to discover our latest deals!</p>"
+            "text": "<p>Abonnieren Sie noch heute und verpassen Sie keine Top-Angebote und wichtigen Ankündigungen mehr. Entdecken Sie als Erster unsere neuesten Angebote!</p>"
           }
         },
         "email_form_BTpUnL": {
@@ -307,10 +336,11 @@
       ],
       "name": "t:sections.newsletter.presets.name",
       "settings": {
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 6,
-        "padding_bottom": 10
+        "padding_top": 8,
+        "padding_bottom": 10,
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff",
+        "button_label": "Melde mich an"
       }
     }
   },
@@ -320,10 +350,10 @@
     "custom_column_list_r9Wkm4",
     "custom_heading_with_text_U77nCM",
     "custom_text_image_jBMAGT",
-    "custom_text_image_CRGAM3",
-    "custom_text_image_dWcCXy",
+    "custom_text_image_ACnap8",
     "custom_logo_list_gbmefQ",
     "custom_collapsible_content_jDyAgP",
+    "custom_text_image_gXHTPk",
     "custom_column_list_RUwq9W",
     "newsletter_Lthb4n"
   ]
