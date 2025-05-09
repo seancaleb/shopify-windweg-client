@@ -9,9 +9,7 @@
 <style>
   #shopify-section-{{ sid }} .content-wrapper {
     display: grid;
-    gap: 6.4rem;
-    max-width: 99rem;
-    margin-inline: auto;
+    gap: 4.8rem;
     width: 100%;
   }
 
@@ -24,40 +22,88 @@
   }
 
   #shopify-section-{{ sid }} .logos-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    gap: {{ section.settings.spacing }}rem;
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      white 10%,
+      white 90%,
+      transparent 100%
+    );
+    width: 100%;
+  }
+
+  #shopify-section-{{ sid }} .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    transition-timing-function: linear;
   }
 
   #shopify-section-{{ sid }} .logo-wrapper {
-    width: 100%;
+    width: fit-content;
     display: flex;
     align-items: center;
+    padding-block: 1rem;
+    margin-right: 8rem;
+    opacity: 0.5;
+    transition: opacity var(--duration) var(--ease);
+  }
+
+  #shopify-section-{{ sid }} .logo-wrapper:hover {
+    opacity: 1;
+  }
+
+  #shopify-section-{{ sid }} .logo-wrapper:first-child {
+    margin-left: 8rem;
   }
 
   #shopify-section-{{ sid }} .logo {
-    display: block;
     width: 100%;
     height: auto;
-    max-height: 20rem;
-    max-width: 15rem;
-    flex-basis: 100%;
+    max-width: 13rem;
   }
 
   @media screen and (min-width: 750px) {
-    #shopify-section-{{ sid }} .logos-wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    #shopify-section-{{ sid }} .content-wrapper {
+      gap: 6.4rem;
+    }
+
+    #shopify-section-{{ sid }} .logo-wrapper {
+      margin-right: 12rem;
+    }
+
+    #shopify-section-{{ sid }} .logo {
+      max-width: 15rem;
     }
   }
 </style>
 
-<div class="page-width">
-  <div class="content-wrapper">
-    <div class="heading">{{ section.settings.text }}</div>
+<div class="content-wrapper">
+  <div class="heading">{{ section.settings.text }}</div>
 
-    <div class="logos-wrapper">
+  <div class="swiper logos-wrapper">
+    <div class="swiper-wrapper">
       {% for block in section.blocks %}
-        <div class="logo-wrapper" {{ block.shopify_attributes }}>
+        <div class="swiper-slide logo-wrapper" {{ block.shopify_attributes }}>
+          {% if block.settings.logo %}
+            {{ block.settings.logo | image_url: height: 200 | image_tag: class: 'logo' }}
+          {% else %}
+            {{ 'product-3' | placeholder_svg_tag: 'logo' }}
+          {% endif %}
+        </div>
+      {% endfor %}
+
+      {% for block in section.blocks %}
+        <div class="swiper-slide logo-wrapper" {{ block.shopify_attributes }}>
+          {% if block.settings.logo %}
+            {{ block.settings.logo | image_url: height: 200 | image_tag: class: 'logo' }}
+          {% else %}
+            {{ 'product-3' | placeholder_svg_tag: 'logo' }}
+          {% endif %}
+        </div>
+      {% endfor %}
+
+      {% for block in section.blocks %}
+        <div class="swiper-slide logo-wrapper" {{ block.shopify_attributes }}>
           {% if block.settings.logo %}
             {{ block.settings.logo | image_url: height: 200 | image_tag: class: 'logo' }}
           {% else %}
@@ -68,6 +114,8 @@
     </div>
   </div>
 </div>
+
+<script src="{{ 'custom-logo-list.js' | asset_url  }}" defer="defer"></script>
 
 {% schema %}
 {

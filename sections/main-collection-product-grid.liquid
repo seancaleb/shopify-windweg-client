@@ -28,6 +28,24 @@
   padding_bottom: section.settings.padding_bottom
 %}
 
+<style>
+  #shopify-section-{{ section.id }} .featured__products-grid {
+    margin-top: 1.6rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .featured__products-grid {
+      margin-top: 2.4rem;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    #shopify-section-{{ section.id }} .featured__products-grid {
+      margin-top: 3.2rem;
+    }
+  }
+</style>
+
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
@@ -165,7 +183,7 @@
               id="product-grid"
               data-id="{{ section.id }}"
               class="featured__products-grid"
-              style="margin-top: 4rem; --columns: {{ section.settings.columns_desktop }}"
+              style="--columns: {{ section.settings.columns_desktop }}"
             >
               {%- for product in collection.products -%}
                 <li

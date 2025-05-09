@@ -8,54 +8,79 @@
   }
 {% endstyle %}
 
-<div class="hero__wrapper" style="max-width: {{ settings.page_width }}px">
-  {% comment %} Hero content  {% endcomment %}
-  <div class="hero__content-wrapper">
-    <div class="hero__ratings-wrapper">
-      <div class="hero__ratings-stars-wrapper">
-        {% for i in (1..5) %}
-          <span class="star{% if forloop.last %} partial{% else %} filled{% endif %}">★</span>
-        {% endfor %}
+<div class="page-width">
+  <div class="hero__wrapper">
+    {% comment %} Hero content  {% endcomment %}
+    <div class="hero__content-wrapper">
+      <div class="hero__ratings-wrapper">
+        <div class="hero__ratings-stars-wrapper">
+          {% for i in (1..5) %}
+            <span class="star{% if forloop.last %} partial{% else %} filled{% endif %}">★</span>
+          {% endfor %}
+        </div>
+
+        <div class="hero__ratings">{{ section.settings.rating }} / 5.0</div>
       </div>
-
-      <div class="hero__ratings">{{ section.settings.rating }} / 5.0</div>
-    </div>
-    {% if section.settings.heading %}
-      <h1 class="hero__heading">{{ section.settings.heading }}</h1>
-    {% endif %}
-    {% if section.settings.text %}
-      <div class="hero__text">{{ section.settings.text }}</div>
-    {% endif %}
-    <a href="{{ section.settings.url }}" class="hero__button button button--{{ section.settings.button_variant }}">
-      {{ section.settings.button_label }}
-    </a>
-
-    <div class="hero__social-proof-wrapper">
-      <img
-        src="{{ 'social-proof.png' | asset_url }}"
-        alt="Social proof"
-        width="128"
-        height="100%"
-        class="hero__social-proof-image"
+      {% if section.settings.heading %}
+        <h1
+          class="hero__heading {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: 1;"
+          {% endif %}
+        >
+          {{ section.settings.heading }}
+        </h1>
+      {% endif %}
+      {% if section.settings.text %}
+        <div
+          class="hero__text {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: 2;"
+          {% endif %}
+        >
+          {{ section.settings.text }}
+        </div>
+      {% endif %}
+      <a
+        href="{{ section.settings.url }}"
+        class="hero__button button button--{{ section.settings.button_variant }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: 3;"
+        {% endif %}
       >
+        {{ section.settings.button_label }}
+      </a>
 
-      {% if section.settings.reviews_label %}
-        <div>50.000+ {{ section.settings.reviews_label }}</div>
+      <div class="hero__social-proof-wrapper">
+        <img
+          src="{{ 'social-proof.png' | asset_url }}"
+          alt="Social proof"
+          width="128"
+          height="100%"
+          class="hero__social-proof-image"
+        >
+
+        {% if section.settings.reviews_label %}
+          <div>50.000+ {{ section.settings.reviews_label }}</div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% comment %} Hero image  {% endcomment %}
+    <div class="hero__image-wrapper">
+      {% if section.settings.image %}
+        {{
+          section.settings.image
+          | image_url: width: 1600
+          | image_tag: class: 'hero__image', widths: '1200, 1600', sizes: '(max-width: 768px) 100vw, 1200px'
+        }}
+      {% else %}
+        {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__image' }}
       {% endif %}
     </div>
-  </div>
-
-  {% comment %} Hero image  {% endcomment %}
-  <div class="hero__image-wrapper">
-    {% if section.settings.image %}
-      {{
-        section.settings.image
-        | image_url: width: 1600
-        | image_tag: class: 'hero__image', widths: '1200, 1600', sizes: '(max-width: 768px) 100vw, 1200px'
-      }}
-    {% else %}
-      {{ 'hero-apparel-1' | placeholder_svg_tag: 'hero__image' }}
-    {% endif %}
   </div>
 </div>
 

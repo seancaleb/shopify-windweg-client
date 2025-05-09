@@ -3861,6 +3861,11 @@ input {
 }
 
 /* Overridden Styles  */
+.scroll-trigger:not(.scroll-trigger--offscreen).animate--slide-in {
+  animation: var(--animation-slide-in);
+  animation-delay: calc(var(--animation-order) * 125ms);
+}
+
 .path {
   stroke: var(--cstm-color-text);
 }
@@ -3891,9 +3896,15 @@ input {
   padding-inline: 1.5rem !important;
 }
 
+
+.page-width {
+  max-width: calc(var(--page-width) + (2 * 1.5rem));
+}
+
 @media screen and (min-width: 600px) {
   .page-width {
     padding: 0 2.4rem;
+    max-width: calc(var(--page-width) + (2 *  2.4rem));
   }
 
   .header {
@@ -3904,6 +3915,7 @@ input {
 @media screen and (min-width: 750px) {
   .page-width {
     padding: 0 5.6rem;
+    max-width: calc(var(--page-width) + (2 * 5.6rem));
   }
 
   .header {

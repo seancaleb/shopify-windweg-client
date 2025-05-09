@@ -1,13 +1,11 @@
 .hero__wrapper {
     display: grid;
-    gap: 2.4rem;
 }
 
 .hero__content-wrapper {
     order: 1;
     display: grid;
     gap: 2.4rem;
-    padding-inline: 1.5rem;
     padding-top: 4rem;
     padding-bottom: 6rem;
     height: auto;
@@ -92,10 +90,10 @@
     display: block;
     height: auto;
     width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    object-position: center;
-    min-height: 40rem;
+}
+
+.hero__image-wrapper {
+    margin-inline: -1.5rem;
 }
 
 @media screen and (min-width: 480px) {
@@ -105,8 +103,8 @@
 }
 
 @media screen and (min-width: 600px) {
-    .hero__content-wrapper {
-        padding-inline: 2.4rem;
+    .hero__image-wrapper {
+        margin-inline: -2.4rem;
     }
 }
 
@@ -115,23 +113,34 @@
         justify-items: start;
     }
 
-    .hero__content-wrapper {
-        padding-inline: 5.6rem;
+    .hero__image-wrapper {
+        margin-inline: -5.6rem;
     }
 }
 
 @media screen and (min-width: 990px) {
+    .hero__content-wrapper {
+        padding-right: 5.6rem;    
+    }
+
+    .hero__image-wrapper {
+        margin-inline: 0;
+    }
+
     .hero__image {
         position: absolute;
         top: 0;
         right: 0;
         height: 100%;
-        width: calc(50% - 1.2rem);
+        width: calc(55%);
         z-index: 0;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: center;
     }
 
     .hero__wrapper {
-       grid-template-columns: repeat(2, 1fr);
+       grid-template-columns: 45% 55%;
        align-items: center;
        min-height: 60rem;
        margin-inline: auto;
@@ -139,6 +148,11 @@
 
     .hero__image-wrapper {
         order: 1;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero__image-wrapper {
         min-height: 60vh;
     }
 }

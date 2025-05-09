@@ -73,11 +73,28 @@
 
   <div class="content">
     {% if section.settings.heading %}
-      <h1>{{ section.settings.heading }}</h1>
+      <h1
+        class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: 1;"
+        {% endif %}
+      >
+        {{ section.settings.heading }}
+      </h1>
     {% endif %}
 
     {% if section.settings.button_label and section.settings.url_link %}
-      <a class="button button--primary" href="{{ section.settings.url_link }}">{{ section.settings.button_label }}</a>
+      <a
+        class="button button--primary {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        href="{{ section.settings.url_link }}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: 2;"
+        {% endif %}
+      >
+        {{- section.settings.button_label -}}
+      </a>
     {% endif %}
   </div>
 </div>

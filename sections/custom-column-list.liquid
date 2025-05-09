@@ -12,23 +12,33 @@
   #shopify-section-{{ sid }} {
     background-color: {{ section.settings.background_color }};
   }
+
+  #shopify-section-{{ sid }} .col__item {
+    justify-items: {{ section.settings.text_alignment }};
+    text-align: {{ section.settings.text_alignment }};
+  }
+
+  #shopify-section-{{ sid }} .col__content-wrapper {
+    justify-items: {{ section.settings.text_alignment }};
+  }
 {% endstyle %}
 
 <div class="page-width">
-  <div class="col__grid">
+  <div class="col__grid" style="--columns: {{ section.settings.columns }}">
     {% for block in section.blocks %}
       <div
-        class="col__item"
+        class="col__item {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: {{ forloop.index }};"
+        {% endif %}
         {{ block.shopify_attributes }}
-        style="justify-items: {{ section.settings.text_alignment }}; text-align: {{ section.settings.text_alignment }};"
       >
-        <div class="col__image-wrapper">
-          {% if block.settings.svg_text != blank %}
+        {% if block.settings.svg_text != blank %}
+          <div class="col__image-wrapper">
             {{ block.settings.svg_text | append: '.svg' | inline_asset_content }}
-          {% else %}
-            {{ 'icon-delivery-box.svg' | inline_asset_content }}
-          {% endif %}
-        </div>
+          </div>
+        {% endif %}
 
         <div class="col__content-wrapper">
           {% if block.settings.title %}
@@ -52,6 +62,15 @@
     "groups": ["*"]
   },
   "settings": [
+    {
+      "type": "range",
+      "id": "columns",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "label": "Columns",
+      "default": 4
+    },
     {
       "type": "header",
       "content": "Styles"

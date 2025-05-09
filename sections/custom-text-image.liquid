@@ -1,12 +1,11 @@
-{{ 'custom-hero-text-image.css' | asset_url | stylesheet_tag }}
-
 {% assign sid = section.id %}
 
 {% style %}
   #shopify-section-{{ sid }} {
       position: relative;
       background-color: {{ section.settings.background_color  }};
-      color: {{ section.settings.text_color  }};
+      color: {{ section.settings.text_color }};
+      overflow: hidden;
   }
 {% endstyle %}
 
@@ -19,7 +18,6 @@
     order: 1;
     display: grid;
     gap: 2.4rem;
-    padding-inline: 1.5rem;
     padding-block: 6rem;
     height: auto;
   }
@@ -32,6 +30,8 @@
 
   @media screen and (min-width: 990px) {
     #shopify-section-{{ sid }} .content-wrapper {
+      padding-right: 5.6rem;
+      padding-left: {% if section.settings.image_position == 'left' %} 5.6rem{% endif %};
     }
   }
 
@@ -56,6 +56,12 @@
     order: 3;
   }
 
+  #shopify-section-{{ sid }} .text * {
+    max-width: 55ch;
+    order: 3;
+    color: inherit !important;
+  }
+
   #shopify-section-{{ sid }} .button {
     margin-top: 0.8rem;
     order: 4;
@@ -65,7 +71,10 @@
     display: block;
     height: auto;
     width: 100%;
-    aspect-ratio: 16 / 9;
+  }
+
+  #shopify-section-{{ sid }} .image-wrapper {
+    margin-inline: -1.5rem;
   }
 
   @media screen and (min-width: 480px) {
@@ -75,8 +84,8 @@
   }
 
   @media screen and (min-width: 600px) {
-    #shopify-section-{{ sid }} .content-wrapper {
-      padding-inline: 2.4rem;
+    #shopify-section-{{ sid }} .image-wrapper {
+      margin-inline: -2.4rem;
     }
   }
 
@@ -85,11 +94,8 @@
       justify-items: start;
     }
 
-    #shopify-section-{{ sid }} .content-wrapper {
-      padding-inline: 5.6rem;
-    }
-
     #shopify-section-{{ sid }} .image-wrapper {
+      margin-inline: -5.6rem;
     }
   }
 
@@ -115,39 +121,77 @@
 
     #shopify-section-{{ sid }} .image-wrapper {
       order: {% if section.settings.image_position == 'left' %} -1{% else %} 1{% endif %};
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    #shopify-section-{{ sid }} .image-wrapper {
       min-height: 65vh;
     }
   }
 </style>
 
-<div class="wrapper" style="max-width: {{ settings.page_width }}px">
-  {% comment %} Content  {% endcomment %}
-  <div class="content-wrapper">
-    {% if section.settings.heading %}
-      <h2 class="heading">{{ section.settings.heading }}</h2>
-    {% endif %}
-    {% if section.settings.subheading %}
-      <div class="subheading">{{ section.settings.subheading }}</div>
-    {% endif %}
-    {% if section.settings.text %}
-      <div class="text">{{ section.settings.text }}</div>
-    {% endif %}
-    <a href="{{ section.settings.url }}" class="button button button--{{ section.settings.button_variant }}">
-      {{ section.settings.button_label }}
-    </a>
-  </div>
+<div class="page-width">
+  <div class="wrapper">
+    {% comment %} Content  {% endcomment %}
+    <div class="content-wrapper">
+      {% if section.settings.heading %}
+        <h2
+          class="heading {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: 2;"
+          {% endif %}
+        >
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+      {% if section.settings.subheading %}
+        <div
+          class="subheading {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: 1;"
+          {% endif %}
+        >
+          {{ section.settings.subheading }}
+        </div>
+      {% endif %}
+      {% if section.settings.text %}
+        <div
+          class="text {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: 3;"
+          {% endif %}
+        >
+          {{ section.settings.text }}
+        </div>
+      {% endif %}
+      <a
+        href="{{ section.settings.url }}"
+        class="button button button--{{ section.settings.button_variant }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: 4;"
+        {% endif %}
+      >
+        {{ section.settings.button_label }}
+      </a>
+    </div>
 
-  {% comment %} Image  {% endcomment %}
-  <div class="image-wrapper">
-    {% if section.settings.image %}
-      {{
-        section.settings.image
-        | image_url: width: 1600
-        | image_tag: class: 'image', widths: '1200, 1600', sizes: '(max-width: 768px) 100vw, 1200px'
-      }}
-    {% else %}
-      {{ 'hero-apparel-1' | placeholder_svg_tag: 'image' }}
-    {% endif %}
+    {% comment %} Image  {% endcomment %}
+    <div class="image-wrapper">
+      {% if section.settings.image %}
+        {{
+          section.settings.image
+          | image_url: width: 1600
+          | image_tag: class: 'image', widths: '1200, 1600', sizes: '(max-width: 768px) 100vw, 1200px'
+        }}
+      {% else %}
+        {{ 'hero-apparel-1' | placeholder_svg_tag: 'image' }}
+      {% endif %}
+    </div>
   </div>
 </div>
 
@@ -172,10 +216,10 @@
       "default": "Your heading goes here"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "text",
       "label": "Text",
-      "default": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet."
+      "default": "<p>This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.</p>"
     },
     {
       "type": "header",
