@@ -18,7 +18,7 @@
       }
     },
     "custom_header_with_heading_image_QT4nPW": {
-      "type": "custom-header-with-heading-image",
+      "type": "custom-header-with-image",
       "name": "Header with Heading Image",
       "settings": {
         "heading": "",

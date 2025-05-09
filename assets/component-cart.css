@@ -227,11 +227,11 @@ cart-items {
 }
 
 .cart__login-paragraph a {
-  color: var(--cstm-color-secondary);
+  color: var(--cstm-color-primary);
   font-weight: 500;
   transition: none;
 }
 
 .cart__login-paragraph a:hover {
-  color: var(--cstm-color-secondary);
+  color: var(--cstm-color-primary);
 }
