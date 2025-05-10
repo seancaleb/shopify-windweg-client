@@ -107,6 +107,9 @@
                     show_badges: true,
                     price_class: 'price--large'
                   -%}
+
+                  {% comment %} Static text  {% endcomment %}
+                  <span style="font-size: 1.4rem; display: block; margin-top: -0.5rem; color: #777">inkl. MwSt.</span>
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
@@ -227,6 +230,7 @@
                   class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
                   {{ block.shopify_attributes }}
                 >
+                  <div style="font-weight: 600; color: var(--cstm-color-primary); margin-bottom: 1rem;">Menge</div>
                   {% comment %} TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter {% endcomment %}
                   {% # theme-check-disable %}
                   {%- assign cart_qty = cart
@@ -659,14 +663,25 @@
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
 
-              {% when 'delivery-notice-banner' %}
-                <div style="margin: unset; margin-bottom: 1.2rem;">
+              {% when 'notice-banner' %}
+                <div
+                  style="margin: unset; margin-block: {{ block.settings.margin }}rem;"
+                  {{ block.shopify_attributes }}
+                >
                   {%
-                    render 'delivery-notice-banner', {
+                    render 'notice-banner', {
+                    id: block.id,
                     title: block.settings.title,
-                    svg_text: block.settings.svg_text
+                    text: block.settings.text,
+                    svg_text: block.settings.svg_text,
+                    color: block.settings.color
                     }
                   %}
+                </div>
+
+              {% when 'features' %}
+                <div {{ block.shopify__attributes }}>
+                  {{ block.settings.text }}
                 </div>
             {%- endcase -%}
           {%- endfor -%}
@@ -742,20 +757,57 @@
       "type": "@app"
     },
     {
-      "type": "delivery-notice-banner",
-      "name": "Delivery Notice Banner",
-      "limit": 4,
+      "type": "notice-banner",
+      "name": "Notice Banner",
       "settings": [
         {
-          "type": "richtext",
+          "type": "text",
           "id": "title",
           "label": "Title",
+          "default": "Lorem ipsum dolor"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
           "default": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>"
         },
         {
           "type": "text",
           "id": "svg_text",
           "label": "SVG Title"
+        },
+        {
+          "type": "header",
+          "content": "Styles"
+        },
+        {
+          "type": "range",
+          "id": "margin",
+          "min": 1,
+          "max": 2.5,
+          "step": 0.1,
+          "unit": "rem",
+          "label": "Margin",
+          "default": 1.2
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color",
+          "default": "#45d945"
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "name": "Features",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>"
         }
       ]
     },

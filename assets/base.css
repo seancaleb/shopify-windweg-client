@@ -3630,6 +3630,25 @@ span {
   letter-spacing: 0;
 }
 
+.shopify-payment-button .shopify-payment-button__button--unbranded {
+  position: relative;
+}
+
+.shopify-payment-button .shopify-payment-button__button--unbranded:after {
+  content: "Jetzt kaufen";
+  background: var(--cstm-color-primary);
+  font-size: inherit;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .button {
   font-weight: 500;
   cursor: pointer;
@@ -3642,7 +3661,7 @@ span {
 }
 
 .button::before,
-.button::after {
+.button::after, .shopify-payment-button .shopify-payment-button__button--unbranded:after {
   box-shadow: unset !important;
 }
 

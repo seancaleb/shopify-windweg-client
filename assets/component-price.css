@@ -150,6 +150,6 @@
   font-size: 1.4rem;
 }
 
-.price--on-sale .price-item--regular {
+.price--on-sale .price-item--regular, .price--on-sale .price-item--large {
   color: var(--cstm-color-tertiary);
 }

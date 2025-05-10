@@ -129,8 +129,7 @@
         {% assign savings_percent = savings | times: 100.0 | divided_by: product.compare_at_price | round %}
       {% endif %}
       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-        {{ 'products.product.on_sale' | t }}
-        {{ savings_percent }}%
+        {{ savings_percent }}% {{ 'products.product.on_sale' | t }}
       </span>
 
       <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
