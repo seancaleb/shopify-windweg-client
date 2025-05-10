@@ -317,6 +317,8 @@
       defer="defer"
     ></script>
 
+    <script src="{{ 'custom-collapsible.js' | asset_url }}" defer="defer"></script>
+
     {%- if settings.cart_type == 'drawer' -%}
       {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
       {{ 'component-cart.css' | asset_url | stylesheet_tag }}

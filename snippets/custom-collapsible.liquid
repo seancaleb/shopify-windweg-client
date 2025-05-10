@@ -1,0 +1,19 @@
+{% comment %}
+  Renders a custom collapsible content
+  Accepts:
+  - title: {Object} the title of the collapsible content
+  - text: {Object} the text of the collapsible content
+
+  Usage:
+  {% render 'custom-collapsible' %}
+{% endcomment %}
+
+{{ 'custom-collapsible.css' | asset_url | stylesheet_tag }}
+
+<div class="collapsible__item" {{ block.shopify_attributes }}>
+  <div class="collapsible__title-wrapper">
+    <div class="h6 collapsible__title">{{ title }}</div>
+    {{ 'icon-caret.svg' | inline_asset_content }}
+  </div>
+  <div class="collapsible__text">{{ text }}</div>
+</div>

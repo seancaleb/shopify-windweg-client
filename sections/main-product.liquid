@@ -69,6 +69,36 @@
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
         {% render 'product-media-gallery', variant_images: variant_images %}
+
+        {% comment %} Custom static code for product details (Desktop) {% endcomment %}
+        <div class="product__details-container product__details-container--desktop">
+          <div class="collapsible__group">
+            {% assign product_description = product.metafields.custom.description | metafield_tag %}
+            {% assign product_highlights = product.metafields.custom.highlights | metafield_tag %}
+            {% assign product_technical_details = product.metafields.custom.technical_details | metafield_tag %}
+
+            {%
+              render 'custom-collapsible', {
+              title: "🧰 Beschreibung",
+              text: product_description,
+              }
+            %}
+
+            {%
+              render 'custom-collapsible', {
+              title: "✅ Highlights",
+              text: product_highlights,
+              }
+            %}
+
+            {%
+              render 'custom-collapsible', {
+              title: "⚙️ Technische Daten",
+              text: product_technical_details,
+              }
+            %}
+          </div>
+        </div>
       </div>
       <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <section
@@ -683,6 +713,18 @@
                 <div {{ block.shopify__attributes }}>
                   {{ block.settings.text }}
                 </div>
+
+              {% when 'collapsible' %}
+                <div {{ block.shopify_attributes }}>
+                  <div class="collapsible__group">
+                    {%
+                      render 'custom-collapsible', {
+                      title: block.settings.title,
+                      text: block.settings.text
+                      }
+                    %}
+                  </div>
+                </div>
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -690,6 +732,36 @@
             {{- 'icon-arrow.svg' | inline_asset_content -}}
           </a>
         </section>
+      </div>
+
+      {% comment %} Custom static code for product details (Mobile) {% endcomment %}
+      <div class="product__details-container product__details-container--mobile">
+        <div class="collapsible__group">
+          {% assign product_description = product.metafields.custom.description | metafield_tag %}
+          {% assign product_highlights = product.metafields.custom.highlights | metafield_tag %}
+          {% assign product_technical_details = product.metafields.custom.technical_details | metafield_tag %}
+
+          {%
+            render 'custom-collapsible', {
+            title: "🧰 Beschreibung",
+            text: product_description,
+            }
+          %}
+
+          {%
+            render 'custom-collapsible', {
+            title: "✅ Highlights",
+            text: product_highlights,
+            }
+          %}
+
+          {%
+            render 'custom-collapsible', {
+            title: "⚙️ Technische Daten",
+            text: product_technical_details,
+            }
+          %}
+        </div>
       </div>
     </div>
 
@@ -803,6 +875,24 @@
       "type": "features",
       "name": "Features",
       "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>"
+        }
+      ]
+    },
+    {
+      "type": "collapsible",
+      "name": "Collapsible",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Lorem ipsum dolor"
+        },
         {
           "type": "richtext",
           "id": "text",

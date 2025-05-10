@@ -1,0 +1,47 @@
+{{ 'custom-announcement-bar.css' | asset_url | stylesheet_tag }}
+
+<div class="announcement-bar">
+  {% for i in (1..3) %}
+    {% assign message_key = 'message_' | append: i %}
+    {% assign message = section.settings[message_key] %}
+    {% if message != blank %}
+      <div class="announcement-bar__message{% if forloop.first %} active{% endif %}">
+        {{ message }}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<script src="{{ 'custom-announcement-bar.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "text",
+      "id": "message_1",
+      "label": "Message 1",
+      "default": "Kostenlose Lieferung innerhalb von Deutschland ab 40€"
+    },
+    {
+      "type": "text",
+      "id": "message_2",
+      "label": "Message 2",
+      "default": "Alle Produkte werden in Deutschland entwickelt"
+    },
+    {
+      "type": "text",
+      "id": "message_3",
+      "label": "Message 3",
+      "default": "Wir verwenden umweltfreundliche Materialien"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement Bar"
+    }
+  ]
+}
+{% endschema %}

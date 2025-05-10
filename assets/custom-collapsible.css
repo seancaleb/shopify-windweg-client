@@ -1,0 +1,66 @@
+.collapsible__item {
+    border-block: 1px solid rgba(224, 224, 224, 0.6);
+    padding-block: 2.4rem;
+    margin-block: 2.4rem;
+  }
+
+  .collapsible__title-wrapper {
+    display: flex;
+    gap: 1.6rem;
+    justify-content: space-between;
+    align-items: start;
+    cursor: pointer;
+  }
+
+  .collapsible__title-wrapper svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+    margin-top: 0.4rem;
+  }
+
+  .collapsible__title-wrapper svg {
+    transition: transform var(--duration) var(--ease);
+  }
+
+  .collapsible__title-wrapper svg.rotated {
+    transform: rotate(180deg);
+  }
+
+  .collapsible__title {
+    font-weight: 500;
+  }
+
+  .collapsible__text {
+    margin-top: 2rem;
+    padding-right: 5.6rem;
+    display: none;
+  }
+
+  .collapsible__text a {
+    text-underline-offset: 0.4rem;
+    color: inherit !important;
+  }
+
+  .collapsible__text a:active {
+    color: inherit !important;
+  }
+
+  .collapsible__text li {
+    padding-left: 1.2rem;
+    color: var(--cstm-color-text);
+  }
+
+  .collapsible__text li::marker {
+    color: #777777;
+  }
+
+  @media screen and (min-width: 750px) {
+    .collapsible__title {
+      font-size: 1.8rem;
+    }
+
+    .collapsible__text {
+      font-size: 1.6rem;
+    }
+  }

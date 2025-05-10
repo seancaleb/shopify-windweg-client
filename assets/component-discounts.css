@@ -28,3 +28,8 @@
   height: 1.2rem;
   margin-right: 0.7rem;
 }
+
+/* Overridden Styles */
+.discounts {
+  color: var(--cstm-color-text);
+}

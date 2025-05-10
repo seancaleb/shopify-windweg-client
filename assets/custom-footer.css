@@ -157,3 +157,7 @@ footer .newsletter-form {
     flex-direction: row;
   }
 }
+
+.footer__copyright-wrapper a {
+  color: inherit;
+}
