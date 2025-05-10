@@ -3601,7 +3601,7 @@ details-disclosure > details {
   /* Colors  */
   --cstm-color-primary: #1a1a1a;
   --cstm-color-primary-dark: #0a0a0a;
-  --cstm-color-secondary: #45D945;
+  --cstm-color-secondary: #45d945;
   --cstm-color-tertiary: #d52941;
   --cstm-color-background: #fdfcf9;
   --cstm-color-text: #424242;
@@ -3613,7 +3613,7 @@ details-disclosure > details {
   --duration: 400ms;
 
   /* Box Shadow */
-  --cstm-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --cstm-box-shadow: rgba(26, 26, 26, 0.04) 0px 2px 32px;
 }
 
 body,
@@ -3641,7 +3641,8 @@ span {
   white-space: nowrap;
 }
 
-.button::before, .button::after {
+.button::before,
+.button::after {
   box-shadow: unset !important;
 }
 
@@ -3656,7 +3657,7 @@ span {
 }
 
 .button--primary:hover {
-  background-color: #1A7F1A;
+  background-color: #1a7f1a;
 }
 
 .button--outline:hover {
@@ -3789,7 +3790,8 @@ h4,
 .h4,
 h5,
 .h5,
-h6, .h6 {
+h6,
+.h6 {
   color: var(--cstm-color-primary) !important;
   font-weight: 500;
 }
@@ -3804,8 +3806,6 @@ strong {
   font-weight: 600;
   color: var(--cstm-color-primary);
 }
-
-
 
 .field:has(textarea),
 .field:has(textarea)::before,
@@ -3870,7 +3870,8 @@ input {
   stroke: var(--cstm-color-text);
 }
 
-.header__icon:hover .icon, .modal__close-button:hover .icon {
+.header__icon:hover .icon,
+.modal__close-button:hover .icon {
   transform: unset;
 }
 
@@ -3896,7 +3897,6 @@ input {
   padding-inline: 1.5rem !important;
 }
 
-
 .page-width {
   max-width: calc(var(--page-width) + (2 * 1.5rem));
 }
@@ -3904,7 +3904,7 @@ input {
 @media screen and (min-width: 600px) {
   .page-width {
     padding: 0 2.4rem;
-    max-width: calc(var(--page-width) + (2 *  2.4rem));
+    max-width: calc(var(--page-width) + (2 * 2.4rem));
   }
 
   .header {

@@ -99,7 +99,7 @@
     {% if section.settings.button_label != blank and section.settings.url != blank %}
       <a
         href="{{ section.settings.url }}"
-        class="button button button--primary {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        class="button button--primary {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         {% if settings.animations_reveal_on_scroll %}
           data-cascade
           style="--animation-order: 1;"
