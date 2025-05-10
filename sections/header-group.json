@@ -11,6 +11,15 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "custom_announcement_bar_97yHbC": {
+      "type": "custom-announcement-bar",
+      "name": "Announcement Bar",
+      "settings": {
+        "message_1": "Kostenlose Lieferung innerhalb von Deutschland ab 40€",
+        "message_2": "Alle Produkte werden in Deutschland entwickelt",
+        "message_3": "Wir verwenden umweltfreundliche Materialien"
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -25,6 +34,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -56,6 +66,7 @@
     }
   },
   "order": [
+    "custom_announcement_bar_97yHbC",
     "announcement-bar",
     "header"
   ]

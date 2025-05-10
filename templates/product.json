@@ -12,13 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text_rzmiyn": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -26,6 +19,29 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "notice_banner_X488KY": {
+          "type": "notice-banner",
+          "settings": {
+            "title": "Maximale Sicherheit für unterwegs",
+            "text": "<p><strong>Windweg Faltschloss</strong> – kompakt, robust und perfekt für <strong>Citybikes</strong>, <strong>E-Bikes</strong> & <strong>MTB</strong>.</p>",
+            "svg_text": "icon-information",
+            "margin": 2.5,
+            "color": "#288cc3"
+          }
+        },
+        "features_hhQqFL": {
+          "type": "features",
+          "settings": {
+            "text": "{{ product.metafields.custom.features | metafield_tag }}"
+          }
+        },
+        "collapsible_AJfAjh": {
+          "type": "collapsible",
+          "settings": {
+            "title": "Welches Faltschloss passt zu deinem Bedarf?",
+            "text": "<p>Je nach Einsatzbereich, Fahrradtyp und Sicherheitsbedürfnis ist das richtige Faltschloss entscheidend. Hier ein schneller Überblick über unsere Top-Modelle:</p><ul><li><a href=\"/products/windweg-faltschloss-xl-zahlen-sicherheitslevel-13\" title=\"Windweg Faltschloss XL Zahlen – Sicherheitslevel 13\"><strong>Windweg XL Zahlenschloss</strong></a>: Hochsicheres Faltschloss mit Zahlencode, Anti-Bohrschutz und 120 cm Länge. Ideal für urbane Zonen und tägliche Nutzung ohne Schlüssel.</li><li><a href=\"/products/windweg-faltschloss-xl-schlussel-sicherheitslevel-13\" title=\"Windweg Faltschloss XL Schlüssel – Sicherheitslevel 13\"><strong>Windweg XL Faltschloss Schlüssel</strong></a>: Extra lang für breite Rahmen & E-Bikes. Robustes Schloss mit Schlüsselverriegelung – ideal für Langzeitparker.</li><li><a href=\"/products/windweg-faltschloss-urban-zahlen-sicherheitslevel-12\" title=\"Windweg Faltschloss Urban Zahlen – Sicherheitslevel 12\"><strong>Windweg Urban Zahlenschloss</strong></a>: Kompaktes Faltschloss mit PIN-Code. Perfekt für Pendler und Kurzstrecken – ohne Schlüssel, mit maximaler Flexibilität.</li><li><a href=\"/products/windweg-faltschloss-urban-schlussel-sicherheitslevel-12\" title=\"Windweg Faltschloss Urban Schlüssel – Sicherheitslevel 12\"><strong>Windweg Urban Faltschloss Schlüssel</strong></a>: Alltagstauglich & wetterfest. Mit Schlüssel und stabilem Design – optimal für City- & E-Bikes.</li></ul><p>Wähle dein Modell passend zu Strecke, Sicherheitslevel und Komfort – für optimalen Schutz unterwegs. 🔐🚴‍♀️</p>"
+          }
         },
         "quantity_selector": {
           "type": "quantity_selector",
@@ -38,42 +54,48 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "delivery_notice_banner_jFVUWx": {
-          "type": "delivery-notice-banner",
+        "notice_banner_chhKwr": {
+          "type": "notice-banner",
           "settings": {
-            "title": "<p><strong>Versand mit DHL</strong>: 2–4 Werktage</p>",
-            "svg_text": "icon-delivery-box"
+            "title": "",
+            "text": "<p>Versand mit DHL: <strong>2–3</strong> Werktage</p>",
+            "svg_text": "icon-delivery-box",
+            "margin": 1.2,
+            "color": "#28c328"
           }
         },
-        "delivery_notice_banner_jcDHff": {
-          "type": "delivery-notice-banner",
+        "notice_banner_3U4it4": {
+          "type": "notice-banner",
           "settings": {
-            "title": "<p><strong>Rückgabe</strong>: 14 Tage gesetzliches Widerrufsrecht</p>",
-            "svg_text": "icon-product-returns"
+            "title": "",
+            "text": "<p>Rückgabe: <strong>14</strong> Tage gesetzliches Widerrufsrecht</p>",
+            "svg_text": "icon-product-returns",
+            "margin": 1.2,
+            "color": "#28c328"
           }
         },
-        "delivery_notice_banner_XtcrNK": {
-          "type": "delivery-notice-banner",
+        "notice_banner_LDzbJ4": {
+          "type": "notice-banner",
           "settings": {
-            "title": "<p>Alle Modelle enthalten Halterung & Anleitung und sind <strong>E-Bike geeignet</strong>.</p>",
-            "svg_text": "icon-product-note"
+            "title": "",
+            "text": "<p>Alle Modelle enthalten Halterung & Anleitung und sind <strong>E-Bike geeignet</strong>.</p>",
+            "svg_text": "icon-product-note",
+            "margin": 1.2,
+            "color": "#28c328"
           }
         }
       },
       "block_order": [
-        "text_rzmiyn",
         "title",
         "price",
+        "notice_banner_X488KY",
+        "features_hhQqFL",
+        "collapsible_AJfAjh",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "delivery_notice_banner_jFVUWx",
-        "delivery_notice_banner_jcDHff",
-        "delivery_notice_banner_XtcrNK"
+        "notice_banner_chhKwr",
+        "notice_banner_3U4it4",
+        "notice_banner_LDzbJ4"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -87,8 +109,204 @@
         "image_zoom": "none",
         "hide_variants": false,
         "enable_video_looping": false,
-        "padding_top": 6,
+        "padding_top": 4,
         "padding_bottom": 6
+      }
+    },
+    "custom_featured_products_AMXbHf": {
+      "type": "custom-featured-products",
+      "name": "Featured Products",
+      "settings": {
+        "heading": "Das könnten dir auch gefallen",
+        "button_label": "",
+        "url": "shopify://collections/new-arrivals",
+        "collection": "new-arrivals",
+        "padding_top": 6,
+        "padding_bottom": 6,
+        "background_color": "#ffffff"
+      }
+    },
+    "custom_text_image_drAW3Q": {
+      "type": "custom-text-image",
+      "custom_css": [
+        ".image {object-position: left center;}"
+      ],
+      "name": "Text with Image",
+      "settings": {
+        "subheading": "Unsere Mission",
+        "heading": "Fahrradschutz, Sicherheit und Nachhaltigkeit",
+        "text": "<p>Für uns ist Fahrradfahren mehr als Fortbewegung – es ist ein Lebensstil. Bei Windweg vereinen wir unsere Leidenschaft für Fahrräder und Sicherheit, um dir mit innovativen Faltschlössern einen zuverlässigen Schutz zu bieten.</p><p><br/>Unsere Vision ist es, allen Radfahrern eine sichere, praktische Lösung anzubieten. Gleichzeitig legen wir großen Wert auf Nachhaltigkeit: Ein Teil unserer Erlöse unterstützt Projekte, die aktiv zur Reduktion des CO₂-Fußabdrucks und zum Schutz der Umwelt beitragen.</p>",
+        "button_label": "Erfahre mehr über uns",
+        "url": "shopify://pages/about-us",
+        "image": "shopify://shop_images/our-mission-image.webp",
+        "image_position": "right",
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff"
+      }
+    },
+    "custom_logo_list_HatrRB": {
+      "type": "custom-logo-list",
+      "blocks": {
+        "logo_XMrhat": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/YouTube.webp"
+          }
+        },
+        "logo_KNcdcr": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Amazon.webp"
+          }
+        },
+        "logo_Nx97Pi": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/TikTok.webp"
+          }
+        },
+        "logo_8jnJJi": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Vergleich.webp"
+          }
+        },
+        "logo_rPFbgL": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Instagram.webp"
+          }
+        },
+        "logo_R8tJJ6": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Fahrradmagazine.webp"
+          }
+        }
+      },
+      "block_order": [
+        "logo_XMrhat",
+        "logo_KNcdcr",
+        "logo_Nx97Pi",
+        "logo_8jnJJi",
+        "logo_rPFbgL",
+        "logo_R8tJJ6"
+      ],
+      "name": "Logo List",
+      "settings": {
+        "text": "bekannt aus:",
+        "spacing": 4,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "custom_faq_FQnJmV": {
+      "type": "custom-faq",
+      "blocks": {
+        "content_yQnYfa": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].answer | metafield_tag }}"
+          }
+        },
+        "content_TThh8c": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].answer | metafield_tag }}"
+          }
+        },
+        "content_3ViV46": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].answer | metafield_tag }}"
+          }
+        },
+        "content_MwakJg": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].question.value }}",
+            "text": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].answer | metafield_tag }}"
+          }
+        },
+        "content_HYQKYX": {
+          "type": "content",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].question.value }}",
+            "text": "<p>{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].answer | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_yQnYfa",
+        "content_TThh8c",
+        "content_3ViV46",
+        "content_MwakJg",
+        "content_HYQKYX"
+      ],
+      "name": "FAQ Collapsible",
+      "settings": {
+        "subheading": "Dein Windweg-Team",
+        "heading": "Häufige Fragen",
+        "text": "<p>Hier beantworten wir die häufigsten Fragen, die uns erreichen. Sollte deine Frage nicht dabei sein, schau gerne auf unserer <a href=\"#\" title=\"#\">FAQ-Seite</a> vorbei oder kontaktiere uns direkt über das <a href=\"/pages/contact\" title=\"Contact\">Kontaktformular</a>.</p>",
+        "button_label": "Zu unseren produkten",
+        "url": "shopify://collections/all",
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "background_color": "#fafafa"
+      }
+    },
+    "custom_column_list_XQKXDC": {
+      "type": "custom-column-list",
+      "blocks": {
+        "column_gAwmhk": {
+          "type": "column",
+          "settings": {
+            "svg_text": "icon-delivery-box",
+            "title": "Kostenloser Versand ab 50€",
+            "text": ""
+          }
+        },
+        "column_zKjwLK": {
+          "type": "column",
+          "settings": {
+            "svg_text": "icon-message",
+            "title": "365 Tage Support",
+            "text": ""
+          }
+        },
+        "column_CWL7tB": {
+          "type": "column",
+          "settings": {
+            "svg_text": "icon-product-returns",
+            "title": "14 Tage Rückgaberecht",
+            "text": ""
+          }
+        },
+        "column_rtkRDh": {
+          "type": "column",
+          "settings": {
+            "svg_text": "icon-shield-check",
+            "title": "Sicherer Checkout",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_gAwmhk",
+        "column_zKjwLK",
+        "column_CWL7tB",
+        "column_rtkRDh"
+      ],
+      "name": "Column List",
+      "settings": {
+        "columns": 4,
+        "text_alignment": "center",
+        "padding_top": 8,
+        "padding_bottom": 10,
+        "background_color": ""
       }
     },
     "related-products": {
@@ -113,6 +331,11 @@
   },
   "order": [
     "main",
+    "custom_featured_products_AMXbHf",
+    "custom_text_image_drAW3Q",
+    "custom_logo_list_HatrRB",
+    "custom_faq_FQnJmV",
+    "custom_column_list_XQKXDC",
     "related-products"
   ]
 }
