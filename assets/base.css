@@ -3671,12 +3671,6 @@ a.button--hero {
  z-index: 1;
 }
 
-button:hover span {
- color: #e0aaff;
- transition: 0.3s;
-}
-
-
 .button::before,
 .button::after,
 .shopify-payment-button .shopify-payment-button__button--unbranded:after {

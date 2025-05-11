@@ -2,6 +2,8 @@
   Renders a custom ratings
   Accepts:
   - rating: {Object} the title of the collapsible content
+  - is_partial: {Boolean} to detect whether a start is partial or not (Optional)
+  - total_reviews_count: {Number} the total number of reviews (Optional)
 
   Usage:
   {% render 'custom-ratings' %}
@@ -10,9 +12,15 @@
 <div class="ratings__wrapper">
   <div class="ratings__stars-wrapper">
     {% for i in (1..5) %}
-      <span class="star{% if forloop.last %} partial{% else %} filled{% endif %}">★</span>
+      <span class="star{% if forloop.last and is_partial == true %} partial{% else %} filled{% endif %}">★</span>
     {% endfor %}
   </div>
 
-  <div class="ratings">{{ rating }} / 5.0</div>
+  {% if total_reviews_count != blank %}
+    <div class="ratings__count">({{ total_reviews_count }})</div>
+  {% endif %}
+
+  {% if rating != blank %}
+    <div class="ratings">{{ rating }} / 5.0</div>
+  {% endif %}
 </div>

@@ -1,6 +1,5 @@
 .ratings__wrapper {
     display: flex;
-    gap: 1.6rem;
     align-items: center;
 }
 
@@ -30,4 +29,12 @@
     color: var(--cstm-color-ratings);
     font-size: 1.4rem;
     font-weight: 600;
+    margin-left: 1.6rem;
+}
+
+.ratings__count {
+    font-size: 1.3rem;
+    color: var(--cstm-color-text);
+    font-weight: 400;
+    margin-left: .8rem;
 }

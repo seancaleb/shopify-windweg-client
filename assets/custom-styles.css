@@ -20,6 +20,10 @@ sticky-header {
   color: var(--cstm-color-text) !important;
 }
 
+.header-wrapper-scrolled div.cart-count-bubble span {
+  color: #ffffff !important;
+}
+
 .header-wrapper .search-modal * {
   color: var(--cstm-color-text) !important;
 }

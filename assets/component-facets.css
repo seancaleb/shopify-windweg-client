@@ -1277,3 +1277,19 @@ input.mobile-facets__checkbox {
     align-self: center;
   }
 }
+
+.mobile-facets__header-inner {
+  display: grid;
+  justify-items: start;
+  text-align: start;
+}
+
+.mobile-facets__header {
+    padding-inline: 3.2rem;
+  padding-bottom: 2.4rem;
+  padding-top: 3.2rem;
+}
+
+.mobile-facets__open-label, .product-count__text {
+  letter-spacing: 0;
+}

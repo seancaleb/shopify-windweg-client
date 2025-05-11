@@ -27,9 +27,27 @@
       }}
     </div>
     <div class="content">
-      <div class="h6">
-        {{ product.title }}
+      <div>
+        {% assign review_count = product.price | money_without_currency | round | divided_by: 1.25 | round %}
+
+        {% if review_count > 40 %}
+          {% assign is_partial = true %}
+        {% else %}
+          {% assign is_partial = false %}
+        {% endif %}
+
+        {%
+          render 'custom-ratings', {
+          is_partial: is_partial,
+          total_reviews_count: review_count
+          }
+        %}
+
+        <div class="h6">
+          {{ product.title }}
+        </div>
       </div>
+
       {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price' -%}
     </div>
 
