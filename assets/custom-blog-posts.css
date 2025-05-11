@@ -17,6 +17,14 @@
   text-decoration: none;
 }
 
+.blog__image-wrapper {
+  overflow: hidden;
+}
+
+.blog__image-wrapper .blog__image:hover {
+  transform: scale(1.05);
+}
+
 .blog__image {
   width: 100%;
   height: auto;
@@ -25,6 +33,8 @@
   object-position: center top;
   display: block;
   border-radius: 0.6rem;
+  transition: transform var(--duration) var(--ease);
+  transform-origin: 10% 0%;
 }
 
 .blog__content-wrapper {

@@ -9,7 +9,9 @@
 {% endcomment %}
 
 <a href="{{ article.url }}" class="blog__item">
-  {{ article.image | image_url: width: 600 | image_tag: class: 'blog__image' }}
+  <div class="blog__image-wrapper">
+    {{ article.image | image_url: width: 600 | image_tag: class: 'blog__image' }}
+  </div>
 
   <div class="blog__content-wrapper">
     <h2 class="h5 blog__title">{{ article.title }}</h2>
