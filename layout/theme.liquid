@@ -329,29 +329,7 @@
         }
       </style>
 
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          window.addEventListener('scroll', function () {
-            const mainContent = document.getElementById('MainContent');
-            const header = document.querySelector('sticky-header');
-            const headerWrapper = document.querySelector('.header-wrapper');
-            const defaultLogo = document.querySelector('.header__logo--black');
-            const whiteLogo = document.querySelector('.header__logo--white');
-
-            if (window.scrollY > 0) {
-              header.classList.add('scrolled-header');
-              headerWrapper.classList.add('header-wrapper-scrolled');
-              whiteLogo.style.display = 'none';
-              defaultLogo.style.display = 'block';
-            } else {
-              header.classList.remove('scrolled-header');
-              headerWrapper.classList.remove('header-wrapper-scrolled');
-              whiteLogo.style.display = 'block';
-              defaultLogo.style.display = 'none';
-            }
-          });
-        });
-      </script>
+      <script src="{{ 'custom-header-scroll.js' | asset_url }}" defer="defer"></script>
     {% endif %}
 
     {% comment %} Custom CDN styles  {% endcomment %}
@@ -371,6 +349,7 @@
     ></script>
 
     <script src="{{ 'custom-collapsible.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'custom-faq.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom-header.js' | asset_url }}" defer="defer"></script>
 
     {%- if settings.cart_type == 'drawer' -%}

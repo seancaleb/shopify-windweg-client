@@ -4078,7 +4078,7 @@ details[open] > .header__menu-item {
 
 @media screen and (min-width: 990px) {
   .header {
-    padding-block: .8rem !important;
+    padding-block: 0.8rem !important;
   }
 }
 
@@ -4159,11 +4159,11 @@ summary .icon-caret {
 }
 
 .header__menu-item .icon-caret {
-    right: 0rem;
+  right: 0rem;
 }
 
 .header__submenu.list-menu {
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   border: 1px solid #e0e0e0;
 }
 
@@ -4172,5 +4172,10 @@ summary .icon-caret {
 }
 
 .header__submenu .header__menu-item:hover {
-  background: rgba(26,26,26, 0.025);
+  background: rgba(26, 26, 26, 0.025);
+  color: var(--cstm-color-text);
+}
+
+.header__menu-item {
+  color: var(--cstm-color-text);
 }

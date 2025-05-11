@@ -63,7 +63,7 @@
 
     {% comment %} FAQ wrapper  {% endcomment %}
     <div
-      class="faq__content-wrapper {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      class="faq__content-wrapper faq__group {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       {% if settings.animations_reveal_on_scroll %}
         data-cascade
         style="--animation-order: 2;"
@@ -95,8 +95,6 @@
     </div>
   {% endif %}
 </div>
-
-<script src="{{ 'custom-faq.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {

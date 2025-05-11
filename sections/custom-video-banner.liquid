@@ -54,12 +54,11 @@
     width: 100%;
     z-index: 2;
     text-align: center;
+    padding-inline: 1.5rem;
   }
 
   #shopify-section-{{ sid }} .content h1 {
     letter-spacing: -0.005em;
-    font-size: 4.8rem;
-    line-height: 1.15;
     color: #ffffff !important;
     font-weight: normal;
   }
@@ -71,39 +70,37 @@
     {{ section.settings.video | video_tag: autoplay: true, loop: true, controls: false, muted: true }}
   {% endif %}
 
-  <div class="page-width">
-    <div class="content">
-      {% if section.settings.heading %}
-        <h1
-          class="h2 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-            style="--animation-order: 1;"
-          {% endif %}
-        >
-          {{ section.settings.heading }}
-        </h1>
-      {% endif %}
+  <div class="content">
+    {% if section.settings.heading %}
+      <h1
+        class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: 1;"
+        {% endif %}
+      >
+        {{ section.settings.heading }}
+      </h1>
+    {% endif %}
 
-      {% if section.settings.button_label and section.settings.url_link %}
-        <a
-          class="button button--primary {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          href="{{ section.settings.url_link }}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-            style="--animation-order: 2;"
-          {% endif %}
-        >
-          {{- section.settings.button_label -}}
-        </a>
-      {% endif %}
+    {% if section.settings.button_label and section.settings.url_link %}
+      <a
+        class="button button--primary {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        href="{{ section.settings.url_link }}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: 2;"
+        {% endif %}
+      >
+        {{- section.settings.button_label -}}
+      </a>
+    {% endif %}
 
-      {%
-        render 'custom-ratings', {
-        rating: section.settings.rating
-        }
-      %}
-    </div>
+    {%
+      render 'custom-ratings', {
+      rating: section.settings.rating
+      }
+    %}
   </div>
 </div>
 

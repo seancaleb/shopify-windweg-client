@@ -1,17 +1,23 @@
 $(document).ready(function () {
-  $('.faq__title-wrapper').click(function () {
-    const $item = $(this).closest('.faq__item');
-    const $caret = $(this).find('svg');
+  $('.faq__group').each(function () {
+    const $group = $(this);
 
-    if ($item.hasClass('active')) {
-      $item.removeClass('active').find('.faq__text').slideUp(150);
-      $caret.removeClass('rotated');
-    } else {
-      $('.faq__item').removeClass('active').find('.faq__text').slideUp(150);
-      $('.faq__item svg').removeClass('rotated');
+    $group.on('click', '.faq__title-wrapper', function () {
+      const $item = $(this).closest('.faq__item');
+      const $text = $item.find('.faq__text');
+      const $caret = $(this).find('svg');
 
-      $item.addClass('active').find('.faq__text').slideDown(150);
-      $caret.addClass('rotated');
-    }
+      const isActive = $item.hasClass('active');
+
+      // Close all in group
+      $group.find('.faq__item').removeClass('active').find('.faq__text').slideUp(150);
+      $group.find('.faq__title-wrapper svg').removeClass('rotated');
+
+      if (!isActive) {
+        $item.addClass('active');
+        $text.slideDown(150);
+        $caret.addClass('rotated');
+      }
+    });
   });
 });
