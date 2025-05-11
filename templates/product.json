@@ -200,62 +200,62 @@
         "padding_bottom": 8
       }
     },
-    "custom_faq_FQnJmV": {
+    "custom_faq_wPEBqP": {
       "type": "custom-faq",
       "blocks": {
-        "content_yQnYfa": {
+        "content_RHGVHk": {
           "type": "content",
           "settings": {
-            "heading": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].question.value }}",
-            "text": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].answer | metafield_tag }}"
+            "heading": "{{ metaobjects.product_faq[\"sind-windweg-faltschlosser-fur-alle-fahrradtypen-geeignet-auch-e-bikes\"].question.value }}",
+            "text": "{{ metaobjects.product_faq[\"sind-windweg-faltschlosser-fur-alle-fahrradtypen-geeignet-auch-e-bikes\"].answer | metafield_tag }}"
           }
         },
-        "content_TThh8c": {
+        "content_6iEgHC": {
           "type": "content",
           "settings": {
-            "heading": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].question.value }}",
-            "text": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].answer | metafield_tag }}"
+            "heading": "{{ metaobjects.product_faq[\"was-ist-der-unterschied-zwischen-den-xl-und-urban-modellen\"].question.value }}",
+            "text": "{{ metaobjects.product_faq[\"was-ist-der-unterschied-zwischen-den-xl-und-urban-modellen\"].answer | metafield_tag }}"
           }
         },
-        "content_3ViV46": {
+        "content_Xm7pQN": {
           "type": "content",
           "settings": {
-            "heading": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].question.value }}",
-            "text": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].answer | metafield_tag }}"
+            "heading": "{{ metaobjects.product_faq[\"sollte-ich-ein-schloss-mit-schlussel-oder-zahlencode-wahlen\"].question.value }}",
+            "text": "{{ metaobjects.product_faq[\"sollte-ich-ein-schloss-mit-schlussel-oder-zahlencode-wahlen\"].answer | metafield_tag }}"
           }
         },
-        "content_MwakJg": {
+        "content_3XH9BU": {
           "type": "content",
           "settings": {
-            "heading": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].question.value }}",
-            "text": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].answer | metafield_tag }}"
+            "heading": "{{ metaobjects.product_faq[\"wie-sicher-sind-windweg-faltschlosser-wirklich\"].question.value }}",
+            "text": "{{ metaobjects.product_faq[\"wie-sicher-sind-windweg-faltschlosser-wirklich\"].answer | metafield_tag }}"
           }
         },
-        "content_HYQKYX": {
+        "content_yQpfyD": {
           "type": "content",
           "settings": {
-            "heading": "{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].question.value }}",
-            "text": "<p>{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].answer | metafield_tag }}</p>"
+            "heading": "{{ metaobjects.product_faq[\"sind-die-schlosser-wetterfest-und-rostfrei\"].question.value }}",
+            "text": "{{ metaobjects.product_faq[\"sind-die-schlosser-wetterfest-und-rostfrei\"].answer | metafield_tag }}"
           }
         }
       },
       "block_order": [
-        "content_yQnYfa",
-        "content_TThh8c",
-        "content_3ViV46",
-        "content_MwakJg",
-        "content_HYQKYX"
+        "content_RHGVHk",
+        "content_6iEgHC",
+        "content_Xm7pQN",
+        "content_3XH9BU",
+        "content_yQpfyD"
       ],
       "name": "FAQ Collapsible",
       "settings": {
         "subheading": "Dein Windweg-Team",
-        "heading": "Häufige Fragen",
-        "text": "<p>Hier beantworten wir die häufigsten Fragen, die uns erreichen. Sollte deine Frage nicht dabei sein, schau gerne auf unserer <a href=\"#\" title=\"#\">FAQ-Seite</a> vorbei oder kontaktiere uns direkt über das <a href=\"/pages/contact\" title=\"Contact\">Kontaktformular</a>.</p>",
-        "button_label": "Zu unseren Produkten",
-        "url": "shopify://collections/all",
-        "padding_top": 8,
-        "padding_bottom": 8,
-        "background_color": "#fafafa"
+        "heading": "Häufig gestellte Fragen",
+        "text": "<p>Du hast Fragen zu unseren Windweg Faltschlössern? Hier findest du Antworten auf die wichtigsten Fragen zu Sicherheit, Anwendung, Kompatibilität und Montage. Unsere Schlösser sind für maximale Sicherheit und Alltagstauglichkeit konzipiert.</p>",
+        "button_label": "Zu unseren produkten",
+        "url": "",
+        "padding_top": 6,
+        "padding_bottom": 6,
+        "background_color": "#ffffff"
       }
     },
     "custom_column_list_XQKXDC": {
@@ -334,7 +334,7 @@
     "custom_featured_products_AMXbHf",
     "custom_text_image_drAW3Q",
     "custom_logo_list_HatrRB",
-    "custom_faq_FQnJmV",
+    "custom_faq_wPEBqP",
     "custom_column_list_XQKXDC",
     "related-products"
   ]

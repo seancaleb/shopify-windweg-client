@@ -15,7 +15,7 @@
       "type": "custom-announcement-bar",
       "name": "Announcement Bar",
       "settings": {
-        "message_1": "Kostenlose Lieferung innerhalb von Deutschland ab 50€",
+        "message_1": "Versandfrei ab 50 € in DE",
         "message_2": "Alle Produkte werden in Deutschland entwickelt",
         "message_3": "Wir verwenden umweltfreundliche Materialien"
       }

@@ -32,6 +32,7 @@
       "type": "custom-header-with-image",
       "name": "Header with Image",
       "settings": {
+        "heading": "Kontaktiere uns",
         "background_image": "shopify://shop_images/pexels-pavel-danilyuk-5807579_copy.webp"
       }
     },
