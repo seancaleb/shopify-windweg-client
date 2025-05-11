@@ -1,0 +1,19 @@
+/* Nova: GDPR Cookie Consent  */
+.cc-btn.cc-dismiss {
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 1.6rem;
+  line-height: 1;
+  padding-block: 1.6rem;
+  padding-inline: 3.2rem;
+  white-space: nowrap;
+}
+
+.cc-btn.cc-dismiss {
+  border-radius: .6rem;
+}
+
+.cc-window.cc-banner {
+  border-top: 1px solid #e0e0e0;
+}

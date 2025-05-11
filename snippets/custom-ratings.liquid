@@ -1,0 +1,18 @@
+{% comment %}
+  Renders a custom ratings
+  Accepts:
+  - rating: {Object} the title of the collapsible content
+
+  Usage:
+  {% render 'custom-ratings' %}
+{% endcomment %}
+
+<div class="ratings__wrapper">
+  <div class="ratings__stars-wrapper">
+    {% for i in (1..5) %}
+      <span class="star{% if forloop.last %} partial{% else %} filled{% endif %}">★</span>
+    {% endfor %}
+  </div>
+
+  <div class="ratings">{{ rating }} / 5.0</div>
+</div>

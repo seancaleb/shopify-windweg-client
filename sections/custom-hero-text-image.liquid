@@ -13,15 +13,14 @@
   <div class="hero__wrapper">
     {% comment %} Hero content  {% endcomment %}
     <div class="hero__content-wrapper">
-      <div class="hero__ratings-wrapper">
-        <div class="hero__ratings-stars-wrapper">
-          {% for i in (1..5) %}
-            <span class="star{% if forloop.last %} partial{% else %} filled{% endif %}">★</span>
-          {% endfor %}
-        </div>
+      {% comment %}
+        {%
+          render 'custom-ratings', {
+          rating: section.settings.rating
+          }
+        %}
+      {% endcomment %}
 
-        <div class="hero__ratings">{{ section.settings.rating }} / 5.0</div>
-      </div>
       {% if section.settings.heading %}
         <h1
           class="hero__heading {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"

@@ -3601,7 +3601,7 @@ details-disclosure > details {
   /* Colors  */
   --cstm-color-primary: #1a1a1a;
   --cstm-color-primary-dark: #0a0a0a;
-  --cstm-color-secondary: #23A923;
+  --cstm-color-secondary: #23a923;
   --cstm-color-tertiary: #d52941;
   --cstm-color-background: #fdfcf9;
   --cstm-color-text: #424242;
@@ -3623,8 +3623,7 @@ a {
 }
 
 body,
-p,
-span {
+p {
   color: var(--cstm-color-text);
   line-height: 1.75;
   letter-spacing: 0;
@@ -3635,7 +3634,7 @@ span {
 }
 
 .shopify-payment-button .shopify-payment-button__button--unbranded:after {
-  content: "Jetzt kaufen";
+  content: 'Jetzt kaufen';
   background: var(--cstm-color-primary);
   font-size: inherit;
   color: inherit;
@@ -3661,7 +3660,8 @@ span {
 }
 
 .button::before,
-.button::after, .shopify-payment-button .shopify-payment-button__button--unbranded:after {
+.button::after,
+.shopify-payment-button .shopify-payment-button__button--unbranded:after {
   box-shadow: unset !important;
 }
 
@@ -3907,10 +3907,6 @@ input {
   text-decoration: none;
 }
 
-.header__menu-item.list-menu__item {
-  font-weight: 500;
-}
-
 .header {
   padding-block: 1.2rem !important;
   padding-inline: 1.5rem !important;
@@ -4082,7 +4078,7 @@ details[open] > .header__menu-item {
 
 @media screen and (min-width: 990px) {
   .header {
-    padding-block: 0.4rem !important;
+    padding-block: .8rem !important;
   }
 }
 
@@ -4102,10 +4098,6 @@ details[open] > .header__menu-item {
 
 .utility-bar {
   background-color: var(--cstm-color-primary);
-}
-
-.header-wrapper {
-  border-bottom: 1px solid #e0e0e0;
 }
 
 .quantity {
@@ -4154,4 +4146,31 @@ details[open] > .header__menu-item {
 .customer select:focus,
 .localization-form__select:focus.localization-form__select:after {
   box-shadow: unset;
+}
+
+.modal__content {
+  top: 4rem;
+}
+
+summary .icon-caret {
+  position: relative;
+  width: 12px;
+  height: 12px;
+}
+
+.header__menu-item .icon-caret {
+    right: 0rem;
+}
+
+.header__submenu.list-menu {
+  border-radius: .6rem;
+  border: 1px solid #e0e0e0;
+}
+
+.header__submenu .header__menu-item {
+  padding-block: 1.4rem;
+}
+
+.header__submenu .header__menu-item:hover {
+  background: rgba(26,26,26, 0.025);
 }

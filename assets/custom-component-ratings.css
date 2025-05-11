@@ -1,0 +1,33 @@
+.ratings__wrapper {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.ratings__stars-wrapper {
+    display: inline-flex;
+    gap: .4rem;
+    font-size: 2rem;
+
+}
+
+.filled {
+    color: var(--cstm-color-ratings);
+}
+
+.partial {
+    background: linear-gradient(90deg, var(--cstm-color-ratings) 60%, #E0E0E0 60%);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+.ratings__stars-wrapper svg path {
+    fill: var(--cstm-color-ratings);
+}
+
+.ratings {
+    color: var(--cstm-color-ratings);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
