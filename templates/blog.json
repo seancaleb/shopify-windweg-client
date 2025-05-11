@@ -22,27 +22,30 @@
         "padding_bottom": 36
       }
     },
-    "featured_blog_pepGAw": {
-      "type": "featured-blog",
-      "name": "t:sections.featured-blog.presets.name",
+    "custom_header_with_image_CpWtX8": {
+      "type": "custom-header-with-image",
+      "name": "Header with Image",
       "settings": {
-        "blog": "blogs",
-        "post_limit": 3,
-        "heading": "Blog posts",
-        "heading_size": "h1",
-        "columns_desktop": 3,
-        "show_view_all": true,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Neueste Artikel",
+        "background_image": "shopify://shop_images/pexels-pavel-danilyuk-5807796_copy.webp"
+      }
+    },
+    "custom_heading_with_text_6gYRrD": {
+      "type": "custom-heading-with-text",
+      "name": "Heading with Text",
+      "settings": {
+        "subheading": "",
+        "heading": "Sicher und immer mobil - Der WindWeg Blog",
+        "text": "Entdecken Sie die perfekte Kombination aus Stil, Sicherheit und Flexibilität für Ihr Abenteuer – mit den innovativen Klappschlössern von WindWeg.",
+        "padding_top": 8,
+        "padding_bottom": 6,
+        "background_color": "#ffffff"
       }
     }
   },
   "order": [
     "main",
-    "featured_blog_pepGAw"
+    "custom_header_with_image_CpWtX8",
+    "custom_heading_with_text_6gYRrD"
   ]
 }

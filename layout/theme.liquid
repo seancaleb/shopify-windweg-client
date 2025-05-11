@@ -99,6 +99,27 @@
         background-color: rgb(var(--color-background));
       }
 
+       @font-face {
+        font-family: "Onest";
+        src: url("{{ 'Onest-Thin.woff2' | asset_url }}") format("woff2");
+        font-style: normal;
+        font-weight: 100;
+      }
+
+      @font-face {
+        font-family: "Onest";
+        src: url("{{ 'Onest-ExtraLight.woff2' | asset_url }}") format("woff2");
+        font-style: normal;
+        font-weight: 200;
+      }
+
+      @font-face {
+        font-family: "Onest";
+        src: url("{{ 'Onest-Light.woff2' | asset_url }}") format("woff2");
+        font-style: normal;
+        font-weight: 300;
+      }
+
       @font-face {
         font-family: "Onest";
         src: url("{{ 'Onest-Regular.woff2' | asset_url }}") format("woff2");
@@ -282,7 +303,7 @@
         }
       }
 
-      {% unless template == 'page.terms-and-conditions' or template == 'page.cancellation-policy' or template == 'page.privacy-policy' or template == 'page.imprint' %}
+      {% unless template == 'page.terms-and-conditions' or template == 'page.cancellation-policy' or template == 'page.privacy-policy' or template == 'page.imprint' or template == 'article' %}
         h1,
         h2,
         h3,
@@ -302,6 +323,7 @@
     {{ 'custom-app-styles.css' | asset_url | stylesheet_tag }}
     {{ 'custom-featured-products.css' | asset_url | stylesheet_tag }}
     {{ 'custom-component-ratings.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-blog-posts.css' | asset_url | stylesheet_tag }}
 
     {% if template == 'index' %}
       {{ 'custom-styles.css' | asset_url | stylesheet_tag }}

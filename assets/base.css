@@ -3659,6 +3659,24 @@ p {
   white-space: nowrap;
 }
 
+a.button--hero {
+  display: inline-block;
+ width: 150px;
+ height: 50px;
+ border-radius: 10px;
+ border: 1px solid #03045e;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.5s ease-in;
+ z-index: 1;
+}
+
+button:hover span {
+ color: #e0aaff;
+ transition: 0.3s;
+}
+
+
 .button::before,
 .button::after,
 .shopify-payment-button .shopify-payment-button__button--unbranded:after {
