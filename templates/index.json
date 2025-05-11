@@ -331,6 +331,20 @@
         "text_color": "#ffffff"
       }
     },
+    "custom_blog_posts_YrreXX": {
+      "type": "custom-blog-posts",
+      "name": "Blog Posts",
+      "settings": {
+        "blog": "faltschlosser",
+        "columns": 3,
+        "heading": "Aktuelles von WindWeg",
+        "button_label": "Entdecken Sie Erkenntnisse",
+        "url": "shopify://blogs/faltschlosser",
+        "padding_top": 8,
+        "padding_bottom": 6,
+        "background_color": "#ffffff"
+      }
+    },
     "custom_faq_R4ij4a": {
       "type": "custom-faq",
       "blocks": {
@@ -487,6 +501,7 @@
     "custom_featured_products_qMcJbp",
     "custom_reviews_list_wAF9eU",
     "custom_text_image_gXHTPk",
+    "custom_blog_posts_YrreXX",
     "custom_faq_R4ij4a",
     "custom_column_list_RUwq9W",
     "newsletter_Lthb4n"
