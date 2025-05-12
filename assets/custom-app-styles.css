@@ -26,3 +26,25 @@
 .jdgm-prev-badge__stars .jdgm-star.jdgm--on {
   color: var(--cstm-color-ratings);
 }
+
+/* Chatty AI Bot  */
+p[class*="AvadaFaqs-MuiTypography-h6-jss"] {
+  line-height: 1.5;
+}
+
+div[class*="AvadaFaqs-MuiListItem-gutters-jss"]  {
+  align-items: start;
+  gap: 1.6rem;
+}
+
+div[class*="AvadaFaqs-MuiListItem-gutters-jss"] .Avada-Faqs_Primary-Icon {
+  transform: translateY(.6rem);
+}
+
+#Avada-FAQ_Widget * {
+  font-family: var(--font-body-family) !important;
+}
+
+input[class*="AvadaFaqs-MuiInputBase-input-jss"] {
+  min-height: unset !important;
+}

@@ -4191,3 +4191,16 @@ summary .icon-caret {
 .header__menu-item {
   color: var(--cstm-color-text);
 }
+
+details[open] .modal-overlay::after {
+  background-color: rgba(26,26,26,0.6);
+}
+
+.search-modal {
+  min-height: unset;
+  height: calc(4.8rem + 2.4rem);
+}
+
+.spinner {
+  border: unset;
+}
