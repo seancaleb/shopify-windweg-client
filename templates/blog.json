@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-blog",
+      "disabled": true,
       "settings": {
         "layout": "collage",
         "show_image": true,
@@ -20,9 +21,82 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_header_with_image_CpWtX8": {
+      "type": "custom-header-with-image",
+      "name": "Header with Image",
+      "settings": {
+        "heading": "Neueste Artikel",
+        "background_image": "shopify://shop_images/pexels-pavel-danilyuk-5807796_copy-min.jpg"
+      }
+    },
+    "custom_heading_with_text_6gYRrD": {
+      "type": "custom-heading-with-text",
+      "name": "Heading with Text",
+      "settings": {
+        "subheading": "",
+        "heading": "Sicher und immer mobil - Der WindWeg Blog",
+        "text": "Entdecken Sie die perfekte Kombination aus Stil, Sicherheit und Flexibilität für Ihr Abenteuer – mit den innovativen Klappschlössern von WindWeg.",
+        "padding_top": 8,
+        "padding_bottom": 4,
+        "background_color": "#ffffff"
+      }
+    },
+    "custom_blog_posts_bnnrCz": {
+      "type": "custom-blog-posts",
+      "name": "Blog Posts",
+      "settings": {
+        "blog": "faltschlosser",
+        "columns": 3,
+        "heading": "",
+        "button_label": "Entdecken Sie Erkenntnisse",
+        "url": "",
+        "padding_top": 6,
+        "padding_bottom": 10,
+        "background_color": "#ffffff"
+      }
+    },
+    "newsletter_9ddyHx": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_axLn8G": {
+          "type": "heading",
+          "settings": {
+            "heading": "Abonnieren Sie unseren Newsletter",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_YmegXM": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Abonnieren Sie noch heute und verpassen Sie keine Top-Angebote und wichtigen Ankündigungen mehr. Entdecken Sie als Erster unsere neuesten Angebote!</p>"
+          }
+        },
+        "email_form_B3HMWp": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_axLn8G",
+        "paragraph_YmegXM",
+        "email_form_B3HMWp"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "padding_top": 8,
+        "padding_bottom": 10,
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff",
+        "button_label": "Anmelden"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_header_with_image_CpWtX8",
+    "custom_heading_with_text_6gYRrD",
+    "custom_blog_posts_bnnrCz",
+    "newsletter_9ddyHx"
   ]
 }

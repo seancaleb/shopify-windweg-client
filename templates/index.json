@@ -9,16 +9,31 @@
  */
 {
   "sections": {
+    "custom_video_banner_DCPPfB": {
+      "type": "custom-video-banner",
+      "name": "Video Banner",
+      "settings": {
+        "rating": 4.8,
+        "video": "shopify://files/videos/video-banner-ad.mp4",
+        "heading": "Sicher unterwegs. Stilvoll verriegelt",
+        "button_label": "Shop",
+        "url_link": "shopify://collections/all"
+      }
+    },
     "custom_hero_text_image_ik4EUP": {
       "type": "custom-hero-text-image",
       "name": "Hero with Text and Image",
       "settings": {
         "rating": 4.8,
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Explore our products",
+        "heading": "Gebaut, um zu schützen. Windweg.",
+        "text": "Windweg steht für sichere und praktische Fahrradschlosslösungen, die das Radfahren im Alltag sicherer und komfortabler machen. Unsere Faltschlösser vereinen robusten Schutz mit intelligentem Design – ideal für Radfahrer, die Wert auf Zuverlässigkeit, Langlebigkeit und Benutzerfreundlichkeit legen.",
+        "reviews_label": "Radfahrer vertrauen auf unsere Faltradschlösser",
+        "button_label": "Entdecken Sie unsere Produkte",
         "button_variant": "primary",
-        "url": ""
+        "url": "shopify://collections/all",
+        "image": "shopify://shop_images/pexels-pavel-danilyuk-5807872_copy.webp",
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff"
       }
     },
     "custom_column_list_r9Wkm4": {
@@ -27,29 +42,33 @@
         "column_NTDjct": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
-            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
+            "svg_text": "icon-star",
+            "title": "Mehrfacher Testsieger",
+            "text": "<p>Unsere Produkte überzeugen mit erstklassiger Qualität und wurden mehrfach von unabhängigen Tests ausgezeichnet.</p>"
           }
         },
         "column_kndn4n": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
-            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
+            "svg_text": "icon-shield-check",
+            "title": "DryLock™ Technology",
+            "text": "<p>Wasserabweisende Versiegelung für zuverlässige Funktion auch bei starkem Regen oder Schnee.</p>"
           }
         },
         "column_FHJFYa": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
-            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
+            "svg_text": "icon-check-circle",
+            "title": "Deutsche Entwicklung",
+            "text": "<p>Wir stehen für Präzision und Qualität. Unsere Produkte werden mit viel Know-how und Leidenschaft entwickelt.</p>"
           }
         },
         "column_FAQVDw": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
-            "text": "<p>Sometimes it's nice to put in text just to get an idea of how text will fill in a space on your website. </p>"
+            "svg_text": "icon-globe",
+            "title": "Umweltschutz",
+            "text": "<p>Nachhaltigkeit liegt uns am Herzen. Wir setzen auf umweltfreundliche Materialien und Prozesse, um die Natur zu schützen.</p>"
           }
         }
       },
@@ -61,130 +80,53 @@
       ],
       "name": "Column List",
       "settings": {
-        "text_alignment": "left",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "columns": 4,
+        "text_alignment": "center",
+        "padding_top": 10,
+        "padding_bottom": 6,
+        "background_color": ""
       }
     },
     "custom_heading_with_text_U77nCM": {
       "type": "custom-heading-with-text",
       "name": "Heading with Text",
       "settings": {
-        "subheading": "Subheading",
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
+        "subheading": "Leidenschaft fürs Radfahren",
+        "heading": "Willkommen bei Windweg",
+        "text": "<p>wo das Radfahren zur Leidenschaft wird und jede Fahrt ein Schritt in eine bessere Zukunft bedeutet! Wir glauben, dass Fahrradfahren nicht nur eine Art der Fortbewegung ist, sondern eine Quelle der Freiheit und des Abenteuers.</p>",
         "padding_top": 6,
-        "padding_bottom": 4
-      }
-    },
-    "custom_collection_list_rmhEiU": {
-      "type": "custom-collection-list",
-      "blocks": {
-        "collection_yWGn3A": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_CXKMiV": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_ihjmnz": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_K79xTX": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_qJPhUf": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_CxRRgN": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        },
-        "collection_NxKPMR": {
-          "type": "collection",
-          "settings": {
-            "title": "Placeholder text",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection_yWGn3A",
-        "collection_CXKMiV",
-        "collection_ihjmnz",
-        "collection_K79xTX",
-        "collection_qJPhUf",
-        "collection_CxRRgN",
-        "collection_NxKPMR"
-      ],
-      "name": "Collection Slider List",
-      "settings": {
-        "padding_top": 4,
-        "padding_bottom": 6
+        "padding_bottom": 10,
+        "background_color": "#ffffff"
       }
     },
     "custom_text_image_jBMAGT": {
       "type": "custom-text-image",
       "name": "Text with Image",
       "settings": {
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Discover more",
-        "button_variant": "primary",
-        "url": "",
+        "subheading": "Maximale Sicherheit – kompakt und allzeit bereit",
+        "heading": "Faltbare Fahrradschlösser für lange Strecken",
+        "text": "<p>Windweg Faltschlösser vereinen höchste Sicherheit mit praktischer Tragbarkeit – ideal für Pendler, Wochenendfahrer und Alltagsradler. Unsere kompakten Schlösser sind auf Langlebigkeit und Benutzerfreundlichkeit ausgelegt und bieten zuverlässigen Diebstahlschutz ohne viel Platz. Dank wetterbeständiger Materialien und einem eleganten, faltbaren Design ist Ihr Fahrrad überall sicher.</p>",
+        "button_label": "Faltschlösser kaufen",
+        "url": "shopify://collections/all",
+        "image": "shopify://shop_images/EBC_2.webp",
         "image_position": "right",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff"
       }
     },
-    "custom_text_image_CRGAM3": {
+    "custom_text_image_ACnap8": {
       "type": "custom-text-image",
       "name": "Text with Image",
       "settings": {
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Discover more",
-        "button_variant": "primary",
-        "url": "",
+        "subheading": "Vertrauenswürdig in 2022, 2023, 2024 – und darüber hinaus",
+        "heading": "Bewährter Schutz. Radfahrer vertrauen darauf.",
+        "text": "<p>Windweg Faltradschlösser werden Jahr für Jahr für Innovation, Qualität und Langlebigkeit ausgezeichnet und gewinnen das Vertrauen von Radfahrern weltweit. Unsere Kunden vertrauen auf unsere sicheren, wetterbeständigen und leicht zu transportierenden Schlösser, die den Anforderungen der Zeit standhalten. Vielen Dank für Ihre anhaltende Unterstützung und Ihr ehrliches Feedback – Sie spornen uns an, uns ständig zu verbessern.</p>",
+        "button_label": "Entdecken Sie unsere Fahrradschlösser",
+        "url": "shopify://collections/all",
+        "image": "shopify://shop_images/EBC_12_copy.webp",
         "image_position": "left",
-        "padding_top": 6,
-        "padding_bottom": 6
-      }
-    },
-    "custom_text_image_dWcCXy": {
-      "type": "custom-text-image",
-      "name": "Text with Image",
-      "settings": {
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Discover more",
-        "button_variant": "primary",
-        "url": "",
-        "image_position": "right",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff"
       }
     },
     "custom_logo_list_gbmefQ": {
@@ -192,27 +134,39 @@
       "blocks": {
         "logo_rQJHQq": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/YouTube.webp"
+          }
         },
         "logo_Ybb3t7": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Amazon.webp"
+          }
         },
         "logo_UEajFF": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/TikTok.webp"
+          }
         },
         "logo_gmj7fN": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Vergleich.webp"
+          }
         },
         "logo_VmBFwf": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Instagram.webp"
+          }
         },
         "logo_UJbBhd": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Fahrradmagazine.webp"
+          }
         }
       },
       "block_order": [
@@ -225,65 +179,228 @@
       ],
       "name": "Logo List",
       "settings": {
-        "text": "As seen on:",
-        "spacing": 2.4,
+        "text": "bekannt aus:",
+        "spacing": 4,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "custom_featured_products_qMcJbp": {
+      "type": "custom-featured-products",
+      "name": "Featured Products",
+      "settings": {
+        "heading": "Finde dein perfektes Schloss",
+        "button_label": "Finde dein perfektes Schloss",
+        "url": "shopify://collections/new-arrivals",
+        "collection": "new-arrivals",
+        "padding_top": 6,
+        "padding_bottom": 6,
+        "background_color": "#fafafa"
+      }
+    },
+    "custom_reviews_list_wAF9eU": {
+      "type": "custom-reviews-list",
+      "blocks": {
+        "review_BRFYxY": {
+          "type": "review",
+          "settings": {
+            "title": "Super sicheres Schloss!",
+            "text": "<p>Das Faltschloss ist sehr stabil und einfach zu bedienen. Ich fühle mich viel sicherer, wenn ich mein Rad damit abschließe.</p>",
+            "avatar_name": "Markus H.",
+            "avatar_image": "shopify://shop_images/reviews-person-1-min.jpg"
+          }
+        },
+        "review_LjF8Pd": {
+          "type": "review",
+          "settings": {
+            "title": "Kompakt und stark",
+            "text": "<p>Endlich ein Fahrradschloss, das leicht zu transportieren ist, aber trotzdem richtig was aushält. Top Qualität!</p>",
+            "avatar_name": "Stefan W.",
+            "avatar_image": "shopify://shop_images/reviews-person-2-min.jpg"
+          }
+        },
+        "review_yBgjpc": {
+          "type": "review",
+          "settings": {
+            "title": "Preis-Leistungs-Verhältnis",
+            "text": "<p>Für den Preis unschlagbar. Verarbeitung ist hochwertig und das Schloss sieht auch noch gut aus.</p>",
+            "avatar_name": "Daniel F.",
+            "avatar_image": "shopify://shop_images/reviews-person-3-min.jpg"
+          }
+        },
+        "review_knF966": {
+          "type": "review",
+          "settings": {
+            "title": "Passt perfekt in meinen Rucksack",
+            "text": "<p>Das Windweg Faltschloss ist super kompakt und ideal für unterwegs. Kein Vergleich zu den dicken Bügelschlössern.</p>",
+            "avatar_name": "Anna S.",
+            "avatar_image": "shopify://shop_images/reviews-person-4-min.jpg"
+          }
+        },
+        "review_JNPWiW": {
+          "type": "review",
+          "settings": {
+            "title": "Sehr zufrieden",
+            "text": "<p>Nutze das Schloss täglich für mein E-Bike. Funktioniert einwandfrei und wirkt sehr robust.</p>",
+            "avatar_name": "Thomas G.",
+            "avatar_image": "shopify://shop_images/reviews-person-5-min.jpg"
+          }
+        },
+        "review_Pq6gwT": {
+          "type": "review",
+          "settings": {
+            "title": "Leicht und trotzdem sicher",
+            "text": "<p>Ich war skeptisch wegen des Gewichts, aber das Schloss ist wirklich stabil und gibt mir ein gutes Gefühl.</p>",
+            "avatar_name": "Lukas R.",
+            "avatar_image": "shopify://shop_images/reviews-person-6-min.jpg"
+          }
+        },
+        "review_zxeR8k": {
+          "type": "review",
+          "settings": {
+            "title": "Ideal für die Stadt",
+            "text": "<p>Ich wohne mitten in Berlin und brauche ein Schloss, auf das ich mich verlassen kann – Windweg liefert!</p>",
+            "avatar_name": "Jonas K.",
+            "avatar_image": "shopify://shop_images/reviews-person-7-min.jpg"
+          }
+        },
+        "review_mPKCWg": {
+          "type": "review",
+          "settings": {
+            "title": "Einfach zu montieren",
+            "text": "<p>Die Halterung ist super praktisch und das Schloss klappert beim Fahren nicht – bin begeistert.</p>",
+            "avatar_name": "Laura M.",
+            "avatar_image": "shopify://shop_images/reviews-person-8-min.jpg"
+          }
+        },
+        "review_3dUWtD": {
+          "type": "review",
+          "settings": {
+            "title": "Schick und funktional",
+            "text": "<p>Das Design gefällt mir sehr gut und es macht einen wirklich hochwertigen Eindruck.</p>",
+            "avatar_name": "Nico B.",
+            "avatar_image": "shopify://shop_images/reviews-person-9-min.jpg"
+          }
+        },
+        "review_AzrGVT": {
+          "type": "review",
+          "settings": {
+            "title": "Nachhaltig gedacht",
+            "text": "<p>Finde es super, dass ein Teil des Erlöses in Umweltprojekte fließt. Tolles Produkt mit Verantwortung!</p>",
+            "avatar_name": "Andreas T.",
+            "avatar_image": "shopify://shop_images/reviews-person-10-min.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "review_BRFYxY",
+        "review_LjF8Pd",
+        "review_yBgjpc",
+        "review_knF966",
+        "review_JNPWiW",
+        "review_Pq6gwT",
+        "review_zxeR8k",
+        "review_mPKCWg",
+        "review_3dUWtD",
+        "review_AzrGVT"
+      ],
+      "name": "Reviews List",
+      "settings": {
+        "heading": "Das sagen unsere Kunden",
+        "button_label": "Erleben Sie es selbst",
+        "url": "shopify://collections/all",
         "padding_top": 6,
         "padding_bottom": 6
       }
     },
-    "custom_collapsible_content_CAa7nd": {
-      "type": "custom-collapsible-content",
+    "custom_text_image_gXHTPk": {
+      "type": "custom-text-image",
+      "custom_css": [
+        ".image {object-position: left center;}"
+      ],
+      "name": "Text with Image",
+      "settings": {
+        "subheading": "Unsere Mission",
+        "heading": "Fahrradschutz, Sicherheit und Nachhaltigkeit",
+        "text": "<p>Für uns ist Fahrradfahren mehr als Fortbewegung – es ist ein Lebensstil. Bei Windweg vereinen wir unsere Leidenschaft für Fahrräder und Sicherheit, um dir mit innovativen Faltschlössern einen zuverlässigen Schutz zu bieten.</p><p><br/>Unsere Vision ist es, allen Radfahrern eine sichere, praktische Lösung anzubieten. Gleichzeitig legen wir großen Wert auf Nachhaltigkeit: Ein Teil unserer Erlöse unterstützt Projekte, die aktiv zur Reduktion des CO₂-Fußabdrucks und zum Schutz der Umwelt beitragen.</p>",
+        "button_label": "Erfahre mehr über uns",
+        "url": "shopify://pages/about-us",
+        "image": "shopify://shop_images/our-mission-image.webp",
+        "image_position": "right",
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff"
+      }
+    },
+    "custom_blog_posts_YrreXX": {
+      "type": "custom-blog-posts",
+      "name": "Blog Posts",
+      "settings": {
+        "blog": "faltschlosser",
+        "columns": 3,
+        "heading": "Aktuelles von WindWeg",
+        "button_label": "Entdecken Sie Erkenntnisse",
+        "url": "shopify://blogs/faltschlosser",
+        "padding_top": 8,
+        "padding_bottom": 6,
+        "background_color": "#ffffff"
+      }
+    },
+    "custom_faq_R4ij4a": {
+      "type": "custom-faq",
       "blocks": {
-        "content_in9Ufw": {
+        "content_kW8mUQ": {
           "type": "content",
           "settings": {
             "heading": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].question.value }}",
             "text": "{{ metaobjects.faq[\"welches-faltschloss-ist-das-sicherste-fur-mein-e-bike\"].answer | metafield_tag }}"
           }
         },
-        "content_FkyzW3": {
+        "content_X4Phbm": {
           "type": "content",
           "settings": {
             "heading": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].question.value }}",
             "text": "{{ metaobjects.faq[\"wie-pflege-ich-mein-faltschloss-richtig\"].answer | metafield_tag }}"
           }
         },
-        "content_t7fVYm": {
+        "content_hJUiG8": {
           "type": "content",
           "settings": {
             "heading": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].question.value }}",
             "text": "{{ metaobjects.faq[\"was-ist-der-unterschied-zwischen-zahlencode-und-schlusselschlossern\"].answer | metafield_tag }}"
           }
         },
-        "content_GLGKfg": {
+        "content_Ciq6Jc": {
           "type": "content",
           "settings": {
             "heading": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].question.value }}",
             "text": "{{ metaobjects.faq[\"wie-befestige-ich-ein-faltschloss-am-fahrradrahmen\"].answer | metafield_tag }}"
           }
         },
-        "content_khzx7e": {
+        "content_G6GB34": {
           "type": "content",
           "settings": {
             "heading": "{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].question.value }}",
-            "text": "{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].answer | metafield_tag }}"
+            "text": "<p>{{ metaobjects.faq[\"sind-faltschlosser-wetterfest\"].answer | metafield_tag }}</p>"
           }
         }
       },
       "block_order": [
-        "content_in9Ufw",
-        "content_FkyzW3",
-        "content_t7fVYm",
-        "content_GLGKfg",
-        "content_khzx7e"
+        "content_kW8mUQ",
+        "content_X4Phbm",
+        "content_hJUiG8",
+        "content_Ciq6Jc",
+        "content_G6GB34"
       ],
-      "name": "Collapsible Content",
+      "name": "FAQ Collapsible",
       "settings": {
-        "subheading": "Subheading",
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "subheading": "Dein Windweg-Team",
+        "heading": "Häufige Fragen",
+        "text": "<p>Hier beantworten wir die häufigsten Fragen, die uns erreichen. Sollte deine Frage nicht dabei sein, schau gerne auf unserer <a href=\"#\" title=\"#\">FAQ-Seite</a> vorbei oder kontaktiere uns direkt über das <a href=\"/pages/contact\" title=\"Contact\">Kontaktformular</a>.</p>",
+        "button_label": "Zu unseren Produkten",
+        "url": "shopify://collections/all",
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "background_color": "#fafafa"
       }
     },
     "custom_column_list_RUwq9W": {
@@ -292,28 +409,32 @@
         "column_aDHycm": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-delivery-box",
+            "title": "Kostenloser Versand ab 50€",
             "text": ""
           }
         },
         "column_gFq37q": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-message",
+            "title": "365 Tage Support",
             "text": ""
           }
         },
         "column_NGxgJh": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-product-returns",
+            "title": "30 Tage Rückgaberecht",
             "text": ""
           }
         },
         "column_xaYnXD": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-shield-check",
+            "title": "Sicherer Checkout",
             "text": ""
           }
         }
@@ -326,9 +447,11 @@
       ],
       "name": "Column List",
       "settings": {
+        "columns": 4,
         "text_alignment": "center",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "padding_top": 8,
+        "padding_bottom": 10,
+        "background_color": ""
       }
     },
     "newsletter_Lthb4n": {
@@ -337,14 +460,14 @@
         "heading_Uz7LbE": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our newsletter",
+            "heading": "Abonnieren Sie unseren Newsletter",
             "heading_size": "h1"
           }
         },
         "paragraph_T9Ccrn": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Subscribe today and never miss our top offers and important announcements. Be the first to discover our latest deals!</p>"
+            "text": "<p>Abonnieren Sie noch heute und verpassen Sie keine Top-Angebote und wichtigen Ankündigungen mehr. Entdecken Sie als Erster unsere neuesten Angebote!</p>"
           }
         },
         "email_form_BTpUnL": {
@@ -359,23 +482,27 @@
       ],
       "name": "t:sections.newsletter.presets.name",
       "settings": {
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 6,
-        "padding_bottom": 10
+        "padding_top": 8,
+        "padding_bottom": 10,
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff",
+        "button_label": "Anmelden"
       }
     }
   },
   "order": [
+    "custom_video_banner_DCPPfB",
     "custom_hero_text_image_ik4EUP",
     "custom_column_list_r9Wkm4",
     "custom_heading_with_text_U77nCM",
-    "custom_collection_list_rmhEiU",
     "custom_text_image_jBMAGT",
-    "custom_text_image_CRGAM3",
-    "custom_text_image_dWcCXy",
+    "custom_text_image_ACnap8",
     "custom_logo_list_gbmefQ",
-    "custom_collapsible_content_CAa7nd",
+    "custom_featured_products_qMcJbp",
+    "custom_reviews_list_wAF9eU",
+    "custom_text_image_gXHTPk",
+    "custom_blog_posts_YrreXX",
+    "custom_faq_R4ij4a",
     "custom_column_list_RUwq9W",
     "newsletter_Lthb4n"
   ]

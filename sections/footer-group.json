@@ -17,11 +17,12 @@
       "settings": {
         "logo": "shopify://shop_images/windweg-logo.svg",
         "logo_width": 110,
-        "text": "This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet.",
-        "menu_heading": "Legal & Return",
+        "text": "Bei Windweg bieten wir hochwertige Faltradschlösser für sicheres und bequemes Radfahren. Wir stehen für Qualität, Innovation und Nachhaltigkeit.",
+        "menu_heading": "Rechtliches & Retoure",
         "menu": "footer-menu",
-        "newsletter_heading": "Subscribe to get latest deals",
-        "newsletter_text": "Subscribe today and never miss our top offers and important announcements.",
+        "newsletter_heading": "Abonnieren Sie, um die neuesten Angebote zu erhalten",
+        "newsletter_text": "Abonnieren Sie noch heute und verpassen Sie nie unsere Top-Angebote und wichtigen Ankündigungen.",
+        "newsletter_button_label": "Anmelden",
         "payment_enable": true,
         "padding_top": 8,
         "padding_bottom": 10

@@ -11,6 +11,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -22,20 +23,208 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "",
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_filtering": true,
+        "quick_add": "none",
+        "enable_filtering": false,
+        "filter_type": "vertical",
         "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 4,
+        "padding_bottom": 8
+      }
+    },
+    "custom_heading_with_text_WXE3PT": {
+      "type": "custom-heading-with-text",
+      "name": "Heading with Text",
+      "settings": {
+        "subheading": "",
+        "heading": "Sicherer Schutz für dein Fahrrad",
+        "text": "Dein Fahrrad verdient den besten Schutz! Unsere hochwertigen Faltschlösser bieten die perfekte Kombination aus Sicherheit, Flexibilität und Kompaktheit. Egal, ob für dein City-Bike, Mountainbike oder Rennrad – bei Windweg findest du das ideale Schloss, das sich einfach verstauen lässt und gleichzeitig dein Fahrrad effektiv schützt.",
+        "padding_top": 6,
+        "padding_bottom": 6,
+        "background_color": "#fafafa"
+      }
+    },
+    "custom_column_list_DnVfra": {
+      "type": "custom-column-list",
+      "blocks": {
+        "column_MrJJpG": {
+          "type": "column",
+          "settings": {
+            "svg_text": "",
+            "title": "Kompakte Sicherheit",
+            "text": "<p>Wähle aus einer Vielzahl von robusten Faltschlössern und finde das perfekte Modell für dein Fahrrad. Unsere Schlösser bieten maximale Sicherheit bei minimalem Platzbedarf.</p>"
+          }
+        },
+        "column_JVbnC9": {
+          "type": "column",
+          "settings": {
+            "svg_text": "",
+            "title": "Hohe Flexibilität",
+            "text": "<p>Dank der flexiblen Konstruktion lassen sich unsere Faltschlösser problemlos an verschiedenen Orten und in unterschiedlichen Formen befestigen – ideal für Pendler und Reisende.</p>"
+          }
+        },
+        "column_KkRExT": {
+          "type": "column",
+          "settings": {
+            "svg_text": "",
+            "title": "Wetterbeständig",
+            "text": "<p>Unsere Faltschlösser sind mit robusten Materialien ausgestattet, die selbst widrigsten Wetterbedingungen standhalten. Egal ob Regen oder Sonne – dein Fahrrad bleibt sicher.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_MrJJpG",
+        "column_JVbnC9",
+        "column_KkRExT"
+      ],
+      "name": "Column List",
+      "settings": {
+        "columns": 3,
+        "text_alignment": "center",
+        "padding_top": 6,
+        "padding_bottom": 10,
+        "background_color": ""
+      }
+    },
+    "custom_text_image_dhqtyG": {
+      "type": "custom-text-image",
+      "custom_css": [
+        ".image {object-position: left center;}"
+      ],
+      "name": "Text with Image",
+      "settings": {
+        "subheading": "Unsere Mission",
+        "heading": "Fahrradschutz, Sicherheit und Nachhaltigkeit",
+        "text": "<p>Für uns ist Fahrradfahren mehr als Fortbewegung – es ist ein Lebensstil. Bei Windweg vereinen wir unsere Leidenschaft für Fahrräder und Sicherheit, um dir mit innovativen Faltschlössern einen zuverlässigen Schutz zu bieten.</p><p><br/>Unsere Vision ist es, allen Radfahrern eine sichere, praktische Lösung anzubieten. Gleichzeitig legen wir großen Wert auf Nachhaltigkeit: Ein Teil unserer Erlöse unterstützt Projekte, die aktiv zur Reduktion des CO₂-Fußabdrucks und zum Schutz der Umwelt beitragen.</p>",
+        "button_label": "Erfahre mehr über uns",
+        "url": "shopify://pages/about-us",
+        "image": "shopify://shop_images/our-mission-image.webp",
+        "image_position": "right",
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff"
+      }
+    },
+    "custom_logo_list_eGzgQq": {
+      "type": "custom-logo-list",
+      "blocks": {
+        "logo_aGBjD8": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/YouTube.webp"
+          }
+        },
+        "logo_ybJED7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Amazon.webp"
+          }
+        },
+        "logo_YpdiBP": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/TikTok.webp"
+          }
+        },
+        "logo_NQRz8A": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Vergleich.webp"
+          }
+        },
+        "logo_QU6Adt": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Instagram.webp"
+          }
+        },
+        "logo_3mRcd4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Fahrradmagazine.webp"
+          }
+        }
+      },
+      "block_order": [
+        "logo_aGBjD8",
+        "logo_ybJED7",
+        "logo_YpdiBP",
+        "logo_NQRz8A",
+        "logo_QU6Adt",
+        "logo_3mRcd4"
+      ],
+      "name": "Logo List",
+      "settings": {
+        "text": "bekannt aus:",
+        "spacing": 4,
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "custom_column_list_WTJB7D": {
+      "type": "custom-column-list",
+      "blocks": {
+        "column_dL4f7Y": {
+          "type": "column",
+          "settings": {
+            "svg_text": "icon-delivery-box",
+            "title": "Kostenloser Versand ab 50€",
+            "text": ""
+          }
+        },
+        "column_iNf89U": {
+          "type": "column",
+          "settings": {
+            "svg_text": "icon-message",
+            "title": "365 Tage Support",
+            "text": ""
+          }
+        },
+        "column_bth3ck": {
+          "type": "column",
+          "settings": {
+            "svg_text": "icon-product-returns",
+            "title": "14 Tage Rückgaberecht",
+            "text": ""
+          }
+        },
+        "column_dKVnjN": {
+          "type": "column",
+          "settings": {
+            "svg_text": "icon-shield-check",
+            "title": "Sicherer Checkout",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_dL4f7Y",
+        "column_iNf89U",
+        "column_bth3ck",
+        "column_dKVnjN"
+      ],
+      "name": "Column List",
+      "settings": {
+        "columns": 4,
+        "text_alignment": "center",
+        "padding_top": 8,
+        "padding_bottom": 10,
+        "background_color": "#fafafa"
       }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "custom_heading_with_text_WXE3PT",
+    "custom_column_list_DnVfra",
+    "custom_text_image_dhqtyG",
+    "custom_logo_list_eGzgQq",
+    "custom_column_list_WTJB7D"
   ]
 }

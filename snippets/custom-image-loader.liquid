@@ -1,0 +1,13 @@
+{% comment %}
+  Renders a custom image loader
+  Accepts:
+  - image: {Object} the image to load
+
+  Usage:
+  {% render 'custom-image-loader' %}
+{% endcomment %}
+
+<div class="img-loader__wrapper img-loader__loading">
+  <div class="img-loader__loader" aria-hidden="true"></div>
+  {{ image }}
+</div>

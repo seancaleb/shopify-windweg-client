@@ -1,0 +1,36 @@
+{% comment %}
+  Renders a custom article card
+
+  Accepts:
+  - article: {Object} Article Liquid object
+
+  Usage:
+  {% render 'custom-card-article', article: article %}
+{% endcomment %}
+
+<a href="{{ article.url }}" class="blog__item">
+  <div class="blog__image-wrapper">
+    {%- # theme-check-disable UnusedAssign -%}
+    {% assign image = article.image
+      | image_url: width: 600
+      | image_tag: class: 'article__image', onload: "this.parentElement.classList.remove('img-loader__loading')"
+    %}
+    {%- # theme-check-enable UnusedAssign -%}
+
+    {%
+      render 'custom-image-loader', {
+      image: image
+      }
+    %}
+  </div>
+
+  <div class="blog__content-wrapper">
+    <h2 class="h5 blog__title">{{ article.title }}</h2>
+
+    <p class="blog__excerpt">{{ article.excerpt | strip_html | truncate: 120 }}</p>
+
+    <p class="blog__date">
+      <small>{{ article.published_at | date: '%d. %B %Y' }}</small>
+    </p>
+  </div>
+</a>

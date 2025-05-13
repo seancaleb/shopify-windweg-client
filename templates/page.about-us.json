@@ -17,186 +17,198 @@
         "padding_bottom": 28
       }
     },
-    "custom_header_with_heading_image_QT4nPW": {
-      "type": "custom-header-with-heading-image",
-      "name": "Header with Heading Image",
+    "custom_header_with_image_V3mBhV": {
+      "type": "custom-header-with-image",
+      "name": "Header with Image",
       "settings": {
-        "heading": "",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "heading": "Über uns",
+        "background_image": "shopify://shop_images/pexels-pavel-danilyuk-5807866_copy-min.jpg"
       }
     },
-    "custom_heading_with_text_7CLABg": {
+    "custom_heading_with_text_wKNKbF": {
       "type": "custom-heading-with-text",
+      "custom_css": [
+        "h2 {letter-spacing: -0.035em; font-size: 4rem; line-height: 1.15;}",
+        "@media screen and (min-width: 990px) {h2 {letter-spacing: -0.035em; font-size: 4.8rem; line-height: 1.15; }}"
+      ],
       "name": "Heading with Text",
       "settings": {
         "subheading": "",
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "padding_top": 10,
-        "padding_bottom": 6
+        "heading": "Willkommen bei Windweg",
+        "text": "wo das Radfahren zur Leidenschaft wird und jede Fahrt ein Schritt in eine bessere Zukunft bedeutet! Wir glauben, dass Fahrradfahren nicht nur eine Art der Fortbewegung ist, sondern eine Quelle der Freiheit und des Abenteuers.",
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "background_color": "#ffffff"
       }
     },
-    "custom_text_image_REmUDw": {
+    "custom_text_image_DRU3UQ": {
       "type": "custom-text-image",
+      "custom_css": [
+        ".image {object-position: left center;}"
+      ],
       "name": "Text with Image",
       "settings": {
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Discover more",
-        "button_variant": "primary",
-        "url": "",
-        "image_position": "left",
-        "padding_top": 6,
-        "padding_bottom": 6
-      }
-    },
-    "custom_text_image_dPhP9J": {
-      "type": "custom-text-image",
-      "name": "Text with Image",
-      "settings": {
-        "heading": "Your heading goes here",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet.",
-        "button_label": "Discover more",
-        "button_variant": "primary",
-        "url": "",
+        "subheading": "Unsere Mission",
+        "heading": "Fahrradsicherheit, Freiheit und Nachhaltigkeit",
+        "text": "<p>Windweg wurde mit der Vision gegründet, Fahrradfahren sicherer, praktischer und nachhaltiger zu gestalten. Unsere hochwertigen Faltschlösser vereinen maximale Fahrradsicherheit mit durchdachtem Design – für alle, die Wert auf Funktionalität, Stil und Verlässlichkeit legen. Wir möchten jedem Radfahrer ein sicheres Gefühl auf zwei Rädern ermöglichen – und das zu einem fairen Preis.</p><p><br/>Als verantwortungsbewusstes Unternehmen engagieren wir uns auch für den Umweltschutz. Ein Teil unserer Einnahmen fließt in nachhaltige Projekte, die aktiv zum Klimaschutz beitragen. Mit Windweg schützt du nicht nur dein Fahrrad – du unterstützt auch eine bessere Zukunft für unseren Planeten.</p>",
+        "button_label": "Entdecke unsere Produkte",
+        "url": "shopify://collections/all",
+        "image": "shopify://shop_images/our-mission-image.webp",
         "image_position": "right",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff"
       }
     },
-    "custom_logo_list_kje6hQ": {
+    "custom_logo_list_agBjtE": {
       "type": "custom-logo-list",
       "blocks": {
-        "logo_NAfmgK": {
+        "logo_m6q9je": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/YouTube.webp"
+          }
         },
-        "logo_qwacbU": {
+        "logo_mqH74X": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Amazon.webp"
+          }
         },
-        "logo_eEcjyn": {
+        "logo_d7j7ka": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/TikTok.webp"
+          }
         },
-        "logo_yYKGjp": {
+        "logo_gcedha": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Vergleich.webp"
+          }
         },
-        "logo_QpPbXw": {
+        "logo_PcFRYh": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Instagram.webp"
+          }
         },
-        "logo_mKQWfD": {
+        "logo_fDp4GP": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/Fahrradmagazine.webp"
+          }
         }
       },
       "block_order": [
-        "logo_NAfmgK",
-        "logo_qwacbU",
-        "logo_eEcjyn",
-        "logo_yYKGjp",
-        "logo_QpPbXw",
-        "logo_mKQWfD"
+        "logo_m6q9je",
+        "logo_mqH74X",
+        "logo_d7j7ka",
+        "logo_gcedha",
+        "logo_PcFRYh",
+        "logo_fDp4GP"
       ],
       "name": "Logo List",
       "settings": {
-        "text": "As seen on:",
-        "spacing": 2.4,
-        "padding_top": 6,
-        "padding_bottom": 6
+        "text": "bekannt aus:",
+        "spacing": 4,
+        "padding_top": 8,
+        "padding_bottom": 8
       }
     },
-    "newsletter_WJ4WhM": {
+    "newsletter_wTaqyg": {
       "type": "newsletter",
       "blocks": {
-        "heading_46adyN": {
+        "heading_RqNYWR": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our newsletter",
+            "heading": "Abonnieren Sie unseren Newsletter",
             "heading_size": "h1"
           }
         },
-        "paragraph_QYa6eb": {
+        "paragraph_naa8pr": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Subscribe today and never miss our top offers and important announcements. Be the first to discover our latest deals.</p>"
+            "text": "<p>Abonnieren Sie noch heute und verpassen Sie keine Top-Angebote und wichtigen Ankündigungen mehr. Entdecken Sie als Erster unsere neuesten Angebote!</p>"
           }
         },
-        "email_form_w4qYeH": {
+        "email_form_ECpUHr": {
           "type": "email_form",
           "settings": {}
         }
       },
       "block_order": [
-        "heading_46adyN",
-        "paragraph_QYa6eb",
-        "email_form_w4qYeH"
+        "heading_RqNYWR",
+        "paragraph_naa8pr",
+        "email_form_ECpUHr"
       ],
       "name": "t:sections.newsletter.presets.name",
       "settings": {
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 6,
-        "padding_bottom": 6
+        "padding_top": 8,
+        "padding_bottom": 10,
+        "background_color": "#1a1a1a",
+        "text_color": "#ffffff",
+        "button_label": "Anmelden"
       }
     },
-    "custom_column_list_yL36rz": {
+    "custom_column_list_bPHG6K": {
       "type": "custom-column-list",
       "blocks": {
-        "column_x8b3AJ": {
+        "column_XFzxnL": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-delivery-box",
+            "title": "Kostenloser Versand ab 50€",
             "text": ""
           }
         },
-        "column_3TdPkh": {
+        "column_eKiiF9": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-message",
+            "title": "365 Tage Support",
             "text": ""
           }
         },
-        "column_A3edTY": {
+        "column_WHKfbF": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-product-returns",
+            "title": "14 Tage Rückgaberecht",
             "text": ""
           }
         },
-        "column_QjbKgi": {
+        "column_agHmkP": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-shield-check",
+            "title": "Sicherer Checkout",
             "text": ""
           }
         }
       },
       "block_order": [
-        "column_x8b3AJ",
-        "column_3TdPkh",
-        "column_A3edTY",
-        "column_QjbKgi"
+        "column_XFzxnL",
+        "column_eKiiF9",
+        "column_WHKfbF",
+        "column_agHmkP"
       ],
       "name": "Column List",
       "settings": {
+        "columns": 4,
         "text_alignment": "center",
-        "padding_top": 6,
-        "padding_bottom": 10
+        "padding_top": 8,
+        "padding_bottom": 10,
+        "background_color": "#fafafa"
       }
     }
   },
   "order": [
     "main",
-    "custom_header_with_heading_image_QT4nPW",
-    "custom_heading_with_text_7CLABg",
-    "custom_text_image_REmUDw",
-    "custom_text_image_dPhP9J",
-    "custom_logo_list_kje6hQ",
-    "newsletter_WJ4WhM",
-    "custom_column_list_yL36rz"
+    "custom_header_with_image_V3mBhV",
+    "custom_heading_with_text_wKNKbF",
+    "custom_text_image_DRU3UQ",
+    "custom_logo_list_agBjtE",
+    "newsletter_wTaqyg",
+    "custom_column_list_bPHG6K"
   ]
 }

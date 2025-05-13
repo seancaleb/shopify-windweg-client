@@ -15,6 +15,24 @@
     gap: 1.6rem;
   }
 
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.background_color }};
+    color: {{ section.settings.text_color }};
+  }
+
+  #shopify-section-{{ section.id }} svg {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #shopify-section-{{ section.id }} h2, #shopify-section-{{ section.id }} .newsletter__subheading p {
+    color: inherit !important;
+  }
+
+  #shopify-section-{{ section.id }} input {
+    color: inherit;
+  }
+
   @media screen and (min-width: 480px) {
     .newsletter__input-wrapper {
       flex-direction: row;
@@ -45,7 +63,8 @@
 {%- endstyle -%}
 
 <div class="page-width newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div class="newsletter__wrapper content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+    {{ 'icon-envelope.svg' | inline_asset_content }}
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -129,7 +148,7 @@
                     id="Subscribe"
                     aria-label="{{ 'newsletter.button_label' | t }}"
                   >
-                    Sign me up
+                    {{ section.settings.button_label }}
                   </button>
                 </div>
                 {%- if form.errors -%}
@@ -172,22 +191,6 @@
   },
   "settings": [
     {
-      "type": "paragraph",
-      "content": "t:sections.newsletter.settings.paragraph.content"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "scheme-1"
-    },
-    {
-      "type": "checkbox",
-      "id": "full_width",
-      "default": true,
-      "label": "t:sections.newsletter.settings.full_width.label"
-    },
-    {
       "type": "header",
       "content": "Styles"
     },
@@ -210,6 +213,28 @@
       "unit": "rem",
       "label": "Padding Bottom",
       "default": 6
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Melde mich an"
     }
   ],
   "blocks": [

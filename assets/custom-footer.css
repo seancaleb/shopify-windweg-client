@@ -63,11 +63,11 @@ footer ul {
   color: var(--cstm-color-text);
   transition: all var(--duration) var(--ease);
   white-space: nowrap;
+  width: fit-content;
 }
 
 .footer__nav-link:hover {
   color: var(--cstm-color-primary);
-  text-decoration: underline;
 }
 
 /* Newsletter  */
@@ -156,4 +156,8 @@ footer .newsletter-form {
   .footer__newsletter-input-wrapper {
     flex-direction: row;
   }
+}
+
+.footer__copyright-wrapper a {
+  color: inherit;
 }

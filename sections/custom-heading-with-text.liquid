@@ -7,10 +7,15 @@
 %}
 
 <style>
+  #shopify-section-{{ sid }} {
+    background-color: {{ section.settings.background_color }};
+  }
+
   #shopify-section-{{ sid }} .wrapper {
     display: grid;
     gap: 2.4rem;
-    justify-items: start;
+    justify-items: center;
+    text-align: center;
   }
 
   #shopify-section-{{ sid }} .heading {
@@ -20,33 +25,53 @@
 
   #shopify-section-{{ sid }} .subheading {
     order: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.4rem;
   }
 
   #shopify-section-{{ sid }} .text {
     order: 3;
     max-width: 65ch;
   }
-
-  @media screen and (min-width: 1280px) {
-    #shopify-section-{{ sid }} .wrapper {
-        justify-items: center;
-        text-align: center;
-    }
-  }
 </style>
 
 <div class="page-width">
   <div class="wrapper">
-    {% if section.settings.heading %}
-      <h2 class="heading">{{ section.settings.heading }}</h2>
+    {% if section.settings.heading != blank %}
+      <h2
+        class="heading {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: 2;"
+        {% endif %}
+      >
+        {{ section.settings.heading }}
+      </h2>
     {% endif %}
 
-    {% if section.settings.subheading %}
-      <div class="subheading badge badge--secondary">{{ section.settings.subheading }}</div>
+    {% if section.settings.subheading != blank %}
+      <div
+        class="subheading {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: 1;"
+        {% endif %}
+      >
+        {{ section.settings.subheading }}
+      </div>
     {% endif %}
 
-    {% if section.settings.text %}
-      <div class="text">{{ section.settings.text }}</div>
+    {% if section.settings.text != blank %}
+      <div
+        class="text {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: 3;"
+        {% endif %}
+      >
+        {{ section.settings.text }}
+      </div>
     {% endif %}
   </div>
 </div>
@@ -100,6 +125,12 @@
       "unit": "rem",
       "label": "Padding Bottom",
       "default": 6
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
     }
   ],
   "presets": [

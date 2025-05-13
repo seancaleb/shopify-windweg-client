@@ -11,10 +11,22 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "disabled": true,
       "settings": {}
+    },
+    "custom_404_JTrX68": {
+      "type": "custom-404",
+      "name": "Custom 404",
+      "settings": {
+        "heading": "",
+        "button_label": "",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_404_JTrX68"
   ]
 }

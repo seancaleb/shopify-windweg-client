@@ -1,0 +1,296 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "custom_header_with_image_DzhzP3": {
+      "type": "custom-header-with-image",
+      "name": "Header with Image",
+      "settings": {
+        "heading": "Häufig gestellte Fragen",
+        "background_image": "shopify://shop_images/pexels-pavel-danilyuk-5807588_copy-min.jpg"
+      }
+    },
+    "custom_faq_HTyBFP": {
+      "type": "custom-faq",
+      "blocks": {
+        "content_ma7MJW": {
+          "type": "content",
+          "settings": {
+            "heading": "Wie lange dauert der Versand?",
+            "text": "<p>Deutschlandweit liefern wir innerhalb von <strong>2–3</strong> Werktagen.</p>"
+          }
+        },
+        "content_4WdMwQ": {
+          "type": "content",
+          "settings": {
+            "heading": "Bietet ihr kostenlosen Versand an?",
+            "text": "<p>Ja, ab einem Bestellwert von <strong>50 €</strong> ist der Versand innerhalb Deutschlands kostenlos.</p>"
+          }
+        },
+        "content_TcbJp7": {
+          "type": "content",
+          "settings": {
+            "heading": "Kann ich meine Bestellung verfolgen?",
+            "text": "<p>Ja. Nach dem Versand erhältst du automatisch eine E-Mail mit deinem Tracking-Link.</p>"
+          }
+        },
+        "content_Tck8KT": {
+          "type": "content",
+          "settings": {
+            "heading": "Versendet ihr auch international?",
+            "text": "<p>Ja, wir liefern in viele EU-Länder. Die Versandkosten variieren je nach Zielort.</p>"
+          }
+        },
+        "content_NTLExG": {
+          "type": "content",
+          "settings": {
+            "heading": "Was passiert, wenn meine Lieferung verspätet ist?",
+            "text": "<p>Sollte es zu Verzögerungen kommen, kontaktiere bitte unseren Support – wir helfen dir schnellstmöglich weiter.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_ma7MJW",
+        "content_4WdMwQ",
+        "content_TcbJp7",
+        "content_Tck8KT",
+        "content_NTLExG"
+      ],
+      "name": "FAQ Collapsible",
+      "settings": {
+        "subheading": "",
+        "heading": "Fragen zu Versand & Lieferung",
+        "text": "<p>Hier findest du alle häufigen Fragen zum Thema Versand.</p>",
+        "button_label": "Zu unseren produkten",
+        "url": "",
+        "padding_top": 8,
+        "padding_bottom": 6,
+        "background_color": "#ffffff"
+      }
+    },
+    "custom_faq_ynG8fX": {
+      "type": "custom-faq",
+      "blocks": {
+        "content_yt6MTB": {
+          "type": "content",
+          "settings": {
+            "heading": "Aus welchen Materialien bestehen eure Produkte?",
+            "text": "<p>Unsere Schlösser bestehen aus hochwertigem Kohlenstoff- oder legiertem Stahl mit kratzfester Kunststoffummantelung.</p>"
+          }
+        },
+        "content_Vpbznh": {
+          "type": "content",
+          "settings": {
+            "heading": "Sind eure Produkte wetterfest?",
+            "text": "<p>Ja, alle Fahrradschlösser sind rostfrei, korrosionsbeständig und für jedes Wetter geeignet.</p>"
+          }
+        },
+        "content_mgX8hF": {
+          "type": "content",
+          "settings": {
+            "heading": "Worin unterscheiden sich die Schlossmodelle?",
+            "text": "<p>Die Modelle unterscheiden sich in Länge, Sicherheitsstufe und dem Schließmechanismus (Schlüssel oder Zahlencode). Alle Details findest du auf der jeweiligen Produktseite.</p>"
+          }
+        },
+        "content_YQy6eR": {
+          "type": "content",
+          "settings": {
+            "heading": "Welches Schloss passt zu meinem Fahrrad?",
+            "text": "<p>Das hängt von deinem Fahrradtyp, dem Abstellort und der gewünschten Sicherheit ab. Unsere Vergleichsübersicht hilft bei der Auswahl.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_yt6MTB",
+        "content_Vpbznh",
+        "content_mgX8hF",
+        "content_YQy6eR"
+      ],
+      "name": "FAQ Collapsible",
+      "settings": {
+        "subheading": "",
+        "heading": "Fragen zu Produkten & Materialien",
+        "text": "<p>Hier finden Sie alle häufig gestellten Fragen zu unseren Produkten und Materialien.</p>",
+        "button_label": "Zu unseren produkten",
+        "url": "",
+        "padding_top": 6,
+        "padding_bottom": 6,
+        "background_color": "#ffffff"
+      }
+    },
+    "custom_faq_9J3w9W": {
+      "type": "custom-faq",
+      "blocks": {
+        "content_WiAM9J": {
+          "type": "content",
+          "settings": {
+            "heading": "Welche Zahlungsmethoden werden akzeptiert?",
+            "text": "<p>Wir akzeptieren <strong>Visa</strong>, <strong>MasterCard</strong>, <strong>PayPal</strong>, Klarna und viele weitere gängige Zahlungsmethoden.</p>"
+          }
+        },
+        "content_NqrBpV": {
+          "type": "content",
+          "settings": {
+            "heading": "Kann ich meine Bestellung nachträglich ändern?",
+            "text": "<p>Solange sie noch nicht versendet wurde, kontaktiere uns bitte umgehend – wir helfen dir gerne weiter.</p>"
+          }
+        },
+        "content_iJCtCb": {
+          "type": "content",
+          "settings": {
+            "heading": "Ist meine Zahlung sicher?",
+            "text": "<p>Ja, alle Zahlungen werden über verschlüsselte und zertifizierte Zahlungsanbieter abgewickelt.</p>"
+          }
+        },
+        "content_KB3wkN": {
+          "type": "content",
+          "settings": {
+            "heading": "Ich habe keine Bestellbestätigung erhalten – was nun?",
+            "text": "<p>Bitte überprüfe deinen Spam-Ordner. Falls nichts angekommen ist, melde dich direkt bei unserem Kundenservice.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_WiAM9J",
+        "content_NqrBpV",
+        "content_iJCtCb",
+        "content_KB3wkN"
+      ],
+      "name": "FAQ Collapsible",
+      "settings": {
+        "subheading": "",
+        "heading": "Fragen zur Bestellung und Zahlung",
+        "text": "<p>Hier finden Sie alle häufig gestellten Fragen zur Bestellung und Zahlung.</p>",
+        "button_label": "Zu unseren produkten",
+        "url": "",
+        "padding_top": 6,
+        "padding_bottom": 6,
+        "background_color": "#ffffff"
+      }
+    },
+    "custom_faq_kwQHcC": {
+      "type": "custom-faq",
+      "blocks": {
+        "content_r8gUkk": {
+          "type": "content",
+          "settings": {
+            "heading": "Wie lautet eure Rückgaberegelung?",
+            "text": "<p>Du kannst unbenutzte Artikel innerhalb von <strong>14</strong> Tagen zurückgeben. Details findest du in unserer Rückgaberichtlinie.</p>"
+          }
+        },
+        "content_BGztqp": {
+          "type": "content",
+          "settings": {
+            "heading": "Wie starte ich eine Rücksendung?",
+            "text": "<p>Senden Sie uns einfach eine E-Mail mit Ihrer Bestellnummer.</p>"
+          }
+        },
+        "content_kMw93z": {
+          "type": "content",
+          "settings": {
+            "heading": "Gibt es eine Garantie auf die Produkte?",
+            "text": "<p>Ja, alle unsere Schlösser haben eine <strong>12-monatige</strong> Garantie auf Herstellungsfehler.</p>"
+          }
+        },
+        "content_7QhUM3": {
+          "type": "content",
+          "settings": {
+            "heading": "Wann erhalte ich meine Rückerstattung?",
+            "text": "<p>Nach Eingang und Prüfung der Rücksendung erfolgt die Rückerstattung innerhalb von <strong>3–5</strong> Werktagen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_r8gUkk",
+        "content_BGztqp",
+        "content_kMw93z",
+        "content_7QhUM3"
+      ],
+      "name": "FAQ Collapsible",
+      "settings": {
+        "subheading": "",
+        "heading": "Fragen zu Rücksendungen und Garantie",
+        "text": "<p>Hier finden Sie alle häufig gestellten Fragen zum Thema Rücksendung und Garantie.</p>",
+        "button_label": "Zu unseren produkten",
+        "url": "",
+        "padding_top": 6,
+        "padding_bottom": 6,
+        "background_color": "#ffffff"
+      }
+    },
+    "custom_faq_R7dfQX": {
+      "type": "custom-faq",
+      "blocks": {
+        "content_QaQfgd": {
+          "type": "content",
+          "settings": {
+            "heading": "Wie kann ich den Kundenservice kontaktieren?",
+            "text": "<p>Schreiben Sie uns über unser Kontaktformular. Wir antworten werktags innerhalb von <strong>24 Stunden</strong>.</p>"
+          }
+        },
+        "content_tPEe3N": {
+          "type": "content",
+          "settings": {
+            "heading": "Muss ich ein Kundenkonto anlegen, um zu bestellen?",
+            "text": "<p>Nein, du kannst auch als Gast bestellen. Mit einem Konto geht der Checkout aber schneller und du kannst deine Bestellungen verfolgen.</p>"
+          }
+        },
+        "content_b8YxaJ": {
+          "type": "content",
+          "settings": {
+            "heading": "Wo befindet sich euer Unternehmen?",
+            "text": "<p>Wir sind ein deutsches Unternehmen mit Lagern in <strong>Berlin</strong>.</p>"
+          }
+        },
+        "content_NwCwYD": {
+          "type": "content",
+          "settings": {
+            "heading": "Gibt es eure Produkte auch im Handel?",
+            "text": "<p>Aktuell verkaufen wir ausschließlich online – so garantieren wir beste Preise und Service.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_QaQfgd",
+        "content_tPEe3N",
+        "content_b8YxaJ",
+        "content_NwCwYD"
+      ],
+      "name": "FAQ Collapsible",
+      "settings": {
+        "subheading": "",
+        "heading": "Allgemeine Fragen",
+        "text": "<p>Hier finden Sie alle allgemeinen, häufig gestellten Fragen.</p>",
+        "button_label": "Zu unseren produkten",
+        "url": "",
+        "padding_top": 6,
+        "padding_bottom": 8,
+        "background_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_header_with_image_DzhzP3",
+    "custom_faq_HTyBFP",
+    "custom_faq_ynG8fX",
+    "custom_faq_9J3w9W",
+    "custom_faq_kwQHcC",
+    "custom_faq_R7dfQX"
+  ]
+}

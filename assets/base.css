@@ -3601,7 +3601,7 @@ details-disclosure > details {
   /* Colors  */
   --cstm-color-primary: #1a1a1a;
   --cstm-color-primary-dark: #0a0a0a;
-  --cstm-color-secondary: #4e937a;
+  --cstm-color-secondary: #23a923;
   --cstm-color-tertiary: #d52941;
   --cstm-color-background: #fdfcf9;
   --cstm-color-text: #424242;
@@ -3611,12 +3611,41 @@ details-disclosure > details {
   /* Easings */
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --duration: 400ms;
+
+  /* Box Shadow */
+  --cstm-box-shadow: rgba(26, 26, 26, 0.04) 0px 2px 32px;
 }
 
 body,
 button,
 a {
   letter-spacing: 0 !important;
+}
+
+body,
+p {
+  color: var(--cstm-color-text);
+  line-height: 1.75;
+  letter-spacing: 0;
+}
+
+.shopify-payment-button .shopify-payment-button__button--unbranded {
+  position: relative;
+}
+
+.shopify-payment-button .shopify-payment-button__button--unbranded:after {
+  content: 'Jetzt kaufen';
+  background: var(--cstm-color-primary);
+  font-size: inherit;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .button {
@@ -3630,6 +3659,24 @@ a {
   white-space: nowrap;
 }
 
+a.button--hero {
+  display: inline-block;
+ width: 150px;
+ height: 50px;
+ border-radius: 10px;
+ border: 1px solid #03045e;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.5s ease-in;
+ z-index: 1;
+}
+
+.button::before,
+.button::after,
+.shopify-payment-button .shopify-payment-button__button--unbranded:after {
+  box-shadow: unset !important;
+}
+
 .button--primary,
 .button--outline {
   transition: all var(--duration) var(--ease);
@@ -3641,7 +3688,7 @@ a {
 }
 
 .button--primary:hover {
-  background-color: var(--cstm-color-primary-dark);
+  background-color: #1a7f1a;
 }
 
 .button--outline:hover {
@@ -3774,21 +3821,21 @@ h4,
 .h4,
 h5,
 .h5,
-h6 {
-  color: var(--cstm-color-primary);
+h6,
+.h6 {
+  color: var(--cstm-color-primary) !important;
   font-weight: 500;
+}
+
+h6,
+.h6 {
+  margin-block-start: unset;
+  margin-block-end: unset;
 }
 
 strong {
   font-weight: 600;
   color: var(--cstm-color-primary);
-}
-
-body,
-p,
-span {
-  color: var(--cstm-color-text);
-  line-height: 1.75;
 }
 
 .field:has(textarea),
@@ -3819,7 +3866,46 @@ input {
   border-radius: 0.6rem;
 }
 
+/* Custom Select  */
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  appearance: none;
+  width: 25rem;
+  font-size: 1.4rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+.custom-select .svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.2rem;
+  width: 1.2rem;
+  color: inherit;
+}
+
 /* Overridden Styles  */
+.scroll-trigger:not(.scroll-trigger--offscreen).animate--slide-in {
+  animation: var(--animation-slide-in);
+  animation-delay: calc(var(--animation-order) * 100ms);
+}
+
+.path {
+  stroke: var(--cstm-color-text);
+}
+
+.header__icon:hover .icon,
+.modal__close-button:hover .icon {
+  transform: unset;
+}
+
 .link,
 .customer a {
   font-size: 1.5rem;
@@ -3833,18 +3919,19 @@ input {
   text-decoration: none;
 }
 
-.header__menu-item.list-menu__item {
-  font-weight: 500;
-}
-
 .header {
   padding-block: 1.2rem !important;
   padding-inline: 1.5rem !important;
 }
 
+.page-width {
+  max-width: calc(var(--page-width) + (2 * 1.5rem));
+}
+
 @media screen and (min-width: 600px) {
   .page-width {
     padding: 0 2.4rem;
+    max-width: calc(var(--page-width) + (2 * 2.4rem));
   }
 
   .header {
@@ -3855,6 +3942,7 @@ input {
 @media screen and (min-width: 750px) {
   .page-width {
     padding: 0 5.6rem;
+    max-width: calc(var(--page-width) + (2 * 5.6rem));
   }
 
   .header {
@@ -3876,8 +3964,18 @@ input {
 }
 
 .cart-count-bubble {
-  bottom: 0.1rem;
-  left: 2rem;
+  bottom: 0rem;
+  left: 1.75rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--cstm-color-primary);
+}
+
+@media screen and (min-width: 990px) {
+  .cart-count-bubble {
+    bottom: 0.25rem;
+    left: 2.25rem;
+  }
 }
 
 .header__icon {
@@ -3933,12 +4031,6 @@ input {
   .header--middle-left .header__heading-link,
   .header--top-left .header__heading-link {
     margin-left: unset;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .header {
-    max-width: 192rem;
   }
 }
 
@@ -3998,7 +4090,7 @@ details[open] > .header__menu-item {
 
 @media screen and (min-width: 990px) {
   .header {
-    padding-block: 1.4rem !important;
+    padding-block: 0.8rem !important;
   }
 }
 
@@ -4020,7 +4112,95 @@ details[open] > .header__menu-item {
   background-color: var(--cstm-color-primary);
 }
 
-.header-wrapper {
-  background-color: var(--cstm-color-white);
-  border-bottom: 1px solid #e0e0e0;
+.quantity {
+  min-height: 4rem;
+  width: fit-content;
+}
+
+.quantity::after {
+  box-shadow: 0 0 0 var(--inputs-border-width) #e0e0e0;
+}
+
+.quantity__button:focus,
+.quantity__input:focus {
+  z-index: unset;
+}
+
+.quantity > input {
+  max-width: 4rem;
+  font-size: 1.5rem;
+}
+
+.quantity > button {
+  width: 4rem;
+}
+
+.quantity > * {
+  min-height: 4rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .quantity > input {
+    font-size: 1.6rem;
+  }
+}
+
+.cart-count-bubble span {
+  color: var(--cstm-color-white);
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.field__input:focus,
+.select__select:focus,
+.customer .field input:focus,
+.customer select:focus,
+.localization-form__select:focus.localization-form__select:after {
+  box-shadow: unset;
+}
+
+.modal__content {
+  top: 4rem;
+}
+
+summary .icon-caret {
+  position: relative;
+  width: 12px;
+  height: 12px;
+}
+
+.header__menu-item .icon-caret {
+  right: 0rem;
+}
+
+.header__submenu.list-menu {
+  border-radius: 0.6rem;
+  border: 1px solid #e0e0e0;
+}
+
+.header__submenu .header__menu-item {
+  padding-block: 1.4rem;
+}
+
+.header__submenu .header__menu-item:hover {
+  background: rgba(26, 26, 26, 0.025);
+  color: var(--cstm-color-text);
+}
+
+.header__menu-item {
+  color: var(--cstm-color-text);
+}
+
+details[open] .modal-overlay::after {
+  background-color: rgba(26,26,26,0.6);
+}
+
+.search-modal {
+  min-height: unset;
+  height: calc(4.8rem + 2.4rem);
+}
+
+.spinner {
+  border: unset;
 }

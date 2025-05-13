@@ -237,17 +237,39 @@
               aria-controls="GalleryViewer-{{ section.id }}"
               aria-describedby="{{ thumbnail_id }}"
             >
-              {{
-                featured_media.preview_image
+              {% comment %}
+                {{
+                  featured_media.preview_image
+                  | image_url: width: 416
+                  | image_tag:
+                    loading: 'lazy',
+                    sizes: sizes,
+                    widths: '54, 74, 104, 162, 208, 324, 416',
+                    id: thumbnail_id,
+                    alt: featured_media.alt
+                  | escape
+                }}
+              {% endcomment %}
+
+              {%- # theme-check-disable UnusedAssign -%}
+              {% assign image = featured_media.preview_image
                 | image_url: width: 416
                 | image_tag:
                   loading: 'lazy',
                   sizes: sizes,
                   widths: '54, 74, 104, 162, 208, 324, 416',
                   id: thumbnail_id,
-                  alt: featured_media.alt
+                  alt: featured_media.alt,
+                  onload: "this.parentElement.classList.remove('img-loader__loading')"
                 | escape
-              }}
+              %}
+              {%- # theme-check-enable UnusedAssign -%}
+
+              {%
+                render 'custom-image-loader', {
+                image: image
+                }
+              %}
             </button>
           </li>
         {%- endif -%}
@@ -299,17 +321,39 @@
                 aria-controls="GalleryViewer-{{ section.id }}"
                 aria-describedby="{{ thumbnail_id }}"
               >
-                {{
-                  media.preview_image
+                {% comment %}
+                  {{
+                    media.preview_image
+                    | image_url: width: 416
+                    | image_tag:
+                      loading: 'lazy',
+                      sizes: sizes,
+                      widths: '54, 74, 104, 162, 208, 324, 416',
+                      id: thumbnail_id,
+                      alt: media.alt
+                    | escape
+                  }}
+                {% endcomment %}
+
+                {%- # theme-check-disable UnusedAssign -%}
+                {% assign image = media.preview_image
                   | image_url: width: 416
                   | image_tag:
                     loading: 'lazy',
                     sizes: sizes,
                     widths: '54, 74, 104, 162, 208, 324, 416',
                     id: thumbnail_id,
-                    alt: media.alt
+                    alt: media.alt,
+                    onload: "this.parentElement.classList.remove('img-loader__loading')"
                   | escape
-                }}
+                %}
+                {%- # theme-check-enable UnusedAssign -%}
+
+                {%
+                  render 'custom-image-loader', {
+                  image: image
+                  }
+                %}
               </button>
             </li>
           {%- endunless -%}

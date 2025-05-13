@@ -28,77 +28,82 @@
         "padding_bottom": 36
       }
     },
-    "custom_header_with_heading_image_7ca8Ah": {
-      "type": "custom-header-with-heading-image",
-      "name": "Header with Heading Image",
+    "custom_header_with_image_xiefhK": {
+      "type": "custom-header-with-image",
+      "name": "Header with Image",
       "settings": {
-        "heading": "",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "heading": "Kontaktiere uns",
+        "background_image": "shopify://shop_images/pexels-pavel-danilyuk-5807579_copy-min.jpg"
       }
     },
     "custom_contact_form_LijNKD": {
       "type": "custom-contact-form",
       "name": "Contact Form",
       "settings": {
-        "heading": "We're here to help - get in touch!",
-        "text": "This is just placeholder text. Don't be alarmed, this is just here to fill up space since your finalized copy isn't ready yet. Once we have your content finalized, we'll replace this.",
-        "button_label": "Send message",
+        "heading": "Wir helfen Ihnen gerne weiter – kontaktieren Sie uns!",
+        "text": "Egal ob du Fragen zu unseren Produkten, deiner Bestellung oder dem Versand hast – unser Kundenservice ist gerne für dich da. Kontaktiere uns einfach über das Kontaktformular und wir melden uns schnellstmöglich bei dir.",
+        "button_label": "Nachricht senden",
         "padding_top": 8,
         "padding_bottom": 8
       }
     },
-    "custom_column_list_dmeczK": {
+    "custom_column_list_KK3LyE": {
       "type": "custom-column-list",
       "blocks": {
-        "column_FmKtdj": {
+        "column_3fiGmx": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-delivery-box",
+            "title": "Kostenloser Versand ab 50€",
             "text": ""
           }
         },
-        "column_rGkG7G": {
+        "column_BFxaNb": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-message",
+            "title": "365 Tage Support",
             "text": ""
           }
         },
-        "column_m6aQhV": {
+        "column_WRrNxX": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-product-returns",
+            "title": "14 Tage Rückgaberecht",
             "text": ""
           }
         },
-        "column_pG7p9q": {
+        "column_jrr3EN": {
           "type": "column",
           "settings": {
-            "title": "Placeholder text",
+            "svg_text": "icon-shield-check",
+            "title": "Sicherer Checkout",
             "text": ""
           }
         }
       },
       "block_order": [
-        "column_FmKtdj",
-        "column_rGkG7G",
-        "column_m6aQhV",
-        "column_pG7p9q"
+        "column_3fiGmx",
+        "column_BFxaNb",
+        "column_WRrNxX",
+        "column_jrr3EN"
       ],
       "name": "Column List",
       "settings": {
+        "columns": 4,
         "text_alignment": "center",
-        "padding_top": 6,
-        "padding_bottom": 10
+        "padding_top": 8,
+        "padding_bottom": 10,
+        "background_color": "#fafafa"
       }
     }
   },
   "order": [
     "main",
     "form",
-    "custom_header_with_heading_image_7ca8Ah",
+    "custom_header_with_image_xiefhK",
     "custom_contact_form_LijNKD",
-    "custom_column_list_dmeczK"
+    "custom_column_list_KK3LyE"
   ]
 }

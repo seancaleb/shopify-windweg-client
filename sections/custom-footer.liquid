@@ -4,7 +4,8 @@
 
 <style>
   #shopify-section-{{ sid }} {
-    background-color: var(--cstm-color-white);
+    {% comment %} border-top: 1px solid #e0e0e0; {% endcomment %}
+     background: #fcfcfc;
   }
 
   .footer__wrapper {
@@ -104,7 +105,7 @@
             id="Subscribe"
             aria-label="{{ 'newsletter.button_label' | t }}"
           >
-            Sign me up
+            {{ section.settings.newsletter_button_label }}
           </button>
         </div>
         {%- if form.errors -%}
@@ -217,6 +218,12 @@
       "id": "newsletter_text",
       "label": "Text",
       "default": "Subscribe today and never miss our top offers and important announcements."
+    },
+    {
+      "type": "text",
+      "id": "newsletter_button_label",
+      "label": "Text",
+      "default": "Melde mich an"
     },
     {
       "type": "checkbox",

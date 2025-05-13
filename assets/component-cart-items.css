@@ -349,3 +349,41 @@ cart-remove-button .icon-remove {
     padding-left: 0;
   }
 }
+
+/* Overridden Styles  */
+cart-remove-button .icon-remove {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--cstm-color-text);
+}
+
+cart-remove-button .svg-wrapper {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.cart-remove-button:hover {
+  background-color: unset;
+}
+
+.cart-item__name {
+  font-weight: 500;
+  color: var(--cstm-color-primary);
+}
+
+.cart-item cart-remove-button {
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.cart-item__name:hover {
+  text-decoration: unset;
+}
+
+.cart-item__error-text {
+  letter-spacing: 0;
+  color: var(--cstm-color-text);
+}

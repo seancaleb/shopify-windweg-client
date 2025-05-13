@@ -99,6 +99,27 @@
         background-color: rgb(var(--color-background));
       }
 
+       @font-face {
+        font-family: "Onest";
+        src: url("{{ 'Onest-Thin.woff2' | asset_url }}") format("woff2");
+        font-style: normal;
+        font-weight: 100;
+      }
+
+      @font-face {
+        font-family: "Onest";
+        src: url("{{ 'Onest-ExtraLight.woff2' | asset_url }}") format("woff2");
+        font-style: normal;
+        font-weight: 200;
+      }
+
+      @font-face {
+        font-family: "Onest";
+        src: url("{{ 'Onest-Light.woff2' | asset_url }}") format("woff2");
+        font-style: normal;
+        font-weight: 300;
+      }
+
       @font-face {
         font-family: "Onest";
         src: url("{{ 'Onest-Regular.woff2' | asset_url }}") format("woff2");
@@ -282,7 +303,7 @@
         }
       }
 
-      {% unless template == 'page.terms-and-conditions' or template == 'page.cancellation-policy' or template == 'page.privacy-policy' or template == 'page.imprint' %}
+      {% unless template == 'page.terms-and-conditions' or template == 'page.cancellation-policy' or template == 'page.privacy-policy' or template == 'page.imprint' or template == 'article' %}
         h1,
         h2,
         h3,
@@ -297,6 +318,42 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+
+    {% comment %} Custom Styles  {% endcomment %}
+    {{ 'custom-app-styles.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-styles.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-featured-products.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-component-ratings.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-blog-posts.css' | asset_url | stylesheet_tag }}
+
+    {% if template == 'index' %}
+      {{ 'custom-index-styles.css' | asset_url | stylesheet_tag }}
+
+      <style>
+        .header-wrapper * {
+          color: #ffffff;
+        }
+
+        .header__submenu.list-menu * {
+          color: var(--cstm-color-text) !important;
+        }
+
+        #MainContent {
+          margin-top: -133px;
+        }
+        @media (max-width: 767px) {
+          #MainContent {
+            margin-top: -107px !important;
+          }
+        }
+
+        sticky-header {
+          background: transparent !important;
+        }
+      </style>
+
+      <script src="{{ 'custom-header-scroll.js' | asset_url }}" defer="defer"></script>
+    {% endif %}
 
     {% comment %} Custom CDN styles  {% endcomment %}
     <link
@@ -313,6 +370,11 @@
       referrerpolicy="no-referrer"
       defer="defer"
     ></script>
+
+    <script src="{{ 'custom-collapsible.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'custom-faq.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'custom-header.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'custom-dynamic-image-loader.js' | asset_url }}" defer="defer"></script>
 
     {%- if settings.cart_type == 'drawer' -%}
       {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}

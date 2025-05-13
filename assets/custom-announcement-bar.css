@@ -1,0 +1,40 @@
+.announcement-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-block: 0.2rem;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cstm-color-primary);
+    color: #ffffff;
+  }
+
+  .announcement-bar__message {
+    position: absolute;
+    font-weight: normal;
+    line-height: 1.4;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity var(--duration) var(--ease), transform var(--duration) var(--ease);
+    font-size: 1.3rem;
+  }
+
+  .announcement-bar__message.active {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+  }
+
+  @media screen and (min-width: 750px) {
+    .announcement-bar__message {
+      font-size: 1.4rem;
+    }
+  }
+  
+  .announcement-bar, .announcement-bar__announcement {
+    height: auto;
+  }

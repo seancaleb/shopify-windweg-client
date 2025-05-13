@@ -391,7 +391,7 @@
                 <h2 class="facet-filters__label caption-large text-body">
                   <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
                 </h2>
-                <div class="select">
+                <div class="custom-select">
                   {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                   <select
                     name="sort_by"
@@ -410,7 +410,7 @@
                       </option>
                     {%- endfor -%}
                   </select>
-                  <span class="svg-wrapper">
+                  <span class="svg">
                     {{- 'icon-caret.svg' | inline_asset_content -}}
                   </span>
                 </div>
@@ -475,7 +475,7 @@
           <div class="mobile-facets__inner gradient">
             <div class="mobile-facets__header">
               <div class="mobile-facets__header-inner">
-                <h2 class="mobile-facets__heading medium-hide large-up-hide">
+                <h2 class="h4 medium-hide large-up-hide">
                   {%- if enable_filtering and enable_sorting -%}
                     {{ 'products.facets.filter_and_sort' | t }}
                   {%- elsif enable_filtering -%}
@@ -484,7 +484,7 @@
                     {{ 'products.facets.sort_button' | t }}
                   {%- endif -%}
                 </h2>
-                <h2 class="mobile-facets__heading small-hide">
+                <h2 class="h4 small-hide">
                   {%- if enable_filtering -%}
                     {{ 'products.facets.filter_button' | t }}
                   {%- endif -%}
@@ -725,7 +725,7 @@
                   <div class="mobile-facets__summary">
                     <div class="mobile-facets__sort">
                       <label for="SortBy-mobile">{{ 'products.facets.sort_by_label' | t }}</label>
-                      <div class="select">
+                      <div class="custom-select">
                         <select
                           name="sort_by"
                           class="select__select"
@@ -743,7 +743,7 @@
                             </option>
                           {%- endfor -%}
                         </select>
-                        <span class="svg-wrapper">
+                        <span class="svg">
                           {{- 'icon-caret.svg' | inline_asset_content -}}
                         </span>
                       </div>
@@ -831,7 +831,7 @@
             <h2 class="facet-filters__label caption-large text-body">
               <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
             </h2>
-            <div class="select">
+            <div class="custom-select">
               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
               <select
                 name="sort_by"
@@ -850,7 +850,7 @@
                   </option>
                 {%- endfor -%}
               </select>
-              <span class="svg-wrapper">
+              <span class="svg">
                 {{- 'icon-caret.svg' | inline_asset_content -}}
               </span>
             </div>

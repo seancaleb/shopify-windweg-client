@@ -1,0 +1,90 @@
+{% comment %}
+  Renders a custom product card
+
+  Accepts:
+  - product: {Object} Product Liquid object
+
+  Usage:
+  {% render 'custom-card-product', product: product %}
+{% endcomment %}
+
+<style>
+  .featured__products-item .content > div:first-child {
+    max-width: 30ch;
+    color: var(--cstm-color-primary);
+    font-weight: 600;
+    margin-top: 1.2rem;
+  }
+</style>
+
+<div class="featured__products-item">
+  <a href="{{ product.url }}">
+    <div class="featured__products-item-image-wrapper">
+      <div class="featured__products-item-image-hover">
+        {% comment %}
+          {{
+            product.featured_image
+            | image_url: width: 500
+            | image_tag: class: 'featured__products-item-image', widths: '200, 400, 600, 800'
+          }}
+        {% endcomment %}
+
+        {%- # theme-check-disable UnusedAssign -%}
+        {% assign image = product.featured_image
+          | image_url: width: 500
+          | image_tag:
+            class: 'featured__products-item-image',
+            widths: '200, 400, 600, 800',
+            onload: "this.parentElement.classList.remove('img-loader__loading')"
+        %}
+        {%- # theme-check-enable UnusedAssign -%}
+
+        {%
+          render 'custom-image-loader', {
+          image: image
+          }
+        %}
+      </div>
+    </div>
+    <div class="content">
+      <div>
+        {% assign review_count = product.price | money_without_currency | round | divided_by: 1.25 | round %}
+
+        {%- # theme-check-disable UnusedAssign -%}
+        {% if review_count > 40 %}
+          {% assign is_partial = true %}
+        {% else %}
+          {% assign is_partial = false %}
+        {% endif %}
+        {%- # theme-check-enable UnusedAssign -%}
+
+        {%
+          render 'custom-ratings', {
+          is_partial: is_partial,
+          total_reviews_count: review_count
+          }
+        %}
+
+        <div class="h6">
+          {{ product.title }}
+        </div>
+      </div>
+
+      {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price' -%}
+    </div>
+
+    <div class="badge__container">
+      {% if product.compare_at_price_max > product.price and product.available %}
+        {% assign savings = product.compare_at_price | minus: product.price %}
+        {% assign savings_percent = savings | times: 100.0 | divided_by: product.compare_at_price | round %}
+        <span class="badge price__badge-sale"> {{ savings_percent }}% {{ 'products.product.on_sale' | t }}</span>
+      {% endif %}
+
+      {% unless product.available %}
+        <span class="badge price__badge-sold-out">
+          {{ 'products.product.sold_out' | t }}
+        </span>
+      {% endunless %}
+    </div>
+  </a>
+</div>
