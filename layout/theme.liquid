@@ -321,12 +321,13 @@
 
     {% comment %} Custom Styles  {% endcomment %}
     {{ 'custom-app-styles.css' | asset_url | stylesheet_tag }}
+    {{ 'custom-styles.css' | asset_url | stylesheet_tag }}
     {{ 'custom-featured-products.css' | asset_url | stylesheet_tag }}
     {{ 'custom-component-ratings.css' | asset_url | stylesheet_tag }}
     {{ 'custom-blog-posts.css' | asset_url | stylesheet_tag }}
 
     {% if template == 'index' %}
-      {{ 'custom-styles.css' | asset_url | stylesheet_tag }}
+      {{ 'custom-index-styles.css' | asset_url | stylesheet_tag }}
 
       <style>
         .header-wrapper * {
@@ -373,6 +374,7 @@
     <script src="{{ 'custom-collapsible.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom-faq.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom-header.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'custom-dynamic-image-loader.js' | asset_url }}" defer="defer"></script>
 
     {%- if settings.cart_type == 'drawer' -%}
       {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}

@@ -78,15 +78,35 @@
     </span>
     {%- render 'loading-spinner' -%}
     <div class="product__media media media--transparent">
-      {{
-        media.preview_image
+      {% comment %}
+        {{
+          media.preview_image
+          | image_url: width: 1946
+          | image_tag:
+            class: image_class,
+            loading: lazy,
+            sizes: sizes,
+            widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
+        }}
+      {% endcomment %}
+
+      {%- # theme-check-disable UnusedAssign -%}
+      {% assign image = media.preview_image
         | image_url: width: 1946
         | image_tag:
           class: image_class,
           loading: lazy,
           sizes: sizes,
-          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
-      }}
+          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+          onload: "this.parentElement.classList.remove('img-loader__loading')"
+      %}
+      {%- # theme-check-enable UnusedAssign -%}
+
+      {%
+        render 'custom-image-loader', {
+        image: image
+        }
+      %}
     </div>
     <button
       class="product__media-toggle quick-add-hidden product__media-zoom-{{ section.settings.image_zoom }}"
@@ -120,14 +140,33 @@
           </span>
         {%- endif -%}
       </span>
-      {{
-        media.preview_image
+      {% comment %}
+        {{
+          media.preview_image
+          | image_url: width: 1946
+          | image_tag:
+            loading: lazy,
+            sizes: sizes,
+            widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
+        }}
+      {% endcomment %}
+
+      {%- # theme-check-disable UnusedAssign -%}
+      {% assign image = media.preview_image
         | image_url: width: 1946
         | image_tag:
           loading: lazy,
           sizes: sizes,
-          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
-      }}
+          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+          onload: "this.parentElement.classList.remove('img-loader__loading')"
+      %}
+      {%- # theme-check-enable UnusedAssign -%}
+
+      {%
+        render 'custom-image-loader', {
+        image: image
+        }
+      %}
     </button>
     <template>
       {%- liquid

@@ -10,7 +10,18 @@
 
 <a href="{{ article.url }}" class="blog__item">
   <div class="blog__image-wrapper">
-    {{ article.image | image_url: width: 600 | image_tag: class: 'blog__image' }}
+    {%- # theme-check-disable UnusedAssign -%}
+    {% assign image = article.image
+      | image_url: width: 600
+      | image_tag: class: 'article__image', onload: "this.parentElement.classList.remove('img-loader__loading')"
+    %}
+    {%- # theme-check-enable UnusedAssign -%}
+
+    {%
+      render 'custom-image-loader', {
+      image: image
+      }
+    %}
   </div>
 
   <div class="blog__content-wrapper">

@@ -20,21 +20,43 @@
 <div class="featured__products-item">
   <a href="{{ product.url }}">
     <div class="featured__products-item-image-wrapper">
-      {{
-        product.featured_image
-        | image_url: width: 500
-        | image_tag: class: 'featured__products-item-image', widths: '200, 400, 600, 800'
-      }}
+      <div class="featured__products-item-image-hover">
+        {% comment %}
+          {{
+            product.featured_image
+            | image_url: width: 500
+            | image_tag: class: 'featured__products-item-image', widths: '200, 400, 600, 800'
+          }}
+        {% endcomment %}
+
+        {%- # theme-check-disable UnusedAssign -%}
+        {% assign image = product.featured_image
+          | image_url: width: 500
+          | image_tag:
+            class: 'featured__products-item-image',
+            widths: '200, 400, 600, 800',
+            onload: "this.parentElement.classList.remove('img-loader__loading')"
+        %}
+        {%- # theme-check-enable UnusedAssign -%}
+
+        {%
+          render 'custom-image-loader', {
+          image: image
+          }
+        %}
+      </div>
     </div>
     <div class="content">
       <div>
         {% assign review_count = product.price | money_without_currency | round | divided_by: 1.25 | round %}
 
+        {%- # theme-check-disable UnusedAssign -%}
         {% if review_count > 40 %}
           {% assign is_partial = true %}
         {% else %}
           {% assign is_partial = false %}
         {% endif %}
+        {%- # theme-check-enable UnusedAssign -%}
 
         {%
           render 'custom-ratings', {

@@ -39,7 +39,18 @@
         style="--animation-order: 3;"
       {% endif %}
     >
-      {{ article.image | image_url: width: 900 | image_tag: class: 'article__image' }}
+      {%- # theme-check-disable UnusedAssign -%}
+      {% assign image = article.image
+        | image_url: width: 900
+        | image_tag: onload: "this.parentElement.classList.remove('img-loader__loading')"
+      %}
+      {%- # theme-check-enable UnusedAssign -%}
+
+      {%
+        render 'custom-image-loader', {
+        image: image
+        }
+      %}
     </div>
 
     <div

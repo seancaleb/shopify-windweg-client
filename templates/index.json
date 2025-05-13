@@ -60,7 +60,7 @@
           "settings": {
             "svg_text": "icon-check-circle",
             "title": "Deutsche Entwicklung",
-            "text": "<p>Wir stehen für Präzision und Qualität „Made in Germany“. Unsere Produkte werden mit viel Know-how und Leidenschaft entwickelt.</p>"
+            "text": "<p>Wir stehen für Präzision und Qualität. Unsere Produkte werden mit viel Know-how und Leidenschaft entwickelt.</p>"
           }
         },
         "column_FAQVDw": {
@@ -426,7 +426,7 @@
           "type": "column",
           "settings": {
             "svg_text": "icon-product-returns",
-            "title": "14 Tage Rückgaberecht",
+            "title": "30 Tage Rückgaberecht",
             "text": ""
           }
         },
