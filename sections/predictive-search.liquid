@@ -142,13 +142,33 @@
                     tabindex="-1"
                   >
                     {%- if product.featured_media != blank -%}
-                      <img
-                        class="predictive-search__image"
-                        src="{{ product.featured_media | image_url: width: 150 }}"
-                        alt="{{ product.featured_media.alt | escape }}"
-                        width="50"
-                        height="{{ 50 | divided_by: product.featured_media.preview_image.aspect_ratio }}"
-                      >
+                      {% comment %}
+                        <img
+                          class="predictive-search__image"
+                          src="{{ product.featured_media | image_url: width: 150 }}"
+                          alt="{{ product.featured_media.alt | escape }}"
+                          width="50"
+                          height="{{ 50 | divided_by: product.featured_media.preview_image.aspect_ratio }}"
+                        >
+                      {% endcomment %}
+
+                      {% assign image_alt = product.featured_media.alt | escape %}
+
+                      {%- # theme-check-disable UnusedAssign -%}
+                      {% assign image = product.featured_media
+                        | image_url: width: 150
+                        | image_tag:
+                          alt: image_alt,
+                          class: 'predictive-search__image',
+                          onload: "this.parentElement.classList.remove('img-loader__loading')"
+                      %}
+                      {%- # theme-check-enable UnusedAssign -%}
+
+                      {%
+                        render 'custom-image-loader', {
+                        image: image
+                        }
+                      %}
                     {%- endif -%}
                     <div class="predictive-search__item-content{% unless settings.predictive_search_show_vendor or settings.predictive_search_show_price %} predictive-search__item-content--centered{% endunless %}">
                       {%- if settings.predictive_search_show_vendor -%}
