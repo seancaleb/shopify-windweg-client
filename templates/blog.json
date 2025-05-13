@@ -27,7 +27,7 @@
       "name": "Header with Image",
       "settings": {
         "heading": "Neueste Artikel",
-        "background_image": "shopify://shop_images/pexels-pavel-danilyuk-5807796_copy.webp"
+        "background_image": "shopify://shop_images/pexels-pavel-danilyuk-5807796_copy-min.jpg"
       }
     },
     "custom_heading_with_text_6gYRrD": {
@@ -49,6 +49,8 @@
         "blog": "faltschlosser",
         "columns": 3,
         "heading": "",
+        "button_label": "Entdecken Sie Erkenntnisse",
+        "url": "",
         "padding_top": 6,
         "padding_bottom": 10,
         "background_color": "#ffffff"
